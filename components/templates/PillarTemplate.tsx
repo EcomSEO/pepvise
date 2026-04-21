@@ -3,7 +3,6 @@ import { getHub } from "@/lib/content/hubs";
 import { relatedPosts } from "@/lib/content/posts";
 import { Breadcrumbs } from "../Breadcrumbs";
 import { ReviewStamp } from "../ReviewStamp";
-import { Callout } from "../Callout";
 import { AuthorBio } from "../AuthorBio";
 import { RelatedPosts } from "../RelatedPosts";
 import { SourcesList } from "../SourcesList";
@@ -53,22 +52,66 @@ export function PillarTemplate({ post }: { post: Post }) {
           {post.description}
         </p>
 
-        <Callout variant="key-takeaway" title="Status">
-          This page is a stub. The full pillar is being drafted per the brief
-          pipeline in <code>docs/sample-briefs.md</code>. The final post will
-          render here as MDX once the draft clears editorial review.
-        </Callout>
+        {post.ourPick && (
+          <section className="mt-10 p-6 rounded-lg bg-bone border border-inknavy/10">
+            <div className="text-xs uppercase tracking-wide text-oxblood mb-1">
+              Editorial reference · {post.ourPick.tier}
+            </div>
+            <h2 className="font-serif text-2xl text-inknavy mb-2">
+              {post.ourPick.name}
+            </h2>
+            <p className="text-charcoal/80">{post.ourPick.reason}</p>
+          </section>
+        )}
 
-        <div className="prose prose-lg mt-8 text-charcoal">
-          <h2 className="font-serif text-forest">What this guide covers</h2>
-          <p>
-            The complete pillar, once drafted, walks through the hub thesis
-            end-to-end in the calm, evidence-led voice from the brand book.
-            H2/H3 structure follows the brief; every factual claim is cited in
-            the Sources section below.
-          </p>
-          <p className="text-charcoal/60 italic">TODO: draft body.</p>
-        </div>
+        {post.products && post.products.length > 0 && (
+          <section className="mt-10">
+            <h2 className="font-serif text-2xl text-inknavy mb-4">
+              Reference reading
+            </h2>
+            <ol className="space-y-6">
+              {post.products.map((p) => (
+                <li
+                  key={p.rank}
+                  className="p-5 border border-inknavy/10 rounded-lg bg-white/60"
+                >
+                  <div className="flex items-baseline gap-3">
+                    <span className="font-serif text-2xl text-oxblood">
+                      {p.rank}.
+                    </span>
+                    <div>
+                      <h3 className="font-serif text-xl text-inknavy">
+                        {p.name}
+                      </h3>
+                      <span className="text-xs uppercase tracking-wide text-charcoal/50">
+                        {p.tier}
+                      </span>
+                    </div>
+                  </div>
+                  <p className="mt-3 text-charcoal/80 text-[15px]">
+                    {p.summary}
+                  </p>
+                </li>
+              ))}
+            </ol>
+          </section>
+        )}
+
+        {post.faq && post.faq.length > 0 && (
+          <section className="mt-12">
+            <h2 className="font-serif text-2xl text-inknavy mb-4">
+              Frequently asked questions
+            </h2>
+            <div className="space-y-5">
+              {post.faq.map((f, i) => (
+                <div key={i}>
+                  <h3 className="font-serif text-lg text-inknavy">{f.q}</h3>
+                  <p className="mt-1 text-charcoal/80">{f.a}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         <SourcesList sources={post.sources ?? []} />
         <AuthorBio />
