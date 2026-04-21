@@ -1,8 +1,9 @@
 import { hubs } from "@/lib/content/hubs";
-import { featuredPost, latestPosts } from "@/lib/content/posts";
+import { featuredPost, latestPosts, posts } from "@/lib/content/posts";
 import { HubCard } from "@/components/HubCard";
 import { PostCard } from "@/components/PostCard";
 import { EmailCapture } from "@/components/EmailCapture";
+import { EvidenceLedgerMaster } from "@/components/EvidenceLedger";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -48,6 +49,10 @@ export default function HomePage() {
           <PostCard post={featured} variant="feature" />
         </section>
       )}
+
+      <section className="mx-auto max-w-6xl px-6 py-16 border-t border-inknavy/10">
+        <EvidenceLedgerMaster posts={posts} />
+      </section>
 
       <section id="hubs" className="mx-auto max-w-6xl px-6 py-16 border-t border-inknavy/10">
         <h2 className="font-serif text-3xl text-inknavy mb-8">The guides</h2>

@@ -7,6 +7,7 @@ import { AuthorBio } from "../AuthorBio";
 import { RelatedPosts } from "../RelatedPosts";
 import { SourcesList } from "../SourcesList";
 import { EmailCapture } from "../EmailCapture";
+import { EvidenceLedger } from "../EvidenceLedger";
 import { PostReviewStamp } from "../MedicalDisclaimer";
 import { ArticleJsonLd } from "../schema/ArticleJsonLd";
 import { BreadcrumbJsonLd } from "../schema/BreadcrumbJsonLd";
@@ -51,6 +52,8 @@ export function PillarTemplate({ post }: { post: Post }) {
         <p className="mt-8 text-lg text-charcoal/90 leading-relaxed">
           {post.description}
         </p>
+
+        <EvidenceLedger post={post} />
 
         {post.ourPick && (
           <section className="mt-10 p-6 rounded-lg bg-bone border border-inknavy/10">
