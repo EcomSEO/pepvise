@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { hubs } from "@/lib/content/hubs";
 import { Wordmark } from "./editorial/Wordmark";
 import { Dateline } from "./editorial/Dateline";
@@ -11,6 +11,49 @@ import { ReadingProgress } from "./editorial/ReadingProgress";
 export function Header() {
   const [guidesOpen, setGuidesOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const guidesWrapRef = useRef<HTMLDivElement | null>(null);
+
+  // Keyboard affordances for the Guides dropdown: Escape closes it and
+  // returns focus to the trigger; clicks outside the wrapper close it.
+  useEffect(() => {
+    if (!guidesOpen) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        setGuidesOpen(false);
+        const trigger = guidesWrapRef.current?.querySelector<HTMLButtonElement>(
+          "button[aria-haspopup]"
+        );
+        trigger?.focus();
+      }
+    }
+    function onClick(e: MouseEvent) {
+      if (!guidesWrapRef.current) return;
+      if (!guidesWrapRef.current.contains(e.target as Node)) {
+        setGuidesOpen(false);
+      }
+    }
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("mousedown", onClick);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("mousedown", onClick);
+    };
+  }, [guidesOpen]);
+
+  // Mobile nav: Escape closes, body-scroll locks while open.
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setMobileOpen(false);
+    }
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [mobileOpen]);
 
   return (
     <header className="bg-bone/95 backdrop-blur sticky top-0 z-40 border-b border-inknavy/15">
@@ -50,21 +93,25 @@ export function Header() {
 
         <nav className="hidden md:flex items-center gap-8 text-sm">
           <div
+            ref={guidesWrapRef}
             className="relative"
             onMouseEnter={() => setGuidesOpen(true)}
             onMouseLeave={() => setGuidesOpen(false)}
           >
             <button
+              type="button"
               onClick={() => setGuidesOpen((v) => !v)}
               className="nav-link flex items-center gap-1"
               aria-expanded={guidesOpen}
               aria-haspopup="menu"
+              aria-controls="guides-menu"
             >
               Guides
               <span aria-hidden className="text-oxblood">▾</span>
             </button>
             {guidesOpen && (
               <div
+                id="guides-menu"
                 role="menu"
                 className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[22rem] bg-bone border border-inknavy/20 rounded-sm shadow-ledger p-3"
               >
@@ -106,9 +153,12 @@ export function Header() {
         </nav>
 
         <button
+          type="button"
           onClick={() => setMobileOpen(true)}
-          className="md:hidden text-inknavy"
+          className="md:hidden text-inknavy p-2 -m-2"
           aria-label="Open menu"
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-menu"
         >
           <svg
             width="26"
@@ -126,13 +176,20 @@ export function Header() {
       </div>
 
       {mobileOpen && (
-        <div className="fixed inset-0 z-50 bg-bone md:hidden overflow-auto">
+        <div
+          id="mobile-menu"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Site navigation"
+          className="fixed inset-0 z-50 bg-bone md:hidden overflow-auto"
+        >
           <div className="flex items-center justify-between px-6 py-4 border-b border-inknavy/15">
             <Wordmark size="sm" />
             <button
+              type="button"
               onClick={() => setMobileOpen(false)}
               aria-label="Close menu"
-              className="text-inknavy"
+              className="text-inknavy p-2 -m-2"
             >
               <svg
                 width="26"

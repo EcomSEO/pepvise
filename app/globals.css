@@ -25,6 +25,29 @@ html {
   font-feature-settings: "ss01", "cv11";
 }
 
+/* === SITE-WIDE FOCUS RINGS — oxblood, keyboard-only ===
+   WCAG 2.2 focus-visible: a clear 2px oxblood ring with a bone offset so
+   the ring is legible against both bone and inknavy surfaces. Mouse/touch
+   focus does not trigger the ring; keyboard/assistive tech does. */
+:focus-visible {
+  outline: 2px solid var(--color-oxblood);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Primary button — invert offset colour so the ring stays visible on
+   inknavy and oxblood fills. */
+.btn-primary:focus-visible {
+  outline-color: var(--color-oxblood);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 2px var(--color-bone) inset;
+}
+
+.btn-secondary:focus-visible {
+  outline-color: var(--color-oxblood);
+  outline-offset: 3px;
+}
+
 body {
   background-color: var(--color-bone);
   color: var(--color-charcoal);
@@ -354,22 +377,41 @@ html {
   border-top-color: var(--color-inknavy);
 }
 
-/* Desktop (hover-capable): show on hover / keyboard focus */
+/* Desktop (hover-capable): show on hover / keyboard focus.
+   focus-within covers the case where any descendant of the anchor is
+   focused; focus-visible on the anchor itself covers keyboard-only
+   reveals without lighting up on mouse click. */
 @media (hover: hover) and (pointer: fine) {
   .cite:hover > .cite-body,
-  .cite:focus-visible > .cite-body {
+  .cite:focus-visible > .cite-body,
+  .cite:focus-within > .cite-body {
     opacity: 1;
     transform: translate(-50%, 0);
     pointer-events: auto;
   }
 }
 
-/* Mobile: keep the popover hidden so the anchor behaves as a link */
+/* Mobile: the popover doesn't reveal on hover (no hover), but keyboard
+   users on touch devices (Bluetooth keyboard on iPad, switch control, etc.)
+   must still get the source text. Reveal on focus-visible / focus-within. */
 @media (hover: none), (pointer: coarse) {
-  .cite > .cite-body { display: none; }
+  .cite > .cite-body {
+    /* stay in the DOM and readable by AT via aria-describedby; only
+       hidden visually until focus */
+    opacity: 0;
+    pointer-events: none;
+  }
+  .cite:focus-visible > .cite-body,
+  .cite:focus-within > .cite-body {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    pointer-events: auto;
+  }
 }
 
-/* === TIER / EVIDENCE CHIPS === */
+/* === TIER / EVIDENCE CHIPS ===
+   Colour + shape + text label — so the tier is legible in greyscale
+   and under colour-vision differences (WCAG 1.4.1). */
 .tier-chip {
   display: inline-flex;
   align-items: center;
@@ -387,10 +429,47 @@ html {
 
 .tier-chip::before {
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: currentColor;
+  flex-shrink: 0;
+}
+
+/* Solid — High / Approved */
+.tier-chip[data-shape="solid"]::before {
+  background: currentColor;
+  border: 1.5px solid currentColor;
+}
+/* Half — Moderate */
+.tier-chip[data-shape="half"]::before {
+  background: linear-gradient(
+    90deg,
+    currentColor 0 50%,
+    transparent 50% 100%
+  );
+  border: 1.5px solid currentColor;
+}
+/* Ring — Low */
+.tier-chip[data-shape="ring"]::before {
+  background: transparent;
+  border: 2px solid currentColor;
+}
+/* Hollow — Anecdotal */
+.tier-chip[data-shape="hollow"]::before {
+  background: transparent;
+  border: 1px dashed currentColor;
+}
+/* Slash — Not approved / Absent */
+.tier-chip[data-shape="slash"]::before {
+  background:
+    linear-gradient(
+      135deg,
+      transparent 0 45%,
+      currentColor 45% 55%,
+      transparent 55% 100%
+    );
+  border: 1px solid currentColor;
 }
 
 .tier-high { color: var(--color-tier-high); }
@@ -444,17 +523,18 @@ html {
   transform: scaleX(1);
 }
 
-/* Current-page dot — a small oxblood italic serif dot after the label */
+/* Current-page dot — a small oxblood italic serif bullet after the label.
+   Uses an empty string + background so screen readers do not announce
+   the glyph on browsers that expose CSS content. */
 .nav-link[aria-current="page"]::before {
-  content: ".";
+  content: "";
   position: absolute;
-  right: -10px;
-  top: -6px;
-  font-family: "Newsreader", serif;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 1.4rem;
-  color: var(--color-oxblood);
+  right: -8px;
+  top: 4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-oxblood);
   line-height: 1;
 }
 
