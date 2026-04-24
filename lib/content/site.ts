@@ -7,7 +7,7 @@ export const SITE = {
     "Citation-heavy literature analysis of BPC-157, TB-500, GHK-Cu, Retatrutide, and the research-peptide category. Every compound opens with the Evidence Ledger. No sales, no dosing prescriptions, no vendor links.",
   author: "The PepVise Editorial Team",
   email: "hello@pepvise.com",
-  launched: false,
+  launched: true,
   requiresMedicalDisclaimer: true,
   volume: "Vol. I",
   issue: "No. 01",
