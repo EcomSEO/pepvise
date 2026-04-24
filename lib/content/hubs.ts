@@ -40,7 +40,7 @@ export const hubs: Hub[] = [
     name: "Safety, Regulation, Markets",
     shortName: "Regulation",
     oneLiner: "FDA status, 503A/503B compounding, counterfeit risks, vendor taxonomy.",
-    thesis: "The legal and regulatory landscape — 'research use only' labeling, compounding pharmacy regulation, counterfeit red flags. Informational taxonomy, never purchase guidance.",
+    thesis: "The legal and regulatory framework — 'research use only' labeling, compounding pharmacy regulation, counterfeit red flags. Informational taxonomy, never purchase guidance.",
   },
 ];
 

@@ -361,7 +361,7 @@ export const posts: Post[] = [
       name: "Jastreboff et al. 2023 — New England Journal of Medicine",
       tier: "Primary trial publication",
       reason:
-        "Retatrutide is the rare research peptide where the best source is the published Phase 2 paper itself. Jastreboff et al. 2023 in NEJM is the triple-agonist obesity trial (n=338) that produced the eye-catching weight-loss numbers everyone is citing — read the actual paper, the actual CONSORT tables, and the actual safety section before forming a view.",
+        "Retatrutide is the rare research peptide where the best source is the published Phase 2 paper itself. Jastreboff et al. 2023 in NEJM is the triple-agonist obesity trial (n=338) that produced the ~24% weight-loss numbers everyone is citing. Read the actual paper, the CONSORT tables, and the safety section before forming a view.",
     },
     products: [
       {
@@ -1145,7 +1145,7 @@ export const posts: Post[] = [
       },
       {
         rank: 4,
-        name: "The 2023 FDA category-2 decisions changed the peptide landscape",
+        name: "The 2023 FDA category-2 decisions reshaped peptide compounding",
         summary:
           "In 2023, the FDA moved several peptide bulk substances (including BPC-157) into category 2 of the 503A bulk-substances evaluation — effectively meaning the agency had significant safety concerns that excluded them from 503A compounding eligibility. This is the most important single regulatory development in research peptides in the last five years.",
       },
