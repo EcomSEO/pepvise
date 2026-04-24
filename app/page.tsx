@@ -8,6 +8,7 @@ import {
   EvidenceLedger,
   EvidenceLedgerMaster,
 } from "@/components/editorial/EvidenceLedger";
+import { Reveal } from "@/components/editorial/Reveal";
 
 const typeLabel: Record<string, string> = {
   pillar: "Compound profile",
@@ -23,31 +24,47 @@ export default function HomePage() {
 
   return (
     <main>
-      {/* === HERO: literary masthead quoting a compound profile === */}
-      <section className="border-b border-inknavy/15">
+      {/* === HERO: literary masthead quoting a compound profile ===
+          Staggered page-load reveal:
+            cascade-1 → hero eyebrow flourish (dateline sits in Header)
+            cascade-2 → display headline ("What the literature...")
+            cascade-3 → italic subhead
+            cascade-4 → secondary paragraph
+            cascade-5 → CTA row
+            cascade-6 → sidebar "In this issue"
+      */}
+      <section className="border-b border-inknavy/15 hero-wash">
         <div className="mx-auto max-w-6xl px-6 pt-14 md:pt-20 pb-14 md:pb-20">
           <div className="grid md:grid-cols-12 gap-10 items-start">
-            <div className="md:col-span-7 fade-up">
-              <Eyebrow tone="oxblood">
-                This issue &nbsp;·&nbsp; The BPC-157 ledger
-              </Eyebrow>
-              <h1 className="display-headline mt-5 text-[2.5rem] sm:text-5xl md:text-[4rem]">
+            <div className="md:col-span-7">
+              <div className="cascade cascade-1 flex items-baseline gap-3 flex-wrap">
+                <Eyebrow tone="oxblood">
+                  This issue &nbsp;·&nbsp; The BPC-157 ledger
+                </Eyebrow>
+                <span
+                  aria-hidden
+                  className="hero-eyebrow-flourish text-[0.95rem] text-oxblood/80"
+                >
+                  — et cetera, <span className="not-italic">ad evidentiam</span>
+                </span>
+              </div>
+              <h1 className="cascade cascade-2 display-headline mt-5 text-[2.5rem] sm:text-5xl md:text-[4rem]">
                 <em>What the literature</em>
                 <br className="hidden md:inline" />
                 <span> actually says.</span>
               </h1>
-              <p className="mt-8 font-serif italic text-xl md:text-[1.4rem] text-inknavy/90 max-w-2xl leading-[1.45]">
+              <p className="cascade cascade-3 mt-8 font-serif italic text-xl md:text-[1.4rem] text-inknavy/90 max-w-2xl leading-[1.45]">
                 Citations over conjecture. Calm, peer-reviewed-aware analysis of
                 BPC-157, TB-500, GHK-Cu, Retatrutide, and the rest of the
                 research-peptide category.
               </p>
-              <p className="mt-6 text-[15.5px] text-charcoal/85 max-w-2xl leading-[1.7]">
+              <p className="cascade cascade-4 mt-6 text-[15.5px] text-charcoal/85 max-w-2xl leading-[1.7]">
                 Every compound profile opens with the Evidence Ledger — the
                 unvarnished state of preclinical, pilot, and phase data so a
                 reader can never mistake mouse findings for human proof. No
                 sales. No dosing prescriptions. No vendor links.
               </p>
-              <div className="mt-9 flex flex-wrap gap-3">
+              <div className="cascade cascade-5 mt-9 flex flex-wrap gap-3">
                 {featured && (
                   <Link href={`/${featured.slug}`} className="btn-primary">
                     Read the BPC-157 profile
@@ -61,7 +78,7 @@ export default function HomePage() {
             </div>
 
             {/* In this issue sidebar */}
-            <aside className="md:col-span-5 md:pl-8 md:border-l md:border-inknavy/15 fade-up-delay-1">
+            <aside className="cascade cascade-6 md:col-span-5 md:pl-8 md:border-l md:border-inknavy/15">
               <div className="caps-label text-slate mb-4">This issue</div>
               <ul className="space-y-5">
                 {(featured ? [featured, ...recent.filter((r) => r.slug !== featured.slug)] : recent)
@@ -97,7 +114,7 @@ export default function HomePage() {
       {featured?.evidenceLedger && (
         <section className="border-b border-inknavy/15 bg-paper">
           <div className="mx-auto max-w-6xl px-6 py-14 md:py-20">
-            <div className="grid md:grid-cols-12 gap-10 items-start">
+            <Reveal className="grid md:grid-cols-12 gap-10 items-start">
               <div className="md:col-span-5">
                 <Eyebrow tone="oxblood">The Investigation</Eyebrow>
                 <h2 className="font-serif text-[2rem] md:text-[2.6rem] text-inknavy mt-4 leading-[1.08]">
@@ -128,7 +145,7 @@ export default function HomePage() {
               <div className="md:col-span-7">
                 <EvidenceLedger post={featured} />
               </div>
-            </div>
+            </Reveal>
           </div>
         </section>
       )}
@@ -136,7 +153,7 @@ export default function HomePage() {
       {/* === HUB INDEX — the five hubs === */}
       <section id="issue-contents" className="border-b border-inknavy/15">
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
-          <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
+          <Reveal className="flex items-end justify-between mb-10 flex-wrap gap-4">
             <div>
               <Eyebrow tone="oxblood">The table of contents</Eyebrow>
               <h2 className="font-serif text-[2rem] md:text-[2.6rem] text-inknavy mt-3 leading-[1.1]">
@@ -149,7 +166,7 @@ export default function HomePage() {
             >
               How we built it &rarr;
             </Link>
-          </div>
+          </Reveal>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-0 border-t border-inknavy/15">
             {hubs.map((hub, i) => (
@@ -180,7 +197,7 @@ export default function HomePage() {
       {/* === EVIDENCE LEDGER MASTER — every compound at a glance === */}
       <section id="ledger" className="border-b border-inknavy/15 bg-paper">
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
-          <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
+          <Reveal className="flex items-end justify-between mb-10 flex-wrap gap-4">
             <div>
               <Eyebrow tone="oxblood">The Ledger at a glance</Eyebrow>
               <h2 className="font-serif text-[2rem] md:text-[2.6rem] text-inknavy mt-3 leading-[1.1]">
@@ -192,7 +209,7 @@ export default function HomePage() {
                 tiers, compound by compound.
               </p>
             </div>
-          </div>
+          </Reveal>
           <EvidenceLedgerMaster posts={posts} />
         </div>
       </section>
@@ -200,16 +217,16 @@ export default function HomePage() {
       {/* === LATEST — editorial two-column === */}
       <section className="border-b border-inknavy/15">
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
-          <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
+          <Reveal className="flex items-end justify-between mb-10 flex-wrap gap-4">
             <div>
               <Eyebrow tone="oxblood">The Latest</Eyebrow>
               <h2 className="font-serif text-[2rem] md:text-[2.6rem] text-inknavy mt-3 leading-[1.1]">
                 Fresh from the reading pile.
               </h2>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="grid md:grid-cols-12 gap-10">
+          <Reveal className="grid md:grid-cols-12 gap-10">
             {recent[0] && (
               <article className="md:col-span-7">
                 <Link href={`/${recent[0].slug}`} className="group block">
@@ -278,13 +295,13 @@ export default function HomePage() {
                 </article>
               ))}
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* === HOW WE WRITE — the credo === */}
       <section className="border-b border-inknavy/15 bg-inknavy text-bone relative overflow-hidden">
-        <div className="mx-auto max-w-5xl px-6 py-20 md:py-28 relative">
+        <Reveal className="mx-auto max-w-5xl px-6 py-20 md:py-28 relative">
           <div className="absolute top-8 left-6 right-6">
             <LedgerRule className="text-bone/30" />
           </div>
@@ -341,21 +358,21 @@ export default function HomePage() {
               <span aria-hidden>→</span>
             </Link>
           </div>
-        </div>
+        </Reveal>
       </section>
 
       {/* === EXPLAINERS === */}
       {explainers.length > 0 && (
         <section className="border-b border-inknavy/15">
           <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
-            <div className="flex items-end justify-between mb-8 flex-wrap gap-3">
+            <Reveal className="flex items-end justify-between mb-8 flex-wrap gap-3">
               <div>
                 <Eyebrow tone="oxblood">Mechanism &amp; science</Eyebrow>
                 <h2 className="font-serif text-[2rem] md:text-[2.4rem] text-inknavy mt-3 leading-[1.1]">
                   The biochemistry underneath the claims.
                 </h2>
               </div>
-            </div>
+            </Reveal>
             <div className="grid md:grid-cols-3 gap-0 border-t border-inknavy/15">
               {explainers.map((p, i) => (
                 <Link
@@ -383,7 +400,7 @@ export default function HomePage() {
       {/* === DISPATCH === */}
       <section className="bg-paper border-b border-inknavy/15">
         <div className="mx-auto max-w-5xl px-6 py-16 md:py-20">
-          <div className="text-center mb-8">
+          <Reveal className="text-center mb-8">
             <Eyebrow tone="oxblood">The Dispatch</Eyebrow>
             <h2 className="font-serif text-[1.9rem] md:text-[2.4rem] text-inknavy mt-3 leading-[1.12] max-w-2xl mx-auto">
               One calm, cited email a week.
@@ -393,7 +410,7 @@ export default function HomePage() {
               and analyzed. Free subscribers receive the 2026 Peptide Evidence
               Ledger PDF on signup.
             </p>
-          </div>
+          </Reveal>
           <EmailCapture />
         </div>
       </section>

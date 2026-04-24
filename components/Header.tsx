@@ -6,6 +6,7 @@ import { hubs } from "@/lib/content/hubs";
 import { Wordmark } from "./editorial/Wordmark";
 import { Dateline } from "./editorial/Dateline";
 import { MedicalDisclaimerStrip } from "./editorial/MedicalDisclaimerStrip";
+import { ReadingProgress } from "./editorial/ReadingProgress";
 
 export function Header() {
   const [guidesOpen, setGuidesOpen] = useState(false);
@@ -13,6 +14,9 @@ export function Header() {
 
   return (
     <header className="bg-bone/95 backdrop-blur sticky top-0 z-40 border-b border-inknavy/15">
+      {/* Reading progress — oxblood hairline that fills as the reader scrolls.
+          Sits flush with the masthead's bottom hairline. */}
+      <ReadingProgress />
       {/* Mandatory medical disclaimer strip — ABOVE masthead */}
       <MedicalDisclaimerStrip variant="top" />
 

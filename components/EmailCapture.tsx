@@ -2,6 +2,14 @@
 
 import { FormEvent, useState } from "react";
 
+/**
+ * EmailCapture — "signing a leather-bound ledger" feel.
+ *
+ * The input is stripped of its rectangular chrome: a single hairline baseline
+ * with an oxblood accent that draws in from the left on focus — think the
+ * stroke of a nib on a subscription card. The submit button depresses 1px on
+ * :active. Restrained, deliberate, editorial.
+ */
 export function EmailCapture({
   headline = "Get the 2026 Peptide Evidence Ledger.",
   subhead = "A 12-page PDF summary of where 10 major compounds sit — Preclinical / Human pilot / Phase trial / FDA status. Updated quarterly. Free.",
@@ -48,30 +56,33 @@ export function EmailCapture({
       ) : (
         <form
           onSubmit={onSubmit}
-          className="mt-6 flex flex-col sm:flex-row gap-2 justify-center max-w-md mx-auto"
+          className="mt-7 flex flex-col sm:flex-row items-end gap-5 justify-center max-w-lg mx-auto"
         >
           <label htmlFor="email" className="sr-only">
             Email address
           </label>
-          <input
-            id="email"
-            type="email"
-            required
-            placeholder="you@example.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="flex-1 rounded-sm border border-inknavy/25 px-4 py-3 bg-bone focus:border-oxblood focus:outline-none text-[15px]"
-          />
+          <div className="ledger-input flex-1 w-full">
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="your email, signed here"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              aria-label="Email address"
+            />
+            <span className="ledger-accent" aria-hidden />
+          </div>
           <button
             type="submit"
             disabled={status === "loading"}
-            className="btn-primary disabled:opacity-50"
+            className="btn-primary disabled:opacity-50 w-full sm:w-auto justify-center"
           >
             {status === "loading" ? "Sending…" : buttonLabel}
           </button>
         </form>
       )}
-      <p className="mt-4 text-[11.5px] text-slate max-w-md mx-auto text-center leading-[1.6]">
+      <p className="mt-5 text-[11.5px] text-slate max-w-md mx-auto text-center leading-[1.6]">
         By subscribing, you agree to our{" "}
         <a
           href="/privacy"

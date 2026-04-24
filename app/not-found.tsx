@@ -11,8 +11,21 @@ import { DotRule } from "@/components/editorial/DotRule";
 export default function NotFound() {
   return (
     <main>
-      <section className="border-b border-inknavy/15">
-        <div className="mx-auto max-w-3xl px-6 pt-20 pb-16 md:pt-28 md:pb-24">
+      <section className="border-b border-inknavy/15 hero-wash">
+        <div className="mx-auto max-w-3xl px-6 pt-20 pb-16 md:pt-28 md:pb-24 relative">
+          {/* Floating decorative italic quote — the signature moment of the 404.
+              The en-dashes draw in from width 0, the whole phrase gently floats. */}
+          <p
+            aria-hidden
+            className="redacted-quote absolute right-6 top-14 md:top-20 text-right hidden sm:inline-flex"
+          >
+            <span className="dash dash-l" />
+            <span className="font-flourish">
+              the passage you seek has been redacted from this volume
+            </span>
+            <span className="dash dash-r" />
+          </p>
+
           <Eyebrow tone="oxblood">404 &middot; Reference missing</Eyebrow>
           <h1 className="display-headline mt-5 text-[2.4rem] sm:text-5xl md:text-[3.6rem]">
             This entry <em>isn&rsquo;t</em> in the ledger.

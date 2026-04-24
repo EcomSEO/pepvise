@@ -1,5 +1,6 @@
 import type { Post } from "@/lib/content/posts";
 import { TierBadge, type EvidenceTier } from "./TierBadge";
+import { Reveal } from "./Reveal";
 
 type Strength = "strong" | "moderate" | "weak" | "absent";
 type FdaStatus = "approved" | "not-approved";
@@ -58,10 +59,15 @@ export function EvidenceLedger({
       : "Anecdotal";
 
   return (
-    <aside
+    <Reveal
+      as="aside"
       className="ledger-card my-10 max-w-ledger"
-      aria-label={`Evidence Ledger for ${displayName}`}
+      // Stagger the tier-chip scale-pulse a beat after the card lands.
+      threshold={0.25}
     >
+      <div className="sr-only" role="note">
+        {`Evidence Ledger for ${displayName}`}
+      </div>
       {/* Header */}
       <div className="ledger-head pl-7">
         <div className="flex items-baseline justify-between gap-4 flex-wrap">
@@ -112,7 +118,7 @@ export function EvidenceLedger({
           <p className="text-[14px] text-charcoal/90 leading-relaxed">{notes}</p>
         </div>
       )}
-    </aside>
+    </Reveal>
   );
 }
 

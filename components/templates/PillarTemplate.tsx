@@ -19,6 +19,7 @@ import { PullQuote } from "../editorial/PullQuote";
 import { EvidenceLedger } from "../editorial/EvidenceLedger";
 import { WhatWouldChangeOurMind } from "../editorial/WhatWouldChangeOurMind";
 import { MethodologyBlock } from "../editorial/MethodologyBlock";
+import { Reveal } from "../editorial/Reveal";
 
 export function PillarTemplate({ post }: { post: Post }) {
   const hub = getHub(post.hub);
@@ -157,10 +158,16 @@ export function PillarTemplate({ post }: { post: Post }) {
           </div>
         )}
 
-        {/* Drop-capped lede */}
-        <p className="drop-cap mt-10 text-[1.15rem] md:text-[1.2rem] leading-[1.78] text-charcoal/90 max-w-[62ch]">
+        {/* Drop-capped lede — the oxblood capital scales from 5.5rem → 4.6rem
+            and fades in over 600ms as the paragraph enters the viewport.
+            Dramatic literary feel; respects reduced-motion. */}
+        <Reveal
+          as="p"
+          threshold={0.4}
+          className="drop-cap mt-10 text-[1.15rem] md:text-[1.2rem] leading-[1.78] text-charcoal/90 max-w-[62ch]"
+        >
           {post.description}
-        </p>
+        </Reveal>
 
         <PullQuote
           attribution="The PepVise Editorial Team"

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -7,6 +8,21 @@ import { MedicalDisclaimerFooter } from "@/components/MedicalDisclaimer";
 import { OrganizationJsonLd } from "@/components/schema/OrganizationJsonLd";
 import { SITE } from "@/lib/content/site";
 import { robotsMeta } from "@/lib/seo";
+
+/**
+ * Playfair Display — a single decorative display serif used only for the
+ * hero eyebrow flourish and the 404 floating quote. Loaded via next/font so
+ * it ships a preloaded variable subset with no FOUT.
+ *
+ * Body + headlines remain Newsreader / Tiempos. Palette is untouched.
+ */
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-display-flourish",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -32,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={playfair.variable}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
@@ -41,7 +57,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="paper-texture">
+      <body>
         <OrganizationJsonLd />
         <Header />
         {children}

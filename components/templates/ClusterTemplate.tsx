@@ -17,6 +17,7 @@ import { DotRule, LedgerRule } from "../editorial/DotRule";
 import { KeyTakeaway } from "../editorial/KeyTakeaway";
 import { EvidenceLedger } from "../editorial/EvidenceLedger";
 import { PullQuote } from "../editorial/PullQuote";
+import { Reveal } from "../editorial/Reveal";
 
 export function ClusterTemplate({ post }: { post: Post }) {
   const hub = getHub(post.hub);
@@ -70,10 +71,15 @@ export function ClusterTemplate({ post }: { post: Post }) {
 
         {hasLedger && <EvidenceLedger post={post} />}
 
-        {/* Drop-capped lede */}
-        <p className="drop-cap mt-9 text-[1.1rem] leading-[1.78] text-charcoal/90">
+        {/* Drop-capped lede — dramatic scale/fade when the paragraph enters
+            the viewport; reduced-motion renders it static at 4.6rem. */}
+        <Reveal
+          as="p"
+          threshold={0.4}
+          className="drop-cap mt-9 text-[1.1rem] leading-[1.78] text-charcoal/90"
+        >
           {post.description}
-        </p>
+        </Reveal>
 
         <KeyTakeaway variant="key-takeaway" title="The short answer">
           The tl;dr sits here for readers who need it now. The rest of the page
