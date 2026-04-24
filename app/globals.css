@@ -5,21 +5,24 @@
 :root {
   color-scheme: light;
   --color-inknavy: #192642;
+  --color-inknavy-deep: #0F1830;
   --color-bone: #F0EBE0;
+  --color-bone-deep: #E4DCC7;
+  --color-paper: #F7F3EA;
   --color-oxblood: #7A2E3B;
+  --color-oxblood-deep: #5E202B;
   --color-slate: #5A6374;
   --color-charcoal: #1A1A1A;
-  --color-sage: #7A2E3B;
-  --color-cream: #F0EBE0;
-  --color-pine: #192642;
-  --color-coral: #7A2E3B;
-  --color-forest: #192642;
-  --color-terracotta: #7A2E3B;
+  --color-tier-high: #2F6B3E;
+  --color-tier-moderate: #B87333;
+  --color-tier-low: #7A2E3B;
+  --color-tier-anecdotal: #5A6374;
 }
 
 html {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
   scroll-behavior: smooth;
+  font-feature-settings: "ss01", "cv11";
 }
 
 body {
@@ -28,18 +31,297 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 17px;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
-h1, h2, h3, h4 {
-  font-family: "Newsreader", "Tiempos Text", Georgia, serif;
-  letter-spacing: -0.005em;
+/* Headline serif — Newsreader with optical size */
+h1, h2, h3, h4, h5 {
+  font-family: "Newsreader", "Tiempos Text", "Source Serif 4", Georgia, serif;
+  font-variation-settings: "opsz" 36;
+  letter-spacing: -0.012em;
   font-weight: 600;
   color: var(--color-inknavy);
 }
 
-::selection { background: var(--color-oxblood); color: var(--color-bone); }
+::selection {
+  background: var(--color-oxblood);
+  color: var(--color-bone);
+}
 
+/* === EDITORIAL UTILITIES === */
+
+/* Small-caps eyebrow, oxblood by default */
+.eyebrow {
+  font-family: "Inter", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-oxblood);
+}
+
+.eyebrow-inknavy { color: var(--color-inknavy); }
+.eyebrow-slate { color: var(--color-slate); }
+.eyebrow-bone { color: var(--color-bone); }
+
+/* Longer-tracked caps label used for meta */
+.caps-label {
+  font-family: "Inter", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-slate);
+}
+
+/* Masthead dateline — "Ledger · Volume N · Date" */
+.dateline {
+  font-family: "Inter", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-slate);
+}
+
+/* Display headline — serif, tight */
+.display-headline {
+  font-family: "Newsreader", "Tiempos Text", serif;
+  font-variation-settings: "opsz" 72;
+  font-weight: 500;
+  letter-spacing: -0.018em;
+  line-height: 1.04;
+  color: var(--color-inknavy);
+}
+
+/* Literary italic — editorial emphasis */
+.display-headline em {
+  font-style: italic;
+  color: var(--color-oxblood);
+  font-variation-settings: "opsz" 72;
+}
+
+/* Rule — simple hairline used between sections */
+.thin-rule {
+  height: 1px;
+  background: rgba(25, 38, 66, 0.15);
+}
+
+/* Monospace evidence chip numerics */
+.tnum { font-variant-numeric: tabular-nums; }
+
+.mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+/* === DROP CAP — long-form opener === */
+.drop-cap::first-letter {
+  font-family: "Newsreader", "Tiempos Text", serif;
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 0.9;
+  float: left;
+  margin: 0.08em 0.08em -0.05em 0;
+  color: var(--color-oxblood);
+  font-variation-settings: "opsz" 144;
+}
+
+/* Ranked numerals — for compound comparison rankings */
+.rank-numeral {
+  font-family: "Newsreader", serif;
+  font-variation-settings: "opsz" 144;
+  font-size: 2.75rem;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--color-oxblood);
+  font-variant-numeric: tabular-nums;
+  font-style: italic;
+}
+
+/* === PROSE — literary body text, generous line-height === */
+.prose { max-width: 64ch; }
+
+.prose p {
+  margin-bottom: 1.2em;
+  line-height: 1.82;
+  font-size: 1.0625rem;
+  color: rgba(26, 26, 26, 0.92);
+}
+
+.prose p + p { text-indent: 0; }
+
+.prose h2 {
+  font-size: 1.85rem;
+  margin-top: 2.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-inknavy);
+  letter-spacing: -0.014em;
+  font-weight: 600;
+}
+
+.prose h3 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
+  color: var(--color-inknavy);
+}
+
+.prose ul, .prose ol {
+  margin: 1em 0 1.4em;
+  padding-left: 1.5em;
+}
+
+.prose ul { list-style: disc; }
+.prose ol { list-style: decimal; }
+.prose li { margin-bottom: 0.5em; line-height: 1.75; }
+
+.prose a {
+  color: var(--color-inknavy);
+  text-decoration: underline;
+  text-decoration-color: var(--color-oxblood);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+
+.prose a:hover {
+  color: var(--color-oxblood);
+  text-decoration-color: var(--color-oxblood-deep);
+}
+
+.prose blockquote {
+  border-left: 3px solid var(--color-oxblood);
+  padding-left: 1.4em;
+  font-family: "Newsreader", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.55;
+  color: var(--color-inknavy);
+  margin: 1.8em 0;
+}
+
+.prose em {
+  font-style: italic;
+  color: var(--color-inknavy);
+}
+
+/* Footnote-style superscript citations */
+.prose sup,
+.prose .fn {
+  font-family: "Inter", sans-serif;
+  font-size: 0.7em;
+  color: var(--color-oxblood);
+  font-weight: 600;
+  vertical-align: super;
+  line-height: 0;
+  margin-left: 0.1em;
+}
+
+/* Small caption under figures */
+.caption {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8125rem;
+  color: var(--color-slate);
+  line-height: 1.55;
+}
+
+/* === TIER / EVIDENCE CHIPS === */
+.tier-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.22rem 0.6rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 1px solid currentColor;
+  background: transparent;
+}
+
+.tier-chip::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.tier-high { color: var(--color-tier-high); }
+.tier-moderate { color: var(--color-tier-moderate); }
+.tier-low { color: var(--color-tier-low); }
+.tier-anecdotal { color: var(--color-tier-anecdotal); }
+
+/* === NAV LINK HOVER — oxblood underline === */
+.nav-link {
+  position: relative;
+  color: var(--color-inknavy);
+  transition: color 0.15s ease;
+  font-weight: 500;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 1.5px;
+  background: var(--color-oxblood);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-oxblood);
+}
+
+.nav-link:hover::after,
+.nav-link[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+/* === BUTTONS === */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.4rem;
+  background: var(--color-inknavy);
+  color: var(--color-bone);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  letter-spacing: 0.01em;
+  border-radius: 2px;
+  transition: background 0.15s ease;
+}
+
+.btn-primary:hover {
+  background: var(--color-oxblood);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.4rem;
+  color: var(--color-inknavy);
+  background: transparent;
+  border: 1px solid var(--color-inknavy);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  border-radius: 2px;
+  transition: all 0.15s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--color-inknavy);
+  color: var(--color-bone);
+  border-color: var(--color-inknavy);
+}
+
+/* === UTILITIES === */
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -47,16 +329,73 @@ h1, h2, h3, h4 {
   overflow: hidden;
 }
 
-.sr-only {
-  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.prose p { margin-bottom: 1.1em; line-height: 1.75; }
-.prose h2 { font-size: 1.75rem; margin-top: 2.5rem; margin-bottom: 1rem; color: var(--color-inknavy); }
-.prose h3 { font-size: 1.375rem; margin-top: 1.75rem; margin-bottom: 0.75rem; color: var(--color-inknavy); }
-.prose ul, .prose ol { margin: 1em 0; padding-left: 1.5em; }
-.prose ul { list-style: disc; } .prose ol { list-style: decimal; }
-.prose a { color: var(--color-oxblood); text-decoration: underline; text-underline-offset: 2px; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
-.font-mono, code, pre, .numeric { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+/* === ANIMATIONS === */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up { animation: fadeUp 0.6s ease-out both; }
+.fade-up-delay-1 { animation: fadeUp 0.6s ease-out 0.1s both; }
+.fade-up-delay-2 { animation: fadeUp 0.6s ease-out 0.2s both; }
+
+/* === PAPER TEXTURE (very subtle) === */
+.paper-texture {
+  background-color: var(--color-bone);
+  background-image:
+    radial-gradient(at 8% 6%, rgba(25, 38, 66, 0.025) 0, transparent 50%),
+    radial-gradient(at 92% 94%, rgba(122, 46, 59, 0.02) 0, transparent 45%);
+}
+
+/* === EVIDENCE LEDGER — signature component === */
+.ledger-card {
+  background: var(--color-paper);
+  border: 1px solid rgba(25, 38, 66, 0.18);
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(25, 38, 66, 0.04), 0 10px 28px rgba(25, 38, 66, 0.06);
+  position: relative;
+}
+
+.ledger-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--color-oxblood);
+}
+
+.ledger-head {
+  background: var(--color-inknavy);
+  color: var(--color-bone);
+  padding: 1rem 1.5rem;
+}
+
+.ledger-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.9rem 1.5rem;
+  border-top: 1px solid rgba(25, 38, 66, 0.08);
+}

@@ -1,11 +1,15 @@
 import { ReactNode } from "react";
 import { Breadcrumbs } from "../Breadcrumbs";
+import { Eyebrow } from "../editorial/Eyebrow";
+import { LedgerRule } from "../editorial/DotRule";
 
 export function TrustPageTemplate({
   title,
+  eyebrow = "Imprint",
   children,
 }: {
   title: string;
+  eyebrow?: string;
   children: ReactNode;
 }) {
   return (
@@ -13,10 +17,14 @@ export function TrustPageTemplate({
       <Breadcrumbs
         crumbs={[{ label: "Home", href: "/" }, { label: title }]}
       />
-      <h1 className="font-serif text-4xl md:text-5xl text-forest mt-4 leading-tight">
+      <div className="mt-6">
+        <Eyebrow tone="oxblood">{eyebrow}</Eyebrow>
+      </div>
+      <h1 className="display-headline mt-3 text-4xl md:text-5xl leading-[1.08]">
         {title}
       </h1>
-      <div className="mt-8 space-y-6 text-[17px] leading-relaxed text-charcoal/90 [&_h2]:font-serif [&_h2]:text-2xl [&_h2]:text-forest [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:font-serif [&_h3]:text-xl [&_h3]:text-forest [&_h3]:mt-6 [&_h3]:mb-2 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-2 [&_a]:text-sage [&_a]:underline [&_strong]:text-forest">
+      <LedgerRule className="mt-8" />
+      <div className="mt-10 prose text-[17px] leading-[1.8] text-charcoal/90 [&_h2]:font-serif [&_h2]:text-2xl [&_h2]:text-inknavy [&_h2]:mt-12 [&_h2]:mb-3 [&_h3]:font-serif [&_h3]:text-xl [&_h3]:text-inknavy [&_h3]:mt-8 [&_h3]:mb-2 [&_strong]:text-inknavy [&_strong]:font-semibold">
         {children}
       </div>
     </article>

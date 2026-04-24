@@ -1,20 +1,13 @@
 import Link from "next/link";
+import { MedicalDisclaimerStrip } from "./editorial/MedicalDisclaimerStrip";
 
+/**
+ * Re-export the canonical site-wide strip under the legacy name used by layout.tsx.
+ * The actual strip lives in components/editorial/MedicalDisclaimerStrip.tsx so it
+ * can be rendered above the masthead as well as in the footer.
+ */
 export function MedicalDisclaimerFooter() {
-  return (
-    <div className="bg-sage/10 border-t border-sage/20">
-      <div className="mx-auto max-w-6xl px-6 py-4 text-xs text-charcoal/80 leading-relaxed">
-        <strong className="text-pine">Not medical advice.</strong>{" "}
-        Information on PepVise is for educational purposes only. Always consult
-        your healthcare provider before starting, stopping, or changing any
-        medication. See our{" "}
-        <Link href="/medical-disclaimer" className="underline">
-          full medical disclaimer
-        </Link>
-        .
-      </div>
-    </div>
-  );
+  return <MedicalDisclaimerStrip variant="footer" />;
 }
 
 export function PostReviewStamp({ reviewedOn }: { reviewedOn: string }) {
@@ -26,15 +19,28 @@ export function PostReviewStamp({ reviewedOn }: { reviewedOn: string }) {
   return (
     <aside
       role="note"
-      className="my-6 px-4 py-3 border-l-4 border-coral bg-coral/5 text-sm text-charcoal/90"
+      className="my-8 border-l-[3px] border-oxblood bg-oxblood/5 pl-5 pr-5 py-5 rounded-r-sm"
     >
-      <strong className="text-pine">
-        Reviewed by The PepVise Editorial Team · {formatted}
-      </strong>
-      <p className="mt-1 text-charcoal/80">
-        This post is for informational purposes only and is not medical advice.
-        Always discuss any changes to your treatment with your healthcare
-        provider.
+      <div className="flex items-center gap-2 mb-2">
+        <span className="h-1.5 w-1.5 rounded-full bg-oxblood" />
+        <span className="caps-label text-oxblood">
+          Editorial review · {formatted}
+        </span>
+      </div>
+      <p className="text-[15px] text-charcoal/90 leading-[1.7]">
+        This post is literature analysis published for educational and research
+        purposes only. Nothing here is medical advice, a dosing prescription, or
+        a purchase recommendation. Many compounds discussed are labeled for
+        research use only and are not FDA-approved for human use. Consult a
+        licensed physician operating within FDA-compliant pathways before any
+        use. Read the full{" "}
+        <Link
+          href="/medical-disclaimer"
+          className="text-oxblood underline underline-offset-4"
+        >
+          medical disclaimer
+        </Link>
+        .
       </p>
     </aside>
   );

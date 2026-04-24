@@ -13,8 +13,9 @@ export function ReviewStamp({
     day: "numeric",
   });
   return (
-    <p className="text-sm text-charcoal/60">
-      By {author} · Updated {formatted} · {readingTime} min read
+    <p className="caps-label text-slate">
+      By {author} <span className="text-inknavy/30">·</span> Reviewed {formatted}{" "}
+      <span className="text-inknavy/30">·</span> {readingTime} min read
     </p>
   );
 }

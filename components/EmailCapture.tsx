@@ -4,9 +4,9 @@ import { FormEvent, useState } from "react";
 
 export function EmailCapture({
   headline = "Get the 2026 Peptide Evidence Ledger.",
-  subhead = "A 12-page PDF summary of where 10 major compounds sit — Preclinical / Human pilot / Phase X / Approved. Updated quarterly. Free.",
+  subhead = "A 12-page PDF summary of where 10 major compounds sit — Preclinical / Human pilot / Phase trial / FDA status. Updated quarterly. Free.",
   variant = "inline",
-  buttonLabel = "Send me the Evidence Ledger",
+  buttonLabel = "Send me the Ledger",
 }: {
   headline?: string;
   subhead?: string;
@@ -14,7 +14,9 @@ export function EmailCapture({
   buttonLabel?: string;
 }) {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">(
+    "idle"
+  );
 
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
@@ -25,15 +27,24 @@ export function EmailCapture({
 
   const wrapper =
     variant === "end-of-article"
-      ? "my-12 p-8 rounded-lg bg-sage/10 border border-sage/20 text-center"
-      : "my-12 p-8 rounded-lg bg-white/70 border border-pine/10 text-center";
+      ? "my-12 p-8 rounded-sm bg-paper border border-inknavy/15 relative overflow-hidden"
+      : "my-8 p-8 rounded-sm bg-bone-deep/40 border border-inknavy/15 relative overflow-hidden";
 
   return (
     <section id="email-capture" className={wrapper}>
-      <h2 className="font-serif text-2xl text-pine mb-2">{headline}</h2>
-      <p className="text-charcoal/80 max-w-xl mx-auto">{subhead}</p>
+      <div className="absolute top-0 left-0 w-1 h-full bg-oxblood" />
+      <div className="text-center">
+        <h2 className="font-serif text-[1.5rem] md:text-[1.8rem] text-inknavy leading-tight">
+          {headline}
+        </h2>
+        <p className="mt-3 font-serif italic text-[1.05rem] text-inknavy/80 max-w-xl mx-auto leading-[1.55]">
+          {subhead}
+        </p>
+      </div>
       {status === "ok" ? (
-        <p className="mt-6 text-pine">Thanks — check your inbox.</p>
+        <p className="mt-6 text-center text-oxblood font-serif italic text-lg">
+          Thanks &mdash; check your inbox for the Ledger.
+        </p>
       ) : (
         <form
           onSubmit={onSubmit}
@@ -49,23 +60,26 @@ export function EmailCapture({
             placeholder="you@example.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="flex-1 rounded-md border border-pine/20 px-4 py-3 bg-white"
+            className="flex-1 rounded-sm border border-inknavy/25 px-4 py-3 bg-bone focus:border-oxblood focus:outline-none text-[15px]"
           />
           <button
             type="submit"
             disabled={status === "loading"}
-            className="rounded-md bg-pine px-6 py-3 text-cream hover:bg-sage transition disabled:opacity-50"
+            className="btn-primary disabled:opacity-50"
           >
             {status === "loading" ? "Sending…" : buttonLabel}
           </button>
         </form>
       )}
-      <p className="mt-4 text-xs text-charcoal/50 max-w-md mx-auto">
+      <p className="mt-4 text-[11.5px] text-slate max-w-md mx-auto text-center leading-[1.6]">
         By subscribing, you agree to our{" "}
-        <a href="/privacy" className="underline">
+        <a
+          href="/privacy"
+          className="underline decoration-oxblood/50 hover:decoration-oxblood underline-offset-2"
+        >
           Privacy Policy
         </a>
-        . One calm email a week. Unsubscribe anytime.
+        . One calm, cited email a week. Unsubscribe anytime.
       </p>
     </section>
   );
