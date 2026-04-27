@@ -50,7 +50,11 @@
       "h1": "Recensioni di peptidi sullo stesso metro.",
       "lede": "Ogni composto valutato sulle stesse cinque dimensioni — evidenza pubblicata, plausibilità del meccanismo, dati umani, affidabilità del venditore, postura regolatoria — e classificato. Ultimo aggiornamento del database {date}.",
       "ctaPrimary": "Vedi i migliori",
-      "ctaSecondary": "Come valutiamo"
+      "ctaSecondary": "Come valutiamo",
+      "refreshLabel": "Ultimo aggiornamento",
+      "methodologyBadge": "Metodologia",
+      "topPicksHeading": "Migliori scelte a colpo d'occhio",
+      "topPicksCta": "Classifica completa"
     },
     "rankIndex": {
       "eyebrow": "I MEGLIO CLASSIFICATI",
@@ -142,7 +146,9 @@
       "tier": "FASCIA",
       "verdictLabel": "VERDETTO",
       "lastUpdated": "Ultimo aggiornamento {date}",
-      "methodologyLink": "Come valutiamo"
+      "methodologyLink": "Come valutiamo",
+      "lastTested": "Ultimo test",
+      "methodologyBadge": "Valutato con"
     },
     "specs": {
       "heading": "Scheda",

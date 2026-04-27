@@ -6,9 +6,13 @@ import { RankIndex } from "@/components/RankIndex";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { CategoriesStrip } from "@/components/CategoriesStrip";
 import { MethodologyTeaser, type MethodologyItem } from "@/components/MethodologyTeaser";
+import { TopPicksCard } from "@/components/TopPicksCard";
+import { MethodologyBadge } from "@/components/MethodologyBadge";
+import { LastTestedLine } from "@/components/LastTestedLine";
 import {
   rankRows,
   comparisonRows,
+  topPicks,
   CATEGORIES,
   PIPELINE,
 } from "@/lib/content/reviews";
@@ -49,29 +53,29 @@ function Home() {
 
   const rows = rankRows(variantLabels);
   const cmpRows = comparisonRows();
+  const topThree = topPicks(3);
 
   const methodologyItemsRaw = tHome.raw("methodology.items") as MethodologyItem[];
 
   return (
     <>
       <section className="bg-paper-soft border-b border-rule">
-        <div className="mx-auto max-w-6xl px-5 md:px-8 py-12 md:py-20 grid lg:grid-cols-12 gap-10 items-end">
-          <div className="lg:col-span-8">
+        <div className="mx-auto max-w-6xl px-5 md:px-8 py-12 md:py-16 grid lg:grid-cols-12 gap-10 items-start">
+          <div className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 mb-5">
               <span aria-hidden className="block w-2 h-2 bg-forest" />
               <span className="caps-data text-forest tracking-[0.18em]">
                 {tHome("hero.ribbon")} · {SITE.databaseEntries}{" "}
-                <span className="lowercase tracking-normal">entries</span> ·{" "}
-                {SITE.methodologyVersion}
+                <span className="lowercase tracking-normal">entries</span>
               </span>
             </div>
-            <h1 className="font-serif text-[2rem] sm:text-[2.4rem] md:text-[2.6rem] leading-[1.08] text-ink tracking-[-0.014em]">
+            <h1 className="font-serif text-[2rem] sm:text-[2.3rem] md:text-[2.5rem] leading-[1.08] text-ink tracking-[-0.014em]">
               {tHome("hero.h1")}
             </h1>
-            <p className="mt-5 text-[15.5px] leading-[1.6] text-ink-soft max-w-2xl">
+            <p className="mt-5 text-[15.5px] leading-[1.6] text-ink-soft max-w-xl">
               {tHome("hero.lede").replace("{date}", SITE.lastDatabaseRefresh)}
             </p>
-            <div className="mt-7 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-wrap items-center gap-3">
               <Link href={"/#rank-index" as never} className="btn-primary">
                 {tHome("hero.ctaPrimary")} <span aria-hidden>→</span>
               </Link>
@@ -79,28 +83,27 @@ function Home() {
                 {tHome("hero.ctaSecondary")}
               </Link>
             </div>
+            <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2">
+              <LastTestedLine
+                date={SITE.lastDatabaseRefresh}
+                label={tHome("hero.refreshLabel")}
+              />
+              <MethodologyBadge
+                version={SITE.methodologyVersion}
+                label={tHome("hero.methodologyBadge")}
+              />
+            </div>
           </div>
 
-          <aside className="lg:col-span-4 border-l border-rule-soft lg:pl-8">
-            <div className="caps-data text-ink-soft mb-3">Database snapshot</div>
-            <dl className="space-y-2.5 text-[13.5px]">
-              <div className="flex items-baseline justify-between gap-3">
-                <dt className="text-ink">Reviews live</dt>
-                <dd className="mono tnum text-ink font-semibold">{SITE.databaseEntries}</dd>
-              </div>
-              <div className="flex items-baseline justify-between gap-3">
-                <dt className="text-ink">In pipeline</dt>
-                <dd className="mono tnum text-ink font-semibold">{SITE.pipelineEntries}</dd>
-              </div>
-              <div className="flex items-baseline justify-between gap-3">
-                <dt className="text-ink">Methodology</dt>
-                <dd className="mono tnum text-ink font-semibold">{SITE.methodologyVersion}</dd>
-              </div>
-              <div className="flex items-baseline justify-between gap-3">
-                <dt className="text-ink">Refreshed</dt>
-                <dd className="mono tnum text-ink-soft">{SITE.lastDatabaseRefresh}</dd>
-              </div>
-            </dl>
+          <aside className="lg:col-span-5">
+            <TopPicksCard
+              entries={topThree}
+              variantLabels={variantLabels}
+              copy={{
+                heading: tHome("hero.topPicksHeading"),
+                ctaSeeAll: tHome("hero.topPicksCta"),
+              }}
+            />
           </aside>
         </div>
       </section>

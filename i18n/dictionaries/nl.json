@@ -50,7 +50,11 @@
       "h1": "Peptidenreviews op één meetlat.",
       "lede": "Elke verbinding gescoord op dezelfde vijf dimensies — gepubliceerd bewijs, mechanisme-plausibiliteit, humane data, betrouwbaarheid van de verkoper, regulatoire status — en gerangschikt. Laatste databasetweak op {date}.",
       "ctaPrimary": "Bekijk de toppers",
-      "ctaSecondary": "Hoe we scoren"
+      "ctaSecondary": "Hoe we scoren",
+      "refreshLabel": "Laatst bijgewerkt",
+      "methodologyBadge": "Methodologie",
+      "topPicksHeading": "Topkeuzes in één oogopslag",
+      "topPicksCta": "Volledige ranglijst"
     },
     "rankIndex": {
       "eyebrow": "DE BEST GERANGSCHIKTE",
@@ -142,7 +146,9 @@
       "tier": "NIVEAU",
       "verdictLabel": "VERDICT",
       "lastUpdated": "Laatst bijgewerkt {date}",
-      "methodologyLink": "Hoe we scoren"
+      "methodologyLink": "Hoe we scoren",
+      "lastTested": "Laatst getest",
+      "methodologyBadge": "Beoordeeld met"
     },
     "specs": {
       "heading": "Specificaties",

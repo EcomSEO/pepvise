@@ -50,7 +50,11 @@
       "h1": "Análises de péptidos na mesma régua.",
       "lede": "Cada composto avaliado nas mesmas cinco dimensões — evidência publicada, plausibilidade do mecanismo, dados humanos, fiabilidade do vendedor, postura regulatória — e classificado. Última atualização da base em {date}.",
       "ctaPrimary": "Ver as melhores escolhas",
-      "ctaSecondary": "Como pontuamos"
+      "ctaSecondary": "Como pontuamos",
+      "refreshLabel": "Última atualização",
+      "methodologyBadge": "Metodologia",
+      "topPicksHeading": "Principais escolhas em resumo",
+      "topPicksCta": "Ver classificação completa"
     },
     "rankIndex": {
       "eyebrow": "MELHOR CLASSIFICADOS",
@@ -142,7 +146,9 @@
       "tier": "NÍVEL",
       "verdictLabel": "VEREDICTO",
       "lastUpdated": "Última atualização {date}",
-      "methodologyLink": "Como pontuamos"
+      "methodologyLink": "Como pontuamos",
+      "lastTested": "Último teste",
+      "methodologyBadge": "Avaliado com"
     },
     "specs": {
       "heading": "Ficha",

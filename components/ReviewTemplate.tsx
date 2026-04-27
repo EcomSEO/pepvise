@@ -1,11 +1,17 @@
 import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import type { ReviewEntry } from "@/lib/content/reviews";
 import { allReviews } from "@/lib/content/reviews";
 import { VerdictBlock } from "./VerdictBlock";
 import { ProsConsTable } from "./ProsConsTable";
 import { ScoreBar } from "./ScoreBar";
 import { ComparisonTable } from "./ComparisonTable";
+import { MethodologyBadge } from "./MethodologyBadge";
+import { LastTestedLine } from "./LastTestedLine";
+import { AlternativesBlock } from "./AlternativesBlock";
+import { ReviewJsonLd } from "./schema/ReviewJsonLd";
+import { BreadcrumbJsonLd } from "./schema/BreadcrumbJsonLd";
+import { SITE } from "@/lib/content/site";
 
 /**
  * ReviewTemplate — the long-form review shell.
@@ -24,6 +30,7 @@ export function ReviewTemplate({ entry }: { entry: ReviewEntry }) {
   const tReview = useTranslations("review");
   const tHome = useTranslations("home");
   const tCommon = useTranslations("common");
+  const locale = useLocale();
 
   const variantLabels = {
     "our-pick": tHome("rankIndex.ourPick"),
@@ -55,18 +62,27 @@ export function ReviewTemplate({ entry }: { entry: ReviewEntry }) {
       total: e.total,
     }));
 
+  const breadcrumbs = [
+    { label: SITE.name, href: "/" },
+    { label: "Reviews", href: "/reviews" },
+    { label: entry.name },
+  ];
+
   return (
     <article>
+      <ReviewJsonLd entry={entry} locale={locale} />
+      <BreadcrumbJsonLd crumbs={breadcrumbs} />
+
       {/* Header strip — breadcrumb-style */}
-      <div className="bg-paper-soft border-b border-rule-soft">
+      <nav aria-label="Breadcrumb" className="bg-paper-soft border-b border-rule-soft">
         <div className="mx-auto max-w-6xl px-5 md:px-8 py-3 flex items-center gap-2 text-[12px] text-ink-soft">
-          <Link href={"/" as never} className="hover:text-forest">{tCommon("backToHome").replace("Back to home", "Pepvise")}</Link>
-          <span aria-hidden>/</span>
-          <Link href={"/reviews" as never} className="hover:text-forest">{tReview("verdict.rank")}</Link>
-          <span aria-hidden>/</span>
+          <Link href={"/" as never} className="hover:text-forest">{SITE.name}</Link>
+          <span aria-hidden className="text-ink-soft/50">/</span>
+          <Link href={"/reviews" as never} className="hover:text-forest">Reviews</Link>
+          <span aria-hidden className="text-ink-soft/50">/</span>
           <span className="text-ink">{entry.name}</span>
         </div>
-      </div>
+      </nav>
 
       {/* Verdict block band */}
       <div className="border-b border-rule">
@@ -80,12 +96,15 @@ export function ReviewTemplate({ entry }: { entry: ReviewEntry }) {
             score={entry.total}
             verdict={entry.oneLineVerdict}
             lastUpdated={entry.lastUpdated}
+            methodologyVersion={SITE.methodologyVersion}
             copy={{
               rank: tReview("verdict.rank"),
               score: tReview("verdict.score"),
               verdictLabel: tReview("verdict.verdictLabel"),
               lastUpdated: tReview("verdict.lastUpdated"),
+              lastTested: tReview("verdict.lastTested"),
               methodologyLink: tReview("verdict.methodologyLink"),
+              methodologyBadge: tReview("verdict.methodologyBadge"),
             }}
           />
         </div>
@@ -108,7 +127,14 @@ export function ReviewTemplate({ entry }: { entry: ReviewEntry }) {
           </div>
 
           <div id="specs">
-            <div className="caps-data text-ink mb-3">{tReview("specs.heading")}</div>
+            <div className="flex items-center justify-between mb-3">
+              <div className="caps-data text-ink">{tReview("specs.heading")}</div>
+              <MethodologyBadge
+                version={SITE.methodologyVersion}
+                label={tReview("verdict.methodologyBadge")}
+                variant="ghost"
+              />
+            </div>
             <dl className="space-y-3 text-[13px]">
               <SpecRow label={tReview("specs.labelEvidence")}>
                 <ScoreBar value={entry.score.evidence} />
@@ -176,37 +202,26 @@ export function ReviewTemplate({ entry }: { entry: ReviewEntry }) {
             />
           </section>
 
-          <section id="alternatives" className="my-10">
-            <h3 className="font-serif text-[1.25rem] mb-2 text-ink">
-              {tReview("alternatives.heading")}
-            </h3>
-            <p className="text-[13.5px] text-ink-soft mb-4">
-              {tReview("alternatives.caption")}
-            </p>
-            <ul className="grid sm:grid-cols-3 gap-3">
-              {entry.alternatives.map((slug) => {
-                const alt = allReviews().find((e) => e.slug === slug);
-                if (!alt) return null;
-                return (
-                  <li key={slug}>
-                    <Link
-                      href={`/${slug}` as never}
-                      className="block border border-rule-soft hover:border-ink p-3 transition-colors"
-                    >
-                      <div className="caps-data text-ink-soft">#{alt.rank} · {variantLabels[alt.variant]}</div>
-                      <div className="font-serif text-[15px] text-ink mt-1">{alt.name}</div>
-                      <div className="mono tnum text-forest text-[15px] mt-1">{alt.total.toFixed(1)}/10</div>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </section>
+          <AlternativesBlock
+            entries={entry.alternatives
+              .map((slug) => allReviews().find((e) => e.slug === slug))
+              .filter((e): e is ReviewEntry => Boolean(e))}
+            variantLabels={variantLabels}
+            copy={{
+              heading: tReview("alternatives.heading"),
+              caption: tReview("alternatives.caption"),
+            }}
+          />
 
-          <section id="references" className="my-10">
-            <h3 className="font-serif text-[1.25rem] mb-3 text-ink">
-              {tReview("references.heading")}
-            </h3>
+          <section id="references" className="my-10 border-t border-rule-soft pt-6">
+            <div className="flex items-baseline justify-between mb-3">
+              <h3 className="font-serif text-[1.25rem] text-ink">
+                {tReview("references.heading")}
+              </h3>
+              <span className="caps-data text-ink-soft">
+                {entry.references.length} cited
+              </span>
+            </div>
             <ol className="space-y-2 text-[13.5px] list-decimal pl-5">
               {entry.references.map((ref, i) => (
                 <li key={i} className="text-ink">
@@ -221,6 +236,13 @@ export function ReviewTemplate({ entry }: { entry: ReviewEntry }) {
                 </li>
               ))}
             </ol>
+            <div className="mt-5 pt-4 border-t border-rule-soft flex flex-wrap items-center justify-between gap-3">
+              <LastTestedLine date={entry.lastUpdated} label={tReview("verdict.lastTested")} />
+              <MethodologyBadge
+                version={SITE.methodologyVersion}
+                label={tReview("verdict.methodologyBadge")}
+              />
+            </div>
           </section>
         </div>
       </div>

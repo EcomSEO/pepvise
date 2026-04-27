@@ -50,7 +50,11 @@
       "h1": "Peptidomtaler på samme stokk.",
       "lede": "Hver forbindelse vurdert på de samme fem dimensjonene — publisert evidens, mekanismens troverdighet, humandata, selgertillit, regulatorisk status — og rangert. Siste databaseoppdatering {date}.",
       "ctaPrimary": "Se toppvalgene",
-      "ctaSecondary": "Slik scorer vi"
+      "ctaSecondary": "Slik scorer vi",
+      "refreshLabel": "Sist oppdatert",
+      "methodologyBadge": "Metodikk",
+      "topPicksHeading": "Topp valg i et øyeblikk",
+      "topPicksCta": "Full rangering"
     },
     "rankIndex": {
       "eyebrow": "BEST RANGERT",
@@ -142,7 +146,9 @@
       "tier": "NIVÅ",
       "verdictLabel": "DOM",
       "lastUpdated": "Sist oppdatert {date}",
-      "methodologyLink": "Slik scorer vi"
+      "methodologyLink": "Slik scorer vi",
+      "lastTested": "Sist testet",
+      "methodologyBadge": "Vurdert med"
     },
     "specs": {
       "heading": "Spesifikasjoner",

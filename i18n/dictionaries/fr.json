@@ -50,7 +50,11 @@
       "h1": "Les peptides notés au même barème.",
       "lede": "Chaque composé évalué sur les cinq mêmes dimensions — preuves publiées, plausibilité du mécanisme, données humaines, fiabilité du vendeur, statut réglementaire — et classé. Dernière mise à jour de la base le {date}.",
       "ctaPrimary": "Voir les meilleurs choix",
-      "ctaSecondary": "Comment nous notons"
+      "ctaSecondary": "Comment nous notons",
+      "refreshLabel": "Dernière mise à jour",
+      "methodologyBadge": "Méthodologie",
+      "topPicksHeading": "Coups de cœur en bref",
+      "topPicksCta": "Classement complet"
     },
     "rankIndex": {
       "eyebrow": "LES MIEUX CLASSÉS",
@@ -142,7 +146,9 @@
       "tier": "PALIER",
       "verdictLabel": "VERDICT",
       "lastUpdated": "Dernière mise à jour {date}",
-      "methodologyLink": "Comment nous notons"
+      "methodologyLink": "Comment nous notons",
+      "lastTested": "Dernier test",
+      "methodologyBadge": "Noté avec"
     },
     "specs": {
       "heading": "Fiche",

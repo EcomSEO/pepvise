@@ -50,7 +50,11 @@
       "h1": "Peptidrecensioner på en måttstock.",
       "lede": "Varje förening bedöms på samma fem dimensioner — publicerad evidens, mekanismens trovärdighet, humandata, säljarens pålitlighet, regulatorisk status — och rankas. Senaste databasuppdatering {date}.",
       "ctaPrimary": "Se topplistan",
-      "ctaSecondary": "Så betygsätter vi"
+      "ctaSecondary": "Så betygsätter vi",
+      "refreshLabel": "Senast uppdaterad",
+      "methodologyBadge": "Metodik",
+      "topPicksHeading": "Topplistan i korthet",
+      "topPicksCta": "Fullständig rankning"
     },
     "rankIndex": {
       "eyebrow": "BÄST RANKADE",
@@ -142,7 +146,9 @@
       "tier": "NIVÅ",
       "verdictLabel": "UTLÅTANDE",
       "lastUpdated": "Senast uppdaterad {date}",
-      "methodologyLink": "Så betygsätter vi"
+      "methodologyLink": "Så betygsätter vi",
+      "lastTested": "Senast testad",
+      "methodologyBadge": "Bedömd med"
     },
     "specs": {
       "heading": "Specifikation",

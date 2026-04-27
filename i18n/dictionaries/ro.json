@@ -50,7 +50,11 @@
       "h1": "Recenzii de peptide pe aceeași riglă.",
       "lede": "Fiecare compus evaluat pe aceleași cinci dimensiuni — dovezi publicate, plauzibilitatea mecanismului, date umane, încrederea în vânzător, postură regulatoare — și clasat. Ultima actualizare a bazei {date}.",
       "ctaPrimary": "Vezi alegerile de top",
-      "ctaSecondary": "Cum punctăm"
+      "ctaSecondary": "Cum punctăm",
+      "refreshLabel": "Actualizat ultima dată",
+      "methodologyBadge": "Metodologie",
+      "topPicksHeading": "Alegeri de top pe scurt",
+      "topPicksCta": "Clasament complet"
     },
     "rankIndex": {
       "eyebrow": "CEL MAI BINE CLASATE",
@@ -142,7 +146,9 @@
       "tier": "NIVEL",
       "verdictLabel": "VERDICT",
       "lastUpdated": "Ultima actualizare {date}",
-      "methodologyLink": "Cum punctăm"
+      "methodologyLink": "Cum punctăm",
+      "lastTested": "Ultima testare",
+      "methodologyBadge": "Evaluat cu"
     },
     "specs": {
       "heading": "Specificații",

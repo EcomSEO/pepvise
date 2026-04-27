@@ -226,6 +226,9 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   color: var(--color-ink);
   white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 .cmp-table thead th[data-numeric="true"] {
   text-align: right;

@@ -50,7 +50,11 @@
       "h1": "Recenzje peptydów na tej samej skali.",
       "lede": "Każdy związek oceniany w tych samych pięciu wymiarach — opublikowane dowody, prawdopodobieństwo mechanizmu, dane ludzkie, wiarygodność sprzedawcy, status regulacyjny — i sklasyfikowany. Ostatnia aktualizacja bazy {date}.",
       "ctaPrimary": "Zobacz najlepsze",
-      "ctaSecondary": "Jak oceniamy"
+      "ctaSecondary": "Jak oceniamy",
+      "refreshLabel": "Ostatnia aktualizacja",
+      "methodologyBadge": "Metodologia",
+      "topPicksHeading": "Najlepsze wybory w skrócie",
+      "topPicksCta": "Pełny ranking"
     },
     "rankIndex": {
       "eyebrow": "NAJWYŻEJ NOTOWANE",
@@ -142,7 +146,9 @@
       "tier": "POZIOM",
       "verdictLabel": "WERDYKT",
       "lastUpdated": "Ostatnia aktualizacja {date}",
-      "methodologyLink": "Jak oceniamy"
+      "methodologyLink": "Jak oceniamy",
+      "lastTested": "Ostatnio testowane",
+      "methodologyBadge": "Oceniane wg"
     },
     "specs": {
       "heading": "Specyfikacja",

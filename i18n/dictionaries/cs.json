@@ -50,7 +50,11 @@
       "h1": "Recenze peptidů na stejném metru.",
       "lede": "Každá sloučenina hodnocena na stejných pěti dimenzích — publikované důkazy, věrohodnost mechanismu, lidská data, důvěra k prodejci, regulační status — a zařazená. Poslední aktualizace databáze {date}.",
       "ctaPrimary": "Zobrazit nejlepší volby",
-      "ctaSecondary": "Jak hodnotíme"
+      "ctaSecondary": "Jak hodnotíme",
+      "refreshLabel": "Naposledy aktualizováno",
+      "methodologyBadge": "Metodika",
+      "topPicksHeading": "Nejlepší volby v kostce",
+      "topPicksCta": "Úplné pořadí"
     },
     "rankIndex": {
       "eyebrow": "NEJLÉPE HODNOCENÉ",
@@ -142,7 +146,9 @@
       "tier": "ÚROVEŇ",
       "verdictLabel": "VERDIKT",
       "lastUpdated": "Poslední aktualizace {date}",
-      "methodologyLink": "Jak hodnotíme"
+      "methodologyLink": "Jak hodnotíme",
+      "lastTested": "Naposledy testováno",
+      "methodologyBadge": "Hodnoceno"
     },
     "specs": {
       "heading": "Specifikace",

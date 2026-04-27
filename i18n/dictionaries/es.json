@@ -50,7 +50,11 @@
       "h1": "Reseñas de péptidos en la misma vara.",
       "lede": "Cada compuesto valorado en las mismas cinco dimensiones — evidencia publicada, plausibilidad del mecanismo, datos humanos, fiabilidad del vendedor, postura regulatoria — y clasificado. Última actualización de la base el {date}.",
       "ctaPrimary": "Ver las mejores",
-      "ctaSecondary": "Cómo puntuamos"
+      "ctaSecondary": "Cómo puntuamos",
+      "refreshLabel": "Última actualización",
+      "methodologyBadge": "Metodología",
+      "topPicksHeading": "Selecciones principales",
+      "topPicksCta": "Ver clasificación completa"
     },
     "rankIndex": {
       "eyebrow": "LOS MEJOR CLASIFICADOS",
@@ -142,7 +146,9 @@
       "tier": "NIVEL",
       "verdictLabel": "VEREDICTO",
       "lastUpdated": "Última actualización {date}",
-      "methodologyLink": "Cómo puntuamos"
+      "methodologyLink": "Cómo puntuamos",
+      "lastTested": "Última prueba",
+      "methodologyBadge": "Puntuado con"
     },
     "specs": {
       "heading": "Ficha",

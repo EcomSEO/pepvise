@@ -50,7 +50,11 @@
       "h1": "Peptide reviews on one yardstick.",
       "lede": "Every compound scored on the same five dimensions — published evidence, mechanism plausibility, human data, vendor trust, regulatory posture — and ranked. Last database refresh {date}.",
       "ctaPrimary": "See the top picks",
-      "ctaSecondary": "How we score"
+      "ctaSecondary": "How we score",
+      "refreshLabel": "Last refreshed",
+      "methodologyBadge": "Methodology",
+      "topPicksHeading": "Top picks at a glance",
+      "topPicksCta": "See full ranking"
     },
     "rankIndex": {
       "eyebrow": "THE TOP RANKED",
@@ -142,7 +146,9 @@
       "tier": "TIER",
       "verdictLabel": "VERDICT",
       "lastUpdated": "Last updated {date}",
-      "methodologyLink": "How we score"
+      "methodologyLink": "How we score",
+      "lastTested": "Last tested",
+      "methodologyBadge": "Scored on"
     },
     "specs": {
       "heading": "Specs",

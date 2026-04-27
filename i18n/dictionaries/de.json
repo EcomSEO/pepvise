@@ -50,7 +50,11 @@
       "h1": "Peptid-Reviews am gleichen Maßstab.",
       "lede": "Jede Substanz auf den gleichen fünf Dimensionen bewertet — publizierte Evidenz, Mechanismus-Plausibilität, Humandaten, Anbieter-Verlässlichkeit, regulatorischer Status — und gerankt. Letzte Datenbank-Aktualisierung {date}.",
       "ctaPrimary": "Top-Empfehlungen ansehen",
-      "ctaSecondary": "Wie wir bewerten"
+      "ctaSecondary": "Wie wir bewerten",
+      "refreshLabel": "Zuletzt aktualisiert",
+      "methodologyBadge": "Methodik",
+      "topPicksHeading": "Top-Picks im Überblick",
+      "topPicksCta": "Vollständiges Ranking"
     },
     "rankIndex": {
       "eyebrow": "DIE TOP-PLATZIERUNGEN",
@@ -142,7 +146,9 @@
       "tier": "STUFE",
       "verdictLabel": "VERDIKT",
       "lastUpdated": "Zuletzt aktualisiert {date}",
-      "methodologyLink": "Wie wir bewerten"
+      "methodologyLink": "Wie wir bewerten",
+      "lastTested": "Zuletzt getestet",
+      "methodologyBadge": "Bewertet mit"
     },
     "specs": {
       "heading": "Spezifikationen",
