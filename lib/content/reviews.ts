@@ -22,6 +22,12 @@ export type ReviewEntry = {
   variant: RankVariant;
   name: string;
   alias?: string;
+  /**
+   * Slug into the DRUGS manifest in `lib/content/drug-images.ts`. When set,
+   * `<DrugImage>` renders the licensed Wikimedia product photo or
+   * chemical-structure SVG in the verdict block.
+   */
+  primaryDrug?: string;
   oneLineVerdict: string;
   longVerdict: string;
   score: {
@@ -50,6 +56,7 @@ const ENTRIES: ReviewEntry[] = [
     variant: "our-pick",
     name: "BPC-157",
     alias: "Body Protection Compound 157",
+    primaryDrug: "bpc-157",
     oneLineVerdict:
       "The most-studied research peptide in rodents. Human evidence remains thin and the FDA narrowed its compounding pathway in 2023.",
     longVerdict:
@@ -84,6 +91,7 @@ const ENTRIES: ReviewEntry[] = [
     rank: 2,
     variant: "budget",
     name: "TB-500",
+    primaryDrug: "tb-500",
     alias: "Thymosin Beta-4 fragment",
     oneLineVerdict:
       "The actin-binding biology is real; what most online sources sell as TB-500 is a fragment, not the full thymosin beta-4 protein.",
@@ -118,6 +126,7 @@ const ENTRIES: ReviewEntry[] = [
     variant: "upgrade",
     name: "GHK-Cu",
     alias: "Copper tripeptide",
+    primaryDrug: "ghk-cu",
     oneLineVerdict:
       "The cleanest evidence file in the database — peer-reviewed cosmetic and wound work, plus topical formulations available outside the research channel.",
     longVerdict:
@@ -150,6 +159,9 @@ const ENTRIES: ReviewEntry[] = [
     variant: "runner-up",
     name: "Retatrutide",
     alias: "LY-3437943, Eli Lilly triple-agonist",
+    // No free-licensed retatrutide product photo or structure on Commons yet
+    // (compound is pre-approval, Eli Lilly retains imagery). DrugImage left
+    // unset — component returns null safely.
     oneLineVerdict:
       "Phase 3 obesity drug from Eli Lilly. Real human data, real regulatory pathway — but not yet approved, and research-channel supply is unsafe.",
     longVerdict:
@@ -182,6 +194,7 @@ const ENTRIES: ReviewEntry[] = [
     rank: 5,
     variant: "also-ran",
     name: "Semaglutide",
+    primaryDrug: "ozempic",
     alias: "Ozempic, Wegovy, Rybelsus",
     oneLineVerdict:
       "FDA-approved GLP-1 with the clean regulatory pathway. Belongs in PepTips, not Pepvise — listed here for context only.",

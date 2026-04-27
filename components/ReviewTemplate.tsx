@@ -3,6 +3,7 @@ import { useTranslations, useLocale } from "next-intl";
 import type { ReviewEntry } from "@/lib/content/reviews";
 import { allReviews } from "@/lib/content/reviews";
 import { VerdictBlock } from "./VerdictBlock";
+import { DrugImage } from "./DrugImage";
 import { ProsConsTable } from "./ProsConsTable";
 import { ScoreBar } from "./ScoreBar";
 import { ComparisonTable } from "./ComparisonTable";
@@ -87,6 +88,11 @@ export function ReviewTemplate({ entry }: { entry: ReviewEntry }) {
       {/* Verdict block band */}
       <div className="border-b border-rule">
         <div className="mx-auto max-w-6xl px-5 md:px-8 py-10 md:py-12">
+          {entry.primaryDrug ? (
+            <div className="mb-8 max-w-md">
+              <DrugImage drugSlug={entry.primaryDrug} size="md" priority />
+            </div>
+          ) : null}
           <VerdictBlock
             rank={entry.rank}
             variant={entry.variant}
