@@ -3,16 +3,16 @@
 import { FormEvent, useState } from "react";
 
 /**
- * EmailCapture — "signing a leather-bound ledger" feel.
+ * EmailCapture, "signing a leather-bound ledger" feel.
  *
  * The input is stripped of its rectangular chrome: a single hairline baseline
- * with an oxblood accent that draws in from the left on focus — think the
+ * with an oxblood accent that draws in from the left on focus, think the
  * stroke of a nib on a subscription card. The submit button depresses 1px on
  * :active. Restrained, deliberate, editorial.
  */
 export function EmailCapture({
   headline = "Get the 2026 Peptide Evidence Ledger.",
-  subhead = "A 12-page PDF summary of where 10 major compounds sit — Preclinical / Human pilot / Phase trial / FDA status. Updated quarterly. Free.",
+  subhead = "A 12-page PDF summary of where 10 major compounds sit, Preclinical / Human pilot / Phase trial / FDA status. Updated quarterly. Free.",
   variant = "inline",
   buttonLabel = "Send me the Ledger",
 }: {

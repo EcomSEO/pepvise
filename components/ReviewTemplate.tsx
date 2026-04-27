@@ -15,7 +15,7 @@ import { BreadcrumbJsonLd } from "./schema/BreadcrumbJsonLd";
 import { SITE } from "@/lib/content/site";
 
 /**
- * ReviewTemplate — the long-form review shell.
+ * ReviewTemplate, the long-form review shell.
  *
  * Layout (desktop):
  *   - Verdict block, full-width across the content column
@@ -74,7 +74,7 @@ export function ReviewTemplate({ entry }: { entry: ReviewEntry }) {
       <ReviewJsonLd entry={entry} locale={locale} />
       <BreadcrumbJsonLd crumbs={breadcrumbs} />
 
-      {/* Header strip — breadcrumb-style */}
+      {/* Header strip, breadcrumb-style */}
       <nav aria-label="Breadcrumb" className="bg-paper-soft border-b border-rule-soft">
         <div className="mx-auto max-w-6xl px-5 md:px-8 py-3 flex items-center gap-2 text-[12px] text-ink-soft">
           <Link href={"/" as never} className="hover:text-forest">{SITE.name}</Link>
@@ -116,7 +116,7 @@ export function ReviewTemplate({ entry }: { entry: ReviewEntry }) {
         </div>
       </div>
 
-      {/* Body — TOC / specs left, prose right */}
+      {/* Body, TOC / specs left, prose right */}
       <div className="mx-auto max-w-6xl px-5 md:px-8 py-10 md:py-14 grid lg:grid-cols-[280px_1fr] gap-10">
         <aside className="space-y-8 lg:sticky lg:top-20 self-start">
           <div>

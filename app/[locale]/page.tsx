@@ -19,15 +19,15 @@ import {
 import { SITE } from "@/lib/content/site";
 
 /**
- * Home — review-database lead.
+ * Home, review-database lead.
  *
  * Section order, top to bottom:
  *   1. Hero band (paper-soft, ribbon + serif h1 + lede + 2 CTAs)
- *   2. RankIndex — numbered ranked list with score bars
- *   3. ComparisonTable — sticky-header full-width table, 4 entries
- *   4. CategoriesStrip — inline horizontal pills
- *   5. MethodologyTeaser — five-row weighted summary
- *   6. PipelinePreview — what we are testing next
+ *   2. RankIndex, numbered ranked list with score bars
+ *   3. ComparisonTable, sticky-header full-width table, 4 entries
+ *   4. CategoriesStrip, inline horizontal pills
+ *   5. MethodologyTeaser, five-row weighted summary
+ *   6. PipelinePreview, what we are testing next
  *   7. Newsletter dispatch (single line)
  */
 export default async function HomePage({
@@ -162,7 +162,7 @@ function Home() {
         }}
       />
 
-      {/* Pipeline preview — five-row dense table */}
+      {/* Pipeline preview, five-row dense table */}
       <section className="border-b border-rule">
         <div className="mx-auto max-w-6xl px-5 md:px-8 py-12 md:py-16">
           <header className="mb-7 max-w-3xl">
@@ -207,7 +207,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Newsletter — single line */}
+      {/* Newsletter, single line */}
       <section className="bg-paper-soft border-b border-rule">
         <div className="mx-auto max-w-3xl px-5 md:px-8 py-12 md:py-16 text-center">
           <div className="eyebrow mb-2.5">{tHome("newsletter.eyebrow")}</div>

@@ -6,8 +6,8 @@ import { robotsMeta } from "@/lib/seo";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — ${SITE.tagline}`,
-    template: `%s — ${SITE.name}`,
+    default: `${SITE.name}, ${SITE.tagline}`,
+    template: `%s, ${SITE.name}`,
   },
   description: SITE.description,
   robots: robotsMeta(),
@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 };
 
 /**
- * Root layout — thin shell. The locale layout (`app/[locale]/layout.tsx`)
+ * Root layout, thin shell. The locale layout (`app/[locale]/layout.tsx`)
  * carries the actual <html> attributes via next-intl. We only emit the
  * Google Fonts preconnect and the global CSS here.
  */

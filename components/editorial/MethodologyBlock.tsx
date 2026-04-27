@@ -4,7 +4,7 @@ const defaultItems: Item[] = [
   {
     label: "Evidence tier",
     detail:
-      "We grade the literature on four tiers — High (replicated RCTs or meta-analyses), Moderate (multiple trials with mixed findings), Low (a single pilot or case series), and Anecdotal (preclinical only, no human data). The tier appears on every compound profile beside the claim it supports.",
+      "We grade the literature on four tiers, High (replicated RCTs or meta-analyses), Moderate (multiple trials with mixed findings), Low (a single pilot or case series), and Anecdotal (preclinical only, no human data). The tier appears on every compound profile beside the claim it supports.",
   },
   {
     label: "Trial stage",
@@ -14,17 +14,17 @@ const defaultItems: Item[] = [
   {
     label: "Regulatory status",
     detail:
-      "We state the FDA posture plainly — approved for indication X, or labeled for research use only, or removed from the 503A list, or investigational under a specific IND. Regulatory status changes; every post carries a review date.",
+      "We state the FDA posture plainly, approved for indication X, or labeled for research use only, or removed from the 503A list, or investigational under a specific IND. Regulatory status changes; every post carries a review date.",
   },
   {
     label: "Where we're uncertain",
     detail:
-      "Every compound profile closes with a named uncertainty section — the question we can't answer from the current literature, the trial we'd want to see, the effect size we'd treat as a real signal. Uncertainty is not a failure mode here; it's load-bearing.",
+      "Every compound profile closes with a named uncertainty section, the question we can't answer from the current literature, the trial we'd want to see, the effect size we'd treat as a real signal. Uncertainty is not a failure mode here; it's load-bearing.",
   },
 ];
 
 /**
- * MethodologyBlock — PepVise's adapted 4-part wedge. Trial stage / Evidence tier /
+ * MethodologyBlock, PepVise's adapted 4-part wedge. Trial stage / Evidence tier /
  * Regulatory status / Where we're uncertain. This is the analytic scaffold.
  */
 export function MethodologyBlock({

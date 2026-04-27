@@ -4,11 +4,11 @@ import type { ReviewEntry } from "@/lib/content/reviews";
 import { JsonLd } from "./JsonLd";
 
 /**
- * ReviewJsonLd — composite Review + AggregateRating + Drug + Breadcrumb
+ * ReviewJsonLd, composite Review + AggregateRating + Drug + Breadcrumb
  * graph for every long-form review page.
  *
  * The schema breadth is the SEO differentiator vs Wirecutter / Rtings /
- * Consumer Reports — most peptide review sites ship Article only;
+ * Consumer Reports, most peptide review sites ship Article only;
  * Pepvise ships:
  *   - Review (with itemReviewed = Drug)
  *   - AggregateRating with the five sub-scores expressed as
@@ -23,7 +23,7 @@ export function ReviewJsonLd({ entry, locale }: { entry: ReviewEntry; locale: st
   const aggId = `${url}#agg`;
 
   // Express the methodology v1.2 sub-dimensions as a list of named
-  // Rating nodes — this is what differentiates the schema breadth
+  // Rating nodes, this is what differentiates the schema breadth
   // from a vanilla 1-rating Review.
   const subRatings = [
     { name: "Published evidence", value: entry.score.evidence },
@@ -52,7 +52,7 @@ export function ReviewJsonLd({ entry, locale }: { entry: ReviewEntry; locale: st
             "@type": "Review",
             "@id": reviewId,
             url,
-            name: `${entry.name} review — Pepvise`,
+            name: `${entry.name} review, Pepvise`,
             headline: `${entry.name}: ${entry.oneLineVerdict}`,
             datePublished: entry.lastUpdated,
             dateModified: entry.lastUpdated,

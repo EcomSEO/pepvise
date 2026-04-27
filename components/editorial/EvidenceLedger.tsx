@@ -20,7 +20,7 @@ const strengthToSummary: Record<Strength, string> = {
 };
 
 /**
- * EvidenceLedger — the site's signature component.
+ * EvidenceLedger, the site's signature component.
  *
  * Renders at the top of every compound pillar and cluster post as a structured
  * definition list showing: Compound, Preclinical (animal), Human pilot (N=?),
@@ -41,7 +41,7 @@ export function EvidenceLedger({
     post.evidenceLedger;
 
   const displayName =
-    compoundName ?? post.title.replace(/\s+—.*$/, "").replace(/\s+[-–].*$/, "");
+    compoundName ?? post.title.replace(/\s+, .*$/, "").replace(/\s+[-–].*$/, "");
 
   const overallTier: EvidenceTier =
     fdaApproved === "approved"
@@ -172,7 +172,7 @@ function LedgerFdaRow({ status }: { status: FdaStatus }) {
 }
 
 /**
- * EvidenceLedgerMaster — homepage grid of all compound ledgers. A reader can
+ * EvidenceLedgerMaster, homepage grid of all compound ledgers. A reader can
  * scan ten compounds in one view.
  */
 export function EvidenceLedgerMaster({ posts }: { posts: Post[] }) {
@@ -194,7 +194,7 @@ function CompactLedgerCard({ post }: { post: Post }) {
   if (!post.evidenceLedger) return null;
   const { preclinical, humanPilot, phaseTrial, fdaApproved } =
     post.evidenceLedger;
-  const name = post.title.replace(/\s+—.*$/, "").replace(/\s+[-–].*$/, "");
+  const name = post.title.replace(/\s+, .*$/, "").replace(/\s+[-–].*$/, "");
 
   const rows = [
     { label: "Preclin", s: strengthToTier[preclinical] },

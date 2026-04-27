@@ -151,14 +151,14 @@ export function PillarTemplate({ post }: { post: Post }) {
 
         <LedgerRule className="mt-8" />
 
-        {/* Evidence Ledger — at the TOP of every compound profile */}
+        {/* Evidence Ledger, at the TOP of every compound profile */}
         {hasLedger && (
           <div id="evidence-ledger">
             <EvidenceLedger post={post} />
           </div>
         )}
 
-        {/* Drop-capped lede — the oxblood capital scales from 5.5rem → 4.6rem
+        {/* Drop-capped lede, the oxblood capital scales from 5.5rem → 4.6rem
             and fades in over 600ms as the paragraph enters the viewport.
             Dramatic literary feel; respects reduced-motion. */}
         <Reveal

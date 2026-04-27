@@ -57,13 +57,13 @@ export function Header() {
 
   return (
     <header className="bg-bone/95 backdrop-blur sticky top-0 z-40 border-b border-inknavy/15">
-      {/* Reading progress — oxblood hairline that fills as the reader scrolls.
+      {/* Reading progress, oxblood hairline that fills as the reader scrolls.
           Sits flush with the masthead's bottom hairline. */}
       <ReadingProgress />
-      {/* Mandatory medical disclaimer strip — ABOVE masthead */}
+      {/* Mandatory medical disclaimer strip, ABOVE masthead */}
       <MedicalDisclaimerStrip variant="top" />
 
-      {/* Masthead strip — dateline + editorial meta */}
+      {/* Masthead strip, dateline + editorial meta */}
       <div className="border-b border-inknavy/10 hidden md:block">
         <div className="mx-auto max-w-6xl px-6 py-2.5 flex items-center justify-between">
           <Dateline />
@@ -87,7 +87,7 @@ export function Header() {
         </div>
       </div>
 
-      {/* Main bar — Wordmark + Guides dropdown */}
+      {/* Main bar, Wordmark + Guides dropdown */}
       <div className="mx-auto max-w-6xl px-6 py-4 md:py-5 flex items-center justify-between gap-6">
         <Wordmark size="md" showSubtitle />
 

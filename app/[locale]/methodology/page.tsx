@@ -27,11 +27,11 @@ export async function generateMetadata({
 }
 
 /**
- * /methodology — long-form score-system explainer.
+ * /methodology, long-form score-system explainer.
  *
  * Numbered list of the five weighted dimensions, version history,
  * "what changed in v1.2" callout, and a pointer to the full v1.2
- * spec. Voice: utilitarian, decisive review-database — owns its
+ * spec. Voice: utilitarian, decisive review-database, owns its
  * weighting choices and invites readers to argue.
  */
 export default async function MethodologyPage({
@@ -99,7 +99,7 @@ function Methodology() {
 
         <p className="mt-12 text-[12.5px] text-ink-soft leading-[1.55] border-t border-rule-soft pt-6">
           Pepvise reviews are not medical advice. Scores reflect published evidence and supply-chain posture
-          — not a recommendation that any individual administer any compound. {SITE.lastDatabaseRefresh}.
+         , not a recommendation that any individual administer any compound. {SITE.lastDatabaseRefresh}.
         </p>
       </section>
     </article>

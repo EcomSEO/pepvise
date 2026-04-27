@@ -65,7 +65,7 @@ const ENTRIES: ReviewEntry[] = [
     total: 6.8,
     category: "tendon-and-tissue-repair",
     fdaStatus: "Removed from 503A list (2023)",
-    wadaStatus: "Plausible S0 — sanctions reported",
+    wadaStatus: "Plausible S0, sanctions reported",
     pros: [
       "Largest preclinical literature of any research peptide we cover.",
       "Mechanism (angiogenesis, growth-factor modulation) is consistent with established cell biology, not back-fitted.",
@@ -73,18 +73,18 @@ const ENTRIES: ReviewEntry[] = [
     ],
     cons: [
       "Single published human pilot was n=12, open-label, oral route.",
-      "Most preclinical work originates from one Zagreb research program — replication from independent labs is the missing piece.",
+      "Most preclinical work originates from one Zagreb research program, replication from independent labs is the missing piece.",
       "FDA's 2023 503A category change closes the cleanest US compounding pathway.",
       "Counterfeit and underdose incidents in research-channel supply.",
     ],
     alternatives: ["tb-500", "ghk-cu-peptide", "thymosin-alpha-1"],
     references: [
-      { label: "Staresinic et al. 2003 — J Orthop Res", url: "https://pubmed.ncbi.nlm.nih.gov/12919876/" },
-      { label: "Chang et al. 2014 — Vojnosanitski Pregled", url: "https://pubmed.ncbi.nlm.nih.gov/25518352/" },
-      { label: "ClinicalTrials.gov — BPC-157 listings", url: "https://clinicaltrials.gov/search?term=BPC-157" },
+      { label: "Staresinic et al. 2003, J Orthop Res", url: "https://pubmed.ncbi.nlm.nih.gov/12919876/" },
+      { label: "Chang et al. 2014, Vojnosanitski Pregled", url: "https://pubmed.ncbi.nlm.nih.gov/25518352/" },
+      { label: "ClinicalTrials.gov, BPC-157 listings", url: "https://clinicaltrials.gov/search?term=BPC-157" },
     ],
     lastUpdated: "2026-04-21",
-    body: "The BPC-157 file is, on paper, the strongest in the research-peptide category. More than fifty preclinical papers cover tendon-to-bone healing, gut ulceration, and crush-injury models, and the published mechanism (angiogenesis with growth-factor modulation, plus nitric-oxide system interaction) is consistent with what cell biology would predict. The catch is that the published human file is one open-label oral pilot of twelve patients in ulcerative colitis — Chang et al. 2014 — and a single registered Phase 1 in the US. That gap between rodent volume and human evidence is the entire reason BPC-157 sits at #1 with a 6.8, not a 9. The methodology v1.2 weights human data at 25% precisely because we do not want a peptide with one paper in humans to outrank a compound with three Phase 2s. The 2023 FDA decision removing BPC-157 from the 503A bulk-substances list is also load-bearing here: it does not change the science but it does change the legal pathway in the US, which v1.2 captures under regulatory posture. We rate BPC-157 #1 because it is the best-documented option in a category where the bar is low — not because it is proven.",
+    body: "The BPC-157 file is, on paper, the strongest in the research-peptide category. More than fifty preclinical papers cover tendon-to-bone healing, gut ulceration, and crush-injury models, and the published mechanism (angiogenesis with growth-factor modulation, plus nitric-oxide system interaction) is consistent with what cell biology would predict. The catch is that the published human file is one open-label oral pilot of twelve patients in ulcerative colitis, Chang et al. 2014, and a single registered Phase 1 in the US. That gap between rodent volume and human evidence is the entire reason BPC-157 sits at #1 with a 6.8, not a 9. The methodology v1.2 weights human data at 25% precisely because we do not want a peptide with one paper in humans to outrank a compound with three Phase 2s. The 2023 FDA decision removing BPC-157 from the 503A bulk-substances list is also load-bearing here: it does not change the science but it does change the legal pathway in the US, which v1.2 captures under regulatory posture. We rate BPC-157 #1 because it is the best-documented option in a category where the bar is low, not because it is proven.",
   },
   {
     slug: "tb-500",
@@ -103,22 +103,22 @@ const ENTRIES: ReviewEntry[] = [
     fdaStatus: "Not approved",
     wadaStatus: "Prohibited (S0)",
     pros: [
-      "Actin-sequestering mechanism is textbook cell biology — the science is not invented.",
+      "Actin-sequestering mechanism is textbook cell biology, the science is not invented.",
       "Lower price point than BPC-157 in research-channel supply, hence the budget pick.",
       "Some Phase 1/2 data exists for the parent thymosin beta-4 in wound and corneal indications.",
     ],
     cons: [
       "The marketed 'TB-500' is a synthetic fragment; trial data on TB-4 does not transfer cleanly.",
-      "WADA explicitly prohibits TB-500 — competitive athletes have been sanctioned.",
+      "WADA explicitly prohibits TB-500, competitive athletes have been sanctioned.",
       "Counterfeit incidence in research-channel supply higher than BPC-157.",
     ],
     alternatives: ["bpc-157", "ghk-cu-peptide", "thymosin-alpha-1"],
     references: [
-      { label: "Goldstein et al. 2012 — thymosin beta-4 review", url: "https://pubmed.ncbi.nlm.nih.gov/22640435/" },
+      { label: "Goldstein et al. 2012, thymosin beta-4 review", url: "https://pubmed.ncbi.nlm.nih.gov/22640435/" },
       { label: "WADA Prohibited List 2026", url: "https://www.wada-ama.org/en/prohibited-list" },
     ],
     lastUpdated: "2026-04-22",
-    body: "TB-500 is the budget pick for tendon and connective-tissue work because the underlying biology — G-actin sequestration, cell migration, modulation of inflammatory cytokines — is well-established cell biology, not a marketing back-fit. The complication is that almost every online source treats 'TB-500' and 'thymosin beta-4' as interchangeable, and they are not. TB-4 is the full 43-residue protein with published Phase 1 and Phase 2 data in corneal injury and dermal wound healing. TB-500 is a synthetic short-fragment derivative that ships through research-peptide channels with very little of its own clinical literature. We score the file under TB-500 the marketed compound, not TB-4 the protein, which is why the human-data column reads 3.2 and not 6.5. WADA has prohibited TB-500 by name since 2014 and athletes have been sanctioned, which v1.2 captures in the regulatory posture column.",
+    body: "TB-500 is the budget pick for tendon and connective-tissue work because the underlying biology, G-actin sequestration, cell migration, modulation of inflammatory cytokines, is well-established cell biology, not a marketing back-fit. The complication is that almost every online source treats 'TB-500' and 'thymosin beta-4' as interchangeable, and they are not. TB-4 is the full 43-residue protein with published Phase 1 and Phase 2 data in corneal injury and dermal wound healing. TB-500 is a synthetic short-fragment derivative that ships through research-peptide channels with very little of its own clinical literature. We score the file under TB-500 the marketed compound, not TB-4 the protein, which is why the human-data column reads 3.2 and not 6.5. WADA has prohibited TB-500 by name since 2014 and athletes have been sanctioned, which v1.2 captures in the regulatory posture column.",
   },
   {
     slug: "ghk-cu-peptide",
@@ -128,7 +128,7 @@ const ENTRIES: ReviewEntry[] = [
     alias: "Copper tripeptide",
     primaryDrug: "ghk-cu",
     oneLineVerdict:
-      "The cleanest evidence file in the database — peer-reviewed cosmetic and wound work, plus topical formulations available outside the research channel.",
+      "The cleanest evidence file in the database, peer-reviewed cosmetic and wound work, plus topical formulations available outside the research channel.",
     longVerdict:
       "Upgrade pick for skin and dermal applications. Topical cosmetic formulations are available legitimately, which sidesteps most of the vendor-trust problem.",
     score: { evidence: 8.6, mechanism: 8.5, human: 6.8, vendor: 8.2, safety: 8.4 },
@@ -138,7 +138,7 @@ const ENTRIES: ReviewEntry[] = [
     wadaStatus: "Not listed",
     pros: [
       "Forty-plus published human studies including double-blind cosmetic trials.",
-      "Established mechanism — copper transport plus collagen and elastin upregulation.",
+      "Established mechanism, copper transport plus collagen and elastin upregulation.",
       "Available in legitimate cosmetic formulations, which removes the vendor-counterfeit risk that drags BPC-157 and TB-500 down.",
       "WADA does not list GHK-Cu, regulatory pathway is clean.",
     ],
@@ -148,10 +148,10 @@ const ENTRIES: ReviewEntry[] = [
     ],
     alternatives: ["bpc-157", "tb-500", "thymosin-alpha-1"],
     references: [
-      { label: "Pickart et al. 2012 — GHK-Cu wound and dermal review", url: "https://pubmed.ncbi.nlm.nih.gov/22762268/" },
+      { label: "Pickart et al. 2012, GHK-Cu wound and dermal review", url: "https://pubmed.ncbi.nlm.nih.gov/22762268/" },
     ],
     lastUpdated: "2026-04-23",
-    body: "GHK-Cu is the highest-scoring entry in the database and the upgrade pick when budget is not the constraint and the use case is dermal. Forty-plus human studies (cosmetic short-trial work, topical wound healing, hair density) sit behind a mechanism that is properly published — copper transport into the cell with downstream collagen and elastin upregulation. Crucially, GHK-Cu can be sourced as a topical cosmetic formulation through ordinary retail channels, which collapses the vendor-trust risk that pulls BPC-157 and TB-500 down by a full point each. The score gap between #1 and #3 is real, and we want readers to see it: GHK-Cu earns 8.1 because it has both the evidence and the legal supply chain. BPC-157 leads the category by name recognition, not by score.",
+    body: "GHK-Cu is the highest-scoring entry in the database and the upgrade pick when budget is not the constraint and the use case is dermal. Forty-plus human studies (cosmetic short-trial work, topical wound healing, hair density) sit behind a mechanism that is properly published, copper transport into the cell with downstream collagen and elastin upregulation. Crucially, GHK-Cu can be sourced as a topical cosmetic formulation through ordinary retail channels, which collapses the vendor-trust risk that pulls BPC-157 and TB-500 down by a full point each. The score gap between #1 and #3 is real, and we want readers to see it: GHK-Cu earns 8.1 because it has both the evidence and the legal supply chain. BPC-157 leads the category by name recognition, not by score.",
   },
   {
     slug: "retatrutide",
@@ -161,9 +161,9 @@ const ENTRIES: ReviewEntry[] = [
     alias: "LY-3437943, Eli Lilly triple-agonist",
     // No free-licensed retatrutide product photo or structure on Commons yet
     // (compound is pre-approval, Eli Lilly retains imagery). DrugImage left
-    // unset — component returns null safely.
+    // unset, component returns null safely.
     oneLineVerdict:
-      "Phase 3 obesity drug from Eli Lilly. Real human data, real regulatory pathway — but not yet approved, and research-channel supply is unsafe.",
+      "Phase 3 obesity drug from Eli Lilly. Real human data, real regulatory pathway, but not yet approved, and research-channel supply is unsafe.",
     longVerdict:
       "Runner-up because the legitimate route is a Phase 3 trial enrollment, not a research-peptide order. The human data is excellent.",
     score: { evidence: 8.9, mechanism: 8.8, human: 8.4, vendor: 3.1, safety: 6.5 },
@@ -172,9 +172,9 @@ const ENTRIES: ReviewEntry[] = [
     fdaStatus: "Phase 3 (Eli Lilly TRIUMPH program)",
     wadaStatus: "Not currently listed",
     pros: [
-      "GLP-1 / GIP / glucagon triple agonism — the most-studied molecular mechanism in active obesity development.",
+      "GLP-1 / GIP / glucagon triple agonism, the most-studied molecular mechanism in active obesity development.",
       "Phase 2 data (Jastreboff et al. 2023 NEJM) showed mean weight loss exceeding semaglutide and tirzepatide.",
-      "Pivotal Phase 3 (TRIUMPH) is enrolling — a legitimate access pathway exists.",
+      "Pivotal Phase 3 (TRIUMPH) is enrolling, a legitimate access pathway exists.",
     ],
     cons: [
       "Not FDA-approved as of April 2026; expected 2027–2028.",
@@ -183,11 +183,11 @@ const ENTRIES: ReviewEntry[] = [
     ],
     alternatives: ["semaglutide", "tirzepatide", "cagrilintide"],
     references: [
-      { label: "Jastreboff et al. 2023 — NEJM (Phase 2)", url: "https://pubmed.ncbi.nlm.nih.gov/37356458/" },
-      { label: "ClinicalTrials.gov — TRIUMPH-1", url: "https://clinicaltrials.gov/search?term=retatrutide+TRIUMPH" },
+      { label: "Jastreboff et al. 2023, NEJM (Phase 2)", url: "https://pubmed.ncbi.nlm.nih.gov/37356458/" },
+      { label: "ClinicalTrials.gov, TRIUMPH-1", url: "https://clinicaltrials.gov/search?term=retatrutide+TRIUMPH" },
     ],
     lastUpdated: "2026-04-24",
-    body: "Retatrutide is the entry where the methodology v1.2 weighting structure earns its keep. The human-data score is the highest of any compound in the database — Phase 2 NEJM publication, ongoing pivotal Phase 3, weight-loss endpoints that beat semaglutide and tirzepatide. But the vendor-trust score is 3.1, the worst on the page, because the only non-trial supply is the research-channel grey market and counterfeit incidence is high. Composite score 7.4 puts retatrutide at #4, behind compounds with worse evidence files but cleaner supply chains. The right read is: enroll in the Phase 3 if you qualify; do not order from a research vendor.",
+    body: "Retatrutide is the entry where the methodology v1.2 weighting structure earns its keep. The human-data score is the highest of any compound in the database, Phase 2 NEJM publication, ongoing pivotal Phase 3, weight-loss endpoints that beat semaglutide and tirzepatide. But the vendor-trust score is 3.1, the worst on the page, because the only non-trial supply is the research-channel grey market and counterfeit incidence is high. Composite score 7.4 puts retatrutide at #4, behind compounds with worse evidence files but cleaner supply chains. The right read is: enroll in the Phase 3 if you qualify; do not order from a research vendor.",
   },
   {
     slug: "semaglutide",
@@ -197,7 +197,7 @@ const ENTRIES: ReviewEntry[] = [
     primaryDrug: "ozempic",
     alias: "Ozempic, Wegovy, Rybelsus",
     oneLineVerdict:
-      "FDA-approved GLP-1 with the clean regulatory pathway. Belongs in PepTips, not Pepvise — listed here for context only.",
+      "FDA-approved GLP-1 with the clean regulatory pathway. Belongs in PepTips, not Pepvise, listed here for context only.",
     longVerdict:
       "An also-tested entry. Approved drugs are out-of-scope for Pepvise's research-peptide review focus, but the comparison is useful for retatrutide context.",
     score: { evidence: 9.2, mechanism: 9.0, human: 9.4, vendor: 9.0, safety: 8.5 },
@@ -216,10 +216,10 @@ const ENTRIES: ReviewEntry[] = [
     ],
     alternatives: ["retatrutide", "tirzepatide", "cagrilintide"],
     references: [
-      { label: "Wilding et al. 2021 — STEP 1 trial", url: "https://pubmed.ncbi.nlm.nih.gov/33567185/" },
+      { label: "Wilding et al. 2021, STEP 1 trial", url: "https://pubmed.ncbi.nlm.nih.gov/33567185/" },
     ],
     lastUpdated: "2026-04-25",
-    body: "Semaglutide is included as an also-tested anchor at the top of the metabolic shelf so readers can calibrate the scoring. A fully approved drug with a SELECT cardiovascular outcomes trial behind it scores 9.0 on the v1.2 methodology — and that is the ceiling. Everything below 9.0 is paying for missing evidence or missing supply integrity. When BPC-157 sits at 6.8, the gap to 9.0 is the gap between 'most-studied research peptide' and 'fully approved drug'. We surface that gap rather than hide it.",
+    body: "Semaglutide is included as an also-tested anchor at the top of the metabolic shelf so readers can calibrate the scoring. A fully approved drug with a SELECT cardiovascular outcomes trial behind it scores 9.0 on the v1.2 methodology, and that is the ceiling. Everything below 9.0 is paying for missing evidence or missing supply integrity. When BPC-157 sits at 6.8, the gap to 9.0 is the gap between 'most-studied research peptide' and 'fully approved drug'. We surface that gap rather than hide it.",
   },
 ];
 

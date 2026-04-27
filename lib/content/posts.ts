@@ -30,8 +30,8 @@ export type Post = {
 export const posts: Post[] = [
   {
     slug: "bpc-157",
-    title: "BPC-157 — What the Evidence Shows",
-    h1: "BPC-157 — what the evidence shows",
+    title: "BPC-157, What the Evidence Shows",
+    h1: "BPC-157, what the evidence shows",
     description:
       "Evidence Ledger for BPC-157: 50+ preclinical studies, 1 human pilot (Chang 2014, n=12), 1 active Phase trial, FDA removed from 503A list in 2023.",
     hub: "compound-profiles",
@@ -53,19 +53,19 @@ export const posts: Post[] = [
       name: "Peptide Protocols: Volume One (William A. Seeds, MD)",
       tier: "Reference text",
       reason:
-        "The closest thing to a practitioner reference that actually catalogs the published BPC-157 preclinical literature with author citations, rather than restating Reddit dosing folklore. We cite Seeds the way we cite any secondary reference — useful for discourse mapping, not for protocol. Read it alongside the primary papers it points to, not instead of them.",
+        "The closest thing to a practitioner reference that actually catalogs the published BPC-157 preclinical literature with author citations, rather than restating Reddit dosing folklore. We cite Seeds the way we cite any secondary reference, useful for discourse mapping, not for protocol. Read it alongside the primary papers it points to, not instead of them.",
     },
     products: [
       {
         rank: 1,
-        name: "Peptide Protocols: Volume One — William A. Seeds, MD",
+        name: "Peptide Protocols: Volume One, William A. Seeds, MD",
         tier: "Reference text",
         summary:
           "A practitioner-oriented compendium that gathers BPC-157, TB-500, and related compounds with citations to the underlying Croatian and Korean literature. Useful for understanding how clinicians in the compounded-peptide space talk about BPC-157, with the caveat that Seeds writes for a prescriber audience and the book is not a substitute for the primary papers.",
       },
       {
         rank: 2,
-        name: "Outlive — Peter Attia, MD (with Bill Gifford)",
+        name: "Outlive, Peter Attia, MD (with Bill Gifford)",
         tier: "Popular-science background",
         summary:
           "Attia is one of the most-cited voices the Alex-persona reader already trusts, and Outlive sets the standard for how to reason about preclinical data, effect sizes, and the gap between mouse models and human endpoints. It does not cover BPC-157 directly, but the reasoning framework is the point.",
@@ -79,7 +79,7 @@ export const posts: Post[] = [
       },
       {
         rank: 4,
-        name: "Clinicaltrials.gov — 'BPC-157' search",
+        name: "Clinicaltrials.gov, 'BPC-157' search",
         tier: "Primary registry",
         summary:
           "The honest place to check what Phase trials exist on any given date. As of April 2026, a small number of US-based Phase 1 listings appear; most are not yet reporting. A saved search is a better source than any blog summary, including ours. [VERIFY current count on access date]",
@@ -92,7 +92,7 @@ export const posts: Post[] = [
       },
       {
         q: "How strong is the human evidence for BPC-157?",
-        a: "Thin. The most-cited human report, Chang et al. 2014 in Vojnosanitski Pregled, was a small single-arm open-label study (n=12) of an oral formulation in ulcerative colitis — not an injection study, not placebo-controlled, not powered for the injury-healing claims the compound is best known for online. Clinicaltrials.gov shows a handful of Phase 1 listings active or recently initiated. Treat claims about 'proven' human efficacy as preclinical extrapolation.",
+        a: "Thin. The most-cited human report, Chang et al. 2014 in Vojnosanitski Pregled, was a small single-arm open-label study (n=12) of an oral formulation in ulcerative colitis, not an injection study, not placebo-controlled, not powered for the injury-healing claims the compound is best known for online. Clinicaltrials.gov shows a handful of Phase 1 listings active or recently initiated. Treat claims about 'proven' human efficacy as preclinical extrapolation.",
       },
       {
         q: "Why are almost all the BPC-157 studies from Croatia?",
@@ -100,7 +100,7 @@ export const posts: Post[] = [
       },
       {
         q: "What does the preclinical evidence actually cover?",
-        a: "Rat and mouse models of tendon injury (Staresinic et al. 2003; Krivic et al. 2006), gut ulceration, muscle crush injury, and assorted vascular and inflammatory endpoints. The preclinical volume is genuinely substantial — more than 50 published papers — and mechanistically coherent around angiogenesis, growth-factor modulation, and nitric-oxide system interactions. 'Coherent in rodents' is not the same claim as 'efficacious in humans'.",
+        a: "Rat and mouse models of tendon injury (Staresinic et al. 2003; Krivic et al. 2006), gut ulceration, muscle crush injury, and assorted vascular and inflammatory endpoints. The preclinical volume is genuinely substantial, more than 50 published papers, and mechanistically coherent around angiogenesis, growth-factor modulation, and nitric-oxide system interactions. 'Coherent in rodents' is not the same claim as 'efficacious in humans'.",
       },
       {
         q: "Is BPC-157 on the WADA prohibited list?",
@@ -108,40 +108,40 @@ export const posts: Post[] = [
       },
       {
         q: "Why is PepVise not giving a dose?",
-        a: "Because a dose recommendation from a website is not a substitute for a prescription from a licensed physician working within FDA-compliant pathways, and because the dose most online sources repeat — 250 to 500 micrograms daily — is extrapolated from rat milligram-per-kilogram work, not from a human dose-finding trial. We describe what has been published. We do not tell readers what to administer. That is the line we hold.",
+        a: "Because a dose recommendation from a website is not a substitute for a prescription from a licensed physician working within FDA-compliant pathways, and because the dose most online sources repeat, 250 to 500 micrograms daily, is extrapolated from rat milligram-per-kilogram work, not from a human dose-finding trial. We describe what has been published. We do not tell readers what to administer. That is the line we hold.",
       },
     ],
     sources: [
       {
-        label: "Staresinic et al. 2003 — J Orthop Res — tendon-to-bone healing in rats",
+        label: "Staresinic et al. 2003, J Orthop Res, tendon-to-bone healing in rats",
         url: "https://pubmed.ncbi.nlm.nih.gov/12919876/",
       },
       {
-        label: "Krivic et al. 2006 — J Orthop Res — Achilles tendon in rats",
+        label: "Krivic et al. 2006, J Orthop Res, Achilles tendon in rats",
         url: "https://pubmed.ncbi.nlm.nih.gov/16514664/",
       },
       {
-        label: "Seiwerth et al. 2014 — Current Medicinal Chemistry — BPC-157 pharmacology review",
+        label: "Seiwerth et al. 2014, Current Medicinal Chemistry, BPC-157 pharmacology review",
         url: "https://pubmed.ncbi.nlm.nih.gov/24164197/",
       },
       {
-        label: "Chang et al. 2014 — Vojnosanitski Pregled — human pilot, oral BPC-157",
+        label: "Chang et al. 2014, Vojnosanitski Pregled, human pilot, oral BPC-157",
         url: "https://pubmed.ncbi.nlm.nih.gov/25518352/",
       },
       {
-        label: "FDA — Bulk Drug Substances Nominated for 503A Compounding (Category 2 listings, 2023) [VERIFY direct URL at review]",
+        label: "FDA, Bulk Drug Substances Nominated for 503A Compounding (Category 2 listings, 2023) [VERIFY direct URL at review]",
         url: "https://www.fda.gov/drugs/human-drug-compounding/bulk-drug-substances-nominations-received-use-compounding-under-section-503a-fdc-act",
       },
       {
-        label: "ClinicalTrials.gov — BPC-157 active listings",
+        label: "ClinicalTrials.gov, BPC-157 active listings",
         url: "https://clinicaltrials.gov/search?term=BPC-157",
       },
     ],
   },
   {
     slug: "tb-500",
-    title: "TB-500 — The Field Guide",
-    h1: "TB-500 — the field guide",
+    title: "TB-500, The Field Guide",
+    h1: "TB-500, the field guide",
     description:
       "TB-500 vs Thymosin Beta-4 (same compound), mechanism, the preclinical tendon and recovery literature, and where the human data is thin.",
     hub: "compound-profiles",
@@ -162,7 +162,7 @@ export const posts: Post[] = [
       name: "Lehninger Principles of Biochemistry (8th ed.)",
       tier: "Textbook",
       reason:
-        "TB-500 conversations go sideways fast because few online sources distinguish the full thymosin beta-4 protein from the synthetic fragment sold as 'TB-500'. Lehninger is the plain-language reference for actin, G-actin sequestration, and the cytoskeletal biology that TB-500 discussions hinge on. We cite it the way we cite any reference textbook — not as a claim about the compound, but as a baseline for talking about it correctly.",
+        "TB-500 conversations go sideways fast because few online sources distinguish the full thymosin beta-4 protein from the synthetic fragment sold as 'TB-500'. Lehninger is the plain-language reference for actin, G-actin sequestration, and the cytoskeletal biology that TB-500 discussions hinge on. We cite it the way we cite any reference textbook, not as a claim about the compound, but as a baseline for talking about it correctly.",
     },
     products: [
       {
@@ -174,14 +174,14 @@ export const posts: Post[] = [
       },
       {
         rank: 2,
-        name: "Outlive — Peter Attia, MD",
+        name: "Outlive, Peter Attia, MD",
         tier: "Popular-science background",
         summary:
           "Attia's framework for distinguishing preclinical promise from human-validated efficacy is directly applicable to the TB-500 literature, which is heavy on preclinical wound-healing models and light on randomized human endpoints. Read it for the reasoning, not for TB-500 specifics.",
       },
       {
         rank: 3,
-        name: "PubMed saved search — 'thymosin beta 4' filter: Clinical Trial",
+        name: "PubMed saved search, 'thymosin beta 4' filter: Clinical Trial",
         tier: "Primary literature",
         summary:
           "Filtering PubMed by publication type to 'Clinical Trial' collapses a noisy literature into the small subset of published human studies on thymosin beta-4 (primarily in wound healing, pressure ulcers, and ocular surface indications). It is the fastest way to see how little of the TB-500 discourse is grounded in human trial data.",
@@ -211,31 +211,31 @@ export const posts: Post[] = [
     ],
     sources: [
       {
-        label: "Bock-Marquette et al. 2004 — Nature — thymosin beta-4 and cardiac repair",
+        label: "Bock-Marquette et al. 2004, Nature, thymosin beta-4 and cardiac repair",
         url: "https://pubmed.ncbi.nlm.nih.gov/15525992/",
       },
       {
-        label: "Goldstein et al. 2012 — Expert Opinion on Biological Therapy — thymosin beta-4 review",
+        label: "Goldstein et al. 2012, Expert Opinion on Biological Therapy, thymosin beta-4 review",
         url: "https://pubmed.ncbi.nlm.nih.gov/22804680/",
       },
       {
-        label: "Philp & Kleinman 2010 — Expert Opinion on Biological Therapy — animal wound-healing review",
+        label: "Philp & Kleinman 2010, Expert Opinion on Biological Therapy, animal wound-healing review",
         url: "https://pubmed.ncbi.nlm.nih.gov/20055691/",
       },
       {
-        label: "ClinicalTrials.gov — thymosin beta-4 listings",
+        label: "ClinicalTrials.gov, thymosin beta-4 listings",
         url: "https://clinicaltrials.gov/search?term=thymosin+beta+4",
       },
       {
-        label: "WADA Prohibited List — current year [VERIFY edition on access]",
+        label: "WADA Prohibited List, current year [VERIFY edition on access]",
         url: "https://www.wada-ama.org/en/prohibited-list",
       },
     ],
   },
   {
     slug: "ghk-cu-peptide",
-    title: "GHK-Cu — Evidence and Hype",
-    h1: "GHK-Cu — evidence and hype",
+    title: "GHK-Cu, Evidence and Hype",
+    h1: "GHK-Cu, evidence and hype",
     description:
       "Copper peptide signaling, the topical RCT evidence for hair and skin, and the gap between topical and injectable claims.",
     hub: "compound-profiles",
@@ -256,33 +256,33 @@ export const posts: Post[] = [
       name: "Pickart & Margolina review (Int J Mol Sci 2018)",
       tier: "Open-access review",
       reason:
-        "The most citation-dense single review of the GHK-Cu literature, authored by the tripeptide's original describer (Loren Pickart). Read critically — Pickart is not an external evaluator of the molecule he discovered — but it is the starting index to the preclinical and clinical papers every GHK-Cu conversation eventually cites. Open-access, free.",
+        "The most citation-dense single review of the GHK-Cu literature, authored by the tripeptide's original describer (Loren Pickart). Read critically, Pickart is not an external evaluator of the molecule he discovered, but it is the starting index to the preclinical and clinical papers every GHK-Cu conversation eventually cites. Open-access, free.",
     },
     products: [
       {
         rank: 1,
-        name: "Pickart & Margolina 2018 — International Journal of Molecular Sciences",
+        name: "Pickart & Margolina 2018, International Journal of Molecular Sciences",
         tier: "Primary review",
         summary:
           "Open-access review covering GHK-Cu's skin, hair, and cellular-aging literature. Author is the 1970s-era original describer of the tripeptide. Useful as a literature index, with the caveat that advocacy and description are hard to separate when the reviewer is also the discoverer.",
       },
       {
         rank: 2,
-        name: "The Beauty of Dirty Skin — Whitney Bowe, MD",
+        name: "The Beauty of Dirty Skin, Whitney Bowe, MD",
         tier: "Popular dermatology",
         summary:
           "A dermatologist-written popular book that covers peptide cosmetics in the broader context of evidence-based skincare. Not a GHK-Cu monograph, but it is the register in which Sarah-persona readers get introduced to copper peptide claims without the bodybuilding-forum framing.",
       },
       {
         rank: 3,
-        name: "ConsumerLab — Topical Skincare Ingredient Reports",
+        name: "ConsumerLab, Topical Skincare Ingredient Reports",
         tier: "Independent testing",
         summary:
           "For readers who want to know whether a given topical product actually contains meaningful GHK-Cu versus trace amounts, ConsumerLab's ingredient-verification reports are the independent source. Subscription-based, no affiliate.",
       },
       {
         rank: 4,
-        name: "FDA — Cosmetic Ingredient Review database",
+        name: "FDA, Cosmetic Ingredient Review database",
         tier: "Regulatory reference",
         summary:
           "The CIR panel has reviewed copper peptides as cosmetic ingredients. Their monographs are the authoritative source on topical-use safety assessments, distinct from drug-approval review.",
@@ -295,7 +295,7 @@ export const posts: Post[] = [
       },
       {
         q: "Is there real randomized evidence for GHK-Cu on skin?",
-        a: "For topical cosmetic formulations, yes — small randomized studies of copper-peptide creams have reported improvements in fine lines, skin thickness, and photodamage endpoints (for example, Leyden et al. 2002 and later work reviewed by Pickart & Margolina 2018). The studies are small, industry-linked, and use proprietary formulations, so effect-size pooling is limited. 'Some randomized human evidence on topical, under-powered and industry-influenced' is the honest summary.",
+        a: "For topical cosmetic formulations, yes, small randomized studies of copper-peptide creams have reported improvements in fine lines, skin thickness, and photodamage endpoints (for example, Leyden et al. 2002 and later work reviewed by Pickart & Margolina 2018). The studies are small, industry-linked, and use proprietary formulations, so effect-size pooling is limited. 'Some randomized human evidence on topical, under-powered and industry-influenced' is the honest summary.",
       },
       {
         q: "Is there evidence that GHK-Cu regrows hair?",
@@ -303,11 +303,11 @@ export const posts: Post[] = [
       },
       {
         q: "What about injected GHK-Cu?",
-        a: "This is where the claim-to-evidence gap is largest. The randomized human data is for topical formulations. Injected GHK-Cu in the research-chemical channel has essentially no published randomized human trials — the injection-route claims rest on preclinical rodent work and user-reported anecdote. Treating injected GHK-Cu as if it inherits the topical evidence base is a category error.",
+        a: "This is where the claim-to-evidence gap is largest. The randomized human data is for topical formulations. Injected GHK-Cu in the research-chemical channel has essentially no published randomized human trials, the injection-route claims rest on preclinical rodent work and user-reported anecdote. Treating injected GHK-Cu as if it inherits the topical evidence base is a category error.",
       },
       {
         q: "Why has the keyword volume for 'GHK-Cu peptide' spiked so much recently?",
-        a: "DataForSEO flagged roughly a 1,000% year-over-year jump in search volume for 'ghk cu peptide' in the April 2026 snapshot. The spike tracks with a broader wellness-community discovery cycle (podcasts, Substacks, TikTok dermatology) rather than any new clinical data. When search volume runs ahead of the evidence base, the discourse usually outpaces the literature — which is why PepVise exists.",
+        a: "DataForSEO flagged roughly a 1,000% year-over-year jump in search volume for 'ghk cu peptide' in the April 2026 snapshot. The spike tracks with a broader wellness-community discovery cycle (podcasts, Substacks, TikTok dermatology) rather than any new clinical data. When search volume runs ahead of the evidence base, the discourse usually outpaces the literature, which is why PepVise exists.",
       },
       {
         q: "Is GHK-Cu safe topically?",
@@ -316,31 +316,31 @@ export const posts: Post[] = [
     ],
     sources: [
       {
-        label: "Pickart & Margolina 2018 — Int J Mol Sci — GHK-Cu review (open access)",
+        label: "Pickart & Margolina 2018, Int J Mol Sci, GHK-Cu review (open access)",
         url: "https://pubmed.ncbi.nlm.nih.gov/29986520/",
       },
       {
-        label: "Leyden et al. 2002 — J Cosmet Dermatol — copper peptide facial cream RCT",
+        label: "Leyden et al. 2002, J Cosmet Dermatol, copper peptide facial cream RCT",
         url: "https://pubmed.ncbi.nlm.nih.gov/17147561/",
       },
       {
-        label: "Badenhorst et al. 2016 — Int J Cosmet Sci — peptide cosmetic review",
+        label: "Badenhorst et al. 2016, Int J Cosmet Sci, peptide cosmetic review",
         url: "https://pubmed.ncbi.nlm.nih.gov/26663064/",
       },
       {
-        label: "Cosmetic Ingredient Review — Copper Peptides Safety Assessment [VERIFY current edition]",
+        label: "Cosmetic Ingredient Review, Copper Peptides Safety Assessment [VERIFY current edition]",
         url: "https://www.cir-safety.org/ingredients",
       },
       {
-        label: "ClinicalTrials.gov — GHK-Cu listings",
+        label: "ClinicalTrials.gov, GHK-Cu listings",
         url: "https://clinicaltrials.gov/search?term=GHK-Cu",
       },
     ],
   },
   {
     slug: "retatrutide",
-    title: "Retatrutide — What the Early Trials Say",
-    h1: "Retatrutide — what the early trials say",
+    title: "Retatrutide, What the Early Trials Say",
+    h1: "Retatrutide, what the early trials say",
     description:
       "Triple GLP-1/GIP/glucagon agonism, the Phase 2 weight-loss data, comparison to tirzepatide, and the Phase 3 outlook.",
     hub: "compound-profiles",
@@ -358,7 +358,7 @@ export const posts: Post[] = [
       notes: "Phase 2 data published 2023 (Jastreboff et al., NEJM) showed ~24% weight loss at 48 weeks at the highest dose; Phase 3 TRIUMPH program ongoing. [VERIFY Phase 3 readout dates]",
     },
     ourPick: {
-      name: "Jastreboff et al. 2023 — New England Journal of Medicine",
+      name: "Jastreboff et al. 2023, New England Journal of Medicine",
       tier: "Primary trial publication",
       reason:
         "Retatrutide is the rare research peptide where the best source is the published Phase 2 paper itself. Jastreboff et al. 2023 in NEJM is the triple-agonist obesity trial (n=338) that produced the ~24% weight-loss numbers everyone is citing. Read the actual paper, the CONSORT tables, and the safety section before forming a view.",
@@ -366,28 +366,28 @@ export const posts: Post[] = [
     products: [
       {
         rank: 1,
-        name: "Jastreboff et al. 2023 — NEJM Phase 2 retatrutide paper",
+        name: "Jastreboff et al. 2023, NEJM Phase 2 retatrutide paper",
         tier: "Primary trial",
         summary:
           "The 48-week randomized, double-blind, placebo-controlled Phase 2 trial in adults with obesity without diabetes, funded by Eli Lilly. Roughly 24% body-weight reduction at the highest dose. Secondary endpoints and adverse-event profile are in the supplement. This is the paper everything else cites.",
       },
       {
         rank: 2,
-        name: "Rubino et al. 2024 — Lancet Diabetes & Endocrinology — retatrutide in type 2 diabetes [VERIFY citation on access]",
+        name: "Rubino et al. 2024, Lancet Diabetes & Endocrinology, retatrutide in type 2 diabetes [VERIFY citation on access]",
         tier: "Primary trial",
         summary:
           "The companion Phase 2 trial in adults with type 2 diabetes. HbA1c and weight outcomes, different dosing arms. Useful for readers comparing retatrutide head-to-head against tirzepatide in diabetes rather than obesity.",
       },
       {
         rank: 3,
-        name: "Good Energy — Casey Means, MD",
+        name: "Good Energy, Casey Means, MD",
         tier: "Popular-science context",
         summary:
           "Not a retatrutide book, but a readable frame for the metabolic-health reasoning that GLP-1-class drugs operate on. Useful orientation for readers new to GIP, glucagon, and the incretin system before reading the primary papers.",
       },
       {
         rank: 4,
-        name: "FDA Drugs@FDA — Mounjaro (tirzepatide) labeling and review docs",
+        name: "FDA Drugs@FDA, Mounjaro (tirzepatide) labeling and review docs",
         tier: "Regulatory reference",
         summary:
           "Retatrutide's approvable pathway is being evaluated against tirzepatide's, and the Mounjaro approval package is the closest regulatory analogue. Reading the labeling plus the medical review gives a realistic picture of what a retatrutide approval package will need to look like.",
@@ -400,7 +400,7 @@ export const posts: Post[] = [
       },
       {
         q: "How much weight loss did the Phase 2 trial actually show?",
-        a: "In Jastreboff et al. 2023 (NEJM), adults with obesity on the highest retatrutide dose (12 mg weekly) saw mean body-weight reduction of roughly 24.2% at 48 weeks, versus 2.1% on placebo. That is numerically larger than the Phase 3 tirzepatide obesity results at the same time horizon, but Phase 2 effect sizes frequently shrink in Phase 3 — cross-trial comparisons are hazardous, and 'retatrutide beats tirzepatide' is a premature framing until TRIUMPH reports.",
+        a: "In Jastreboff et al. 2023 (NEJM), adults with obesity on the highest retatrutide dose (12 mg weekly) saw mean body-weight reduction of roughly 24.2% at 48 weeks, versus 2.1% on placebo. That is numerically larger than the Phase 3 tirzepatide obesity results at the same time horizon, but Phase 2 effect sizes frequently shrink in Phase 3, cross-trial comparisons are hazardous, and 'retatrutide beats tirzepatide' is a premature framing until TRIUMPH reports.",
       },
       {
         q: "How is retatrutide different from semaglutide and tirzepatide?",
@@ -408,7 +408,7 @@ export const posts: Post[] = [
       },
       {
         q: "What are the safety signals so far?",
-        a: "In Phase 2, the adverse-event profile was dominated by gastrointestinal effects — nausea, diarrhea, vomiting, constipation — at the pattern and rates broadly consistent with the incretin class. The glucagon-related questions the field is watching include effects on heart rate, liver enzymes, and lipids, all of which the Phase 2 paper addresses briefly in the supplement. Longer-term and larger-scale signals will come out of the Phase 3 TRIUMPH program.",
+        a: "In Phase 2, the adverse-event profile was dominated by gastrointestinal effects, nausea, diarrhea, vomiting, constipation, at the pattern and rates broadly consistent with the incretin class. The glucagon-related questions the field is watching include effects on heart rate, liver enzymes, and lipids, all of which the Phase 2 paper addresses briefly in the supplement. Longer-term and larger-scale signals will come out of the Phase 3 TRIUMPH program.",
       },
       {
         q: "Can I get retatrutide outside the trials?",
@@ -421,33 +421,33 @@ export const posts: Post[] = [
     ],
     sources: [
       {
-        label: "Jastreboff et al. 2023 — NEJM — retatrutide Phase 2 in obesity",
+        label: "Jastreboff et al. 2023, NEJM, retatrutide Phase 2 in obesity",
         url: "https://pubmed.ncbi.nlm.nih.gov/37366315/",
       },
       {
-        label: "Rosenstock et al. 2023 — Lancet — retatrutide Phase 2 in type 2 diabetes",
+        label: "Rosenstock et al. 2023, Lancet, retatrutide Phase 2 in type 2 diabetes",
         url: "https://pubmed.ncbi.nlm.nih.gov/37356447/",
       },
       {
-        label: "Coskun et al. 2022 — Cell Metabolism — retatrutide preclinical pharmacology",
+        label: "Coskun et al. 2022, Cell Metabolism, retatrutide preclinical pharmacology",
         url: "https://pubmed.ncbi.nlm.nih.gov/35908562/",
       },
       {
-        label: "ClinicalTrials.gov — TRIUMPH program (retatrutide Phase 3)",
+        label: "ClinicalTrials.gov, TRIUMPH program (retatrutide Phase 3)",
         url: "https://clinicaltrials.gov/search?term=retatrutide",
       },
       {
-        label: "FDA Drugs@FDA — Mounjaro (tirzepatide) approval package for regulatory analogue context",
+        label: "FDA Drugs@FDA, Mounjaro (tirzepatide) approval package for regulatory analogue context",
         url: "https://www.accessdata.fda.gov/scripts/cder/daf/",
       },
     ],
   },
   {
     slug: "how-peptides-signal",
-    title: "How Peptides Signal — A Primer for Informed Readers",
+    title: "How Peptides Signal, A Primer for Informed Readers",
     h1: "How peptides signal",
     description:
-      "Amino acid chains, receptor binding, signaling cascades — a rigorous but accessible explainer of peptide pharmacology.",
+      "Amino acid chains, receptor binding, signaling cascades, a rigorous but accessible explainer of peptide pharmacology.",
     hub: "mechanism-and-science",
     postType: "pillar",
     publishedAt: "2026-04-21",
@@ -459,7 +459,7 @@ export const posts: Post[] = [
       name: "Lehninger Principles of Biochemistry (8th ed., Nelson & Cox)",
       tier: "Textbook",
       reason:
-        "The default undergraduate and graduate reference for the biochemistry our posts keep leaning on — peptide structure, receptor binding, signaling cascades. When we reference GPCRs or tyrosine kinase receptors in a compound profile, Lehninger is the layer underneath. We recommend it the way any pharmacology course recommends it: as the baseline vocabulary.",
+        "The default undergraduate and graduate reference for the biochemistry our posts keep leaning on, peptide structure, receptor binding, signaling cascades. When we reference GPCRs or tyrosine kinase receptors in a compound profile, Lehninger is the layer underneath. We recommend it the way any pharmacology course recommends it: as the baseline vocabulary.",
     },
     products: [
       {
@@ -485,7 +485,7 @@ export const posts: Post[] = [
       },
       {
         rank: 4,
-        name: "Khan Academy — Receptor and Signaling modules (free)",
+        name: "Khan Academy, Receptor and Signaling modules (free)",
         tier: "Free primer",
         summary:
           "For readers who want the GPCR cascade and second-messenger system explained in ten-minute video chunks before opening Lehninger, Khan's MCAT-level biology and biochemistry modules are accurate and free.",
@@ -494,7 +494,7 @@ export const posts: Post[] = [
     items: [
       {
         rank: 1,
-        name: "Peptides are short amino-acid chains — usually under 50 residues",
+        name: "Peptides are short amino-acid chains, usually under 50 residues",
         summary:
           "By convention, 'peptide' describes chains up to roughly 50 amino acids; longer chains get called proteins. The distinction is not mechanistic but size-related, and it matters because peptides are small enough to be synthesized chemically but large enough to fold, bind receptors, and carry real pharmacology.",
       },
@@ -502,17 +502,17 @@ export const posts: Post[] = [
         rank: 2,
         name: "Most therapeutic peptides bind G-protein-coupled receptors (GPCRs)",
         summary:
-          "GLP-1, GIP, glucagon, somatostatin, growth-hormone-releasing hormone — the big drug-development wins in peptides are mostly GPCR agonists or antagonists. Rockman & Koch 2002 in Nature is the classical review on GPCR signaling as a therapeutic target.",
+          "GLP-1, GIP, glucagon, somatostatin, growth-hormone-releasing hormone, the big drug-development wins in peptides are mostly GPCR agonists or antagonists. Rockman & Koch 2002 in Nature is the classical review on GPCR signaling as a therapeutic target.",
       },
       {
         rank: 3,
         name: "Receptor binding is a shape-fit problem, not a strength problem",
         summary:
-          "A peptide's affinity for its receptor is about three-dimensional fit and charge complementarity, not size or dose. This is why small structural tweaks (one amino acid swap, one fatty-acid tail) can turn a native peptide into a drug — semaglutide is essentially GLP-1 with stability modifications.",
+          "A peptide's affinity for its receptor is about three-dimensional fit and charge complementarity, not size or dose. This is why small structural tweaks (one amino acid swap, one fatty-acid tail) can turn a native peptide into a drug, semaglutide is essentially GLP-1 with stability modifications.",
       },
       {
         rank: 4,
-        name: "Native peptides are degraded fast — that is why half-life engineering matters",
+        name: "Native peptides are degraded fast, that is why half-life engineering matters",
         summary:
           "Endogenous GLP-1 has a half-life of about two minutes. Semaglutide has a half-life of about a week. The difference is almost entirely about protecting the molecule from dipeptidyl peptidase-4 and albumin-binding to slow renal clearance. Peptide drug development is largely half-life engineering.",
       },
@@ -550,7 +550,7 @@ export const posts: Post[] = [
         rank: 10,
         name: "Route matters: topical versus injected is not a minor variant",
         summary:
-          "GHK-Cu is the cleanest example — topical formulations have small randomized trials, injected preparations do not. Applying topical evidence to injected use (or vice versa) is a category error. Always check the route in the methods section of any paper before extrapolating.",
+          "GHK-Cu is the cleanest example, topical formulations have small randomized trials, injected preparations do not. Applying topical evidence to injected use (or vice versa) is a category error. Always check the route in the methods section of any paper before extrapolating.",
       },
       {
         rank: 11,
@@ -562,21 +562,21 @@ export const posts: Post[] = [
         rank: 12,
         name: "Pharmacokinetics and pharmacodynamics are different questions",
         summary:
-          "PK is what the body does to the drug (absorption, distribution, metabolism, excretion). PD is what the drug does to the body (receptor occupancy, downstream effect, duration of effect). Every peptide discussion benefits from separating the two — the BPC-157 preclinical literature, for example, has more PD work than mature PK work, which is one reason dose extrapolation to humans is contested.",
+          "PK is what the body does to the drug (absorption, distribution, metabolism, excretion). PD is what the drug does to the body (receptor occupancy, downstream effect, duration of effect). Every peptide discussion benefits from separating the two, the BPC-157 preclinical literature, for example, has more PD work than mature PK work, which is one reason dose extrapolation to humans is contested.",
       },
     ],
     faq: [
       {
         q: "What is the actual difference between a peptide and a protein?",
-        a: "Size, by convention. Peptides are typically under 50 amino acids; proteins are longer and fold into more elaborate tertiary structures. The biochemistry textbooks (Lehninger, Alberts) draw the line around 50 residues, though the cutoff is fuzzy. Mechanistically, peptides bind receptors the same way proteins do — via shape and charge complementarity — but their shorter length makes them easier to synthesize and modify for drug development.",
+        a: "Size, by convention. Peptides are typically under 50 amino acids; proteins are longer and fold into more elaborate tertiary structures. The biochemistry textbooks (Lehninger, Alberts) draw the line around 50 residues, though the cutoff is fuzzy. Mechanistically, peptides bind receptors the same way proteins do, via shape and charge complementarity, but their shorter length makes them easier to synthesize and modify for drug development.",
       },
       {
         q: "Why do most peptides need to be injected?",
-        a: "Because the gastrointestinal tract is evolutionarily designed to digest peptides. Stomach acid denatures them, pancreatic enzymes cleave them, and the remaining fragments rarely cross the intestinal epithelium intact. Injectable routes (most often subcutaneous) bypass the gut entirely. Oral peptide formulations exist — Rybelsus is the production example — but they require substantial formulation engineering and still hit only low single-digit bioavailability.",
+        a: "Because the gastrointestinal tract is evolutionarily designed to digest peptides. Stomach acid denatures them, pancreatic enzymes cleave them, and the remaining fragments rarely cross the intestinal epithelium intact. Injectable routes (most often subcutaneous) bypass the gut entirely. Oral peptide formulations exist, Rybelsus is the production example, but they require substantial formulation engineering and still hit only low single-digit bioavailability.",
       },
       {
         q: "What is a GPCR and why does it keep coming up?",
-        a: "G-protein-coupled receptors are a large family of cell-surface receptors that pass signals to intracellular G proteins, which in turn trigger second-messenger cascades (cAMP, inositol trisphosphate, others). A large fraction of therapeutic peptides — GLP-1 agonists, somatostatin analogues, oxytocin, vasopressin — act through GPCRs. 'GPCR cascade' is biochemistry's most productive drug-discovery target class.",
+        a: "G-protein-coupled receptors are a large family of cell-surface receptors that pass signals to intracellular G proteins, which in turn trigger second-messenger cascades (cAMP, inositol trisphosphate, others). A large fraction of therapeutic peptides, GLP-1 agonists, somatostatin analogues, oxytocin, vasopressin, act through GPCRs. 'GPCR cascade' is biochemistry's most productive drug-discovery target class.",
       },
       {
         q: "Why does half-life matter so much?",
@@ -584,35 +584,35 @@ export const posts: Post[] = [
       },
       {
         q: "How should I read a peptide paper as a non-specialist?",
-        a: "Start with the methods section — route of administration, species, dose, duration, outcome measure. Then the primary endpoint. Then the figures. The discussion section is where investigators editorialize; read it last, skeptically. This is the Cochrane reading order and it works for anyone evaluating a new compound. Claims in the abstract or headline that are not supported by the methods and results are the most common failure mode in the peptide discourse.",
+        a: "Start with the methods section, route of administration, species, dose, duration, outcome measure. Then the primary endpoint. Then the figures. The discussion section is where investigators editorialize; read it last, skeptically. This is the Cochrane reading order and it works for anyone evaluating a new compound. Claims in the abstract or headline that are not supported by the methods and results are the most common failure mode in the peptide discourse.",
       },
     ],
     sources: [
       {
-        label: "Lehninger Principles of Biochemistry — Nelson & Cox (8th ed.)",
+        label: "Lehninger Principles of Biochemistry, Nelson & Cox (8th ed.)",
         url: "https://www.macmillanlearning.com/college/us/product/Lehninger-Principles-of-Biochemistry/p/1319228003",
       },
       {
-        label: "Rockman & Koch 2002 — Nature — GPCR signaling review",
+        label: "Rockman & Koch 2002, Nature, GPCR signaling review",
         url: "https://pubmed.ncbi.nlm.nih.gov/11805846/",
       },
       {
-        label: "Lau et al. 2015 — J Med Chem — semaglutide half-life engineering",
+        label: "Lau et al. 2015, J Med Chem, semaglutide half-life engineering",
         url: "https://pubmed.ncbi.nlm.nih.gov/26308095/",
       },
       {
-        label: "Buckley et al. 2018 — Sci Transl Med — oral semaglutide bioavailability",
+        label: "Buckley et al. 2018, Sci Transl Med, oral semaglutide bioavailability",
         url: "https://pubmed.ncbi.nlm.nih.gov/30429357/",
       },
       {
-        label: "Molecular Biology of the Cell — Alberts et al. (7th ed.)",
+        label: "Molecular Biology of the Cell, Alberts et al. (7th ed.)",
         url: "https://wwnorton.com/books/9780393884821",
       },
     ],
   },
   {
     slug: "bpc-157-for-tendon",
-    title: "BPC-157 for Tendon Repair — Literature Review",
+    title: "BPC-157 for Tendon Repair, Literature Review",
     h1: "BPC-157 for tendon repair",
     description:
       "Inclusion criteria, 8-10 preclinical studies tabulated, the human evidence gap, and an honest assessment of the tendon claims.",
@@ -631,7 +631,7 @@ export const posts: Post[] = [
       notes: "No human tendon trials published or registered as of April 2026. The entire tendon evidence base is rat and mouse.",
     },
     ourPick: {
-      name: "ClinicalTrials.gov — 'BPC-157 AND tendon' saved search",
+      name: "ClinicalTrials.gov, 'BPC-157 AND tendon' saved search",
       tier: "Primary registry",
       reason:
         "The single most useful thing any reader can do before accepting a tendon-repair claim is to check the registry themselves. As of April 2026, the 'BPC-157 AND tendon' search returns zero completed human trials. That null result is more informative than any secondary summary, including ours. [VERIFY count on access date]",
@@ -639,21 +639,21 @@ export const posts: Post[] = [
     products: [
       {
         rank: 1,
-        name: "ClinicalTrials.gov — BPC-157 AND tendon saved search",
+        name: "ClinicalTrials.gov, BPC-157 AND tendon saved search",
         tier: "Primary registry",
         summary:
           "The honest starting point for anyone assessing BPC-157's tendon evidence. Free, indexed by the NIH, and updated continuously. We link to it because the null result is the point.",
       },
       {
         rank: 2,
-        name: "Peptide Protocols: Volume One — William A. Seeds, MD",
+        name: "Peptide Protocols: Volume One, William A. Seeds, MD",
         tier: "Reference text",
         summary:
-          "Seeds' book is the clearest articulation of how the compounded-peptide clinical community talks about BPC-157 for injury. Read critically — it is a practitioner book, not an evidence review — but it is the mental model that patients hear from their physicians, and it cites the Croatian preclinical work.",
+          "Seeds' book is the clearest articulation of how the compounded-peptide clinical community talks about BPC-157 for injury. Read critically, it is a practitioner book, not an evidence review, but it is the mental model that patients hear from their physicians, and it cites the Croatian preclinical work.",
       },
       {
         rank: 3,
-        name: "The Sports Gene — David Epstein",
+        name: "The Sports Gene, David Epstein",
         tier: "Popular-science background",
         summary:
           "Not a BPC-157 book, but the best readable frame for why effect sizes in sports-medicine interventions are so hard to measure and why small-N case-series claims almost never replicate in large randomized trials. Useful context for reading the tendon preclinical literature without overclaiming.",
@@ -662,61 +662,61 @@ export const posts: Post[] = [
     items: [
       {
         rank: 1,
-        name: "Staresinic et al. 2003 — tendon-to-bone junction (rat, J Orthop Res)",
+        name: "Staresinic et al. 2003, tendon-to-bone junction (rat, J Orthop Res)",
         summary:
           "Rat model of quadriceps tendon-to-bone detachment. BPC-157-treated animals showed faster tendon reattachment and greater tensile strength versus controls at two-week follow-up. Single institution, small N, no placebo-control mechanism beyond vehicle.",
       },
       {
         rank: 2,
-        name: "Krivic et al. 2006 — Achilles tendon transection (rat, J Orthop Res)",
+        name: "Krivic et al. 2006, Achilles tendon transection (rat, J Orthop Res)",
         summary:
           "Rat Achilles transection model. BPC-157 treatment accelerated macroscopic and histologic healing. One of the most-cited studies in the tendon-specific literature. Same Zagreb institutional group.",
       },
       {
         rank: 3,
-        name: "Staresinic et al. 2006 — quadriceps tendon (rat, J Pharmacol Sci) [VERIFY journal]",
+        name: "Staresinic et al. 2006, quadriceps tendon (rat, J Pharmacol Sci) [VERIFY journal]",
         summary:
           "Follow-up from the 2003 group examining quadriceps tendon healing under multiple dosing regimens. Finding: accelerated healing in BPC-157 groups. Methodologically consistent with the 2003 study; independent replication from non-Zagreb groups is the field's open question.",
       },
       {
         rank: 4,
-        name: "Chang et al. 2011 — tendon fibroblast migration (in vitro, J Appl Physiol)",
+        name: "Chang et al. 2011, tendon fibroblast migration (in vitro, J Appl Physiol)",
         summary:
           "In-vitro cell-culture work showing BPC-157 promoting tendon fibroblast outgrowth and migration. Mechanistically consistent with the in-vivo tendon results, though in-vitro effects at supraphysiological concentrations do not reliably predict in-vivo outcomes.",
       },
       {
         rank: 5,
-        name: "Cerovecki et al. 2010 — medial collateral ligament (rat)",
+        name: "Cerovecki et al. 2010, medial collateral ligament (rat)",
         summary:
           "Expansion of the tendon-adjacent soft-tissue literature into ligament. Same pattern: accelerated healing in BPC-157 arms, single-institution.",
       },
       {
         rank: 6,
-        name: "Sikiric et al. 2018 — comprehensive mechanism review",
+        name: "Sikiric et al. 2018, comprehensive mechanism review",
         summary:
           "Summary review by the original investigator group covering tendon, gut, and vascular mechanisms. Useful as a literature index; not an independent evaluation. Read as primary-source advocacy, not as meta-analysis.",
       },
       {
         rank: 7,
-        name: "Gwyer et al. 2019 — Cell Tissue Res — narrative review of BPC-157 in musculoskeletal repair",
+        name: "Gwyer et al. 2019, Cell Tissue Res, narrative review of BPC-157 in musculoskeletal repair",
         summary:
           "Independent narrative review from a non-Zagreb group synthesizing the musculoskeletal literature. Concludes the preclinical evidence is 'promising' but explicitly flags the absence of human data as a ranging limitation. Useful outside-in assessment.",
       },
       {
         rank: 8,
-        name: "Pevec et al. 2010 — peripheral nerve (rat, adjacent indication)",
+        name: "Pevec et al. 2010, peripheral nerve (rat, adjacent indication)",
         summary:
           "Not tendon-specific but methodologically informative: same research program applying BPC-157 to nerve crush injury with similar positive findings. Establishes the breadth of the preclinical claim space.",
       },
       {
         rank: 9,
-        name: "Chang et al. 2014 — the single human pilot (Vojnosanitski Pregled)",
+        name: "Chang et al. 2014, the single human pilot (Vojnosanitski Pregled)",
         summary:
-          "The only published human study of BPC-157. n=12, oral administration, ulcerative colitis endpoint — not tendon. We include it here to mark the boundary: the tendon-specific human evidence base is empty, and applying the Chang 2014 design to tendon endpoints would be extrapolation.",
+          "The only published human study of BPC-157. n=12, oral administration, ulcerative colitis endpoint, not tendon. We include it here to mark the boundary: the tendon-specific human evidence base is empty, and applying the Chang 2014 design to tendon endpoints would be extrapolation.",
       },
       {
         rank: 10,
-        name: "ClinicalTrials.gov — BPC-157 registry check, April 2026",
+        name: "ClinicalTrials.gov, BPC-157 registry check, April 2026",
         summary:
           "No completed human trials for BPC-157 in tendon indications. A small number of early-phase listings exist for other indications. [VERIFY current counts on access date]. The registry null result is the most important data point in this table.",
       },
@@ -724,7 +724,7 @@ export const posts: Post[] = [
     faq: [
       {
         q: "Does BPC-157 heal torn tendons in humans?",
-        a: "There is no published human trial of BPC-157 for tendon repair. Every specific 'BPC-157 heals tendons' claim online is extrapolation from rat Achilles and quadriceps tendon models. The rat literature is substantial and mechanistically coherent; the human evidence base for tendon specifically is empty. Treat 'BPC-157 healed my rotator cuff' anecdotes as anecdote — not as evidence that generalizes.",
+        a: "There is no published human trial of BPC-157 for tendon repair. Every specific 'BPC-157 heals tendons' claim online is extrapolation from rat Achilles and quadriceps tendon models. The rat literature is substantial and mechanistically coherent; the human evidence base for tendon specifically is empty. Treat 'BPC-157 healed my rotator cuff' anecdotes as anecdote, not as evidence that generalizes.",
       },
       {
         q: "Why is the preclinical evidence so heavily concentrated in one research program?",
@@ -732,47 +732,47 @@ export const posts: Post[] = [
       },
       {
         q: "What outcome measures do the rat tendon studies use?",
-        a: "A mix of macroscopic healing grades, histologic scoring of collagen organization, and biomechanical tensile-strength testing. The biomechanical endpoints are the most interpretable — 'force to failure' is a clean number. What these endpoints do not measure is the thing patients care about: return to sport, persistent function, re-rupture rate. Rat endpoints and patient endpoints are different questions.",
+        a: "A mix of macroscopic healing grades, histologic scoring of collagen organization, and biomechanical tensile-strength testing. The biomechanical endpoints are the most interpretable, 'force to failure' is a clean number. What these endpoints do not measure is the thing patients care about: return to sport, persistent function, re-rupture rate. Rat endpoints and patient endpoints are different questions.",
       },
       {
         q: "Is there any route-of-administration data that matters?",
-        a: "Most rat studies used intraperitoneal or intragastric administration. The oral dose used in Chang et al. 2014 (the non-tendon human pilot) was 50 mcg/kg. Injectable subcutaneous administration — the most common route in the research-chemical channel — has not been directly compared head-to-head with oral or intraperitoneal at human scale in a tendon endpoint. The route assumption in online discussion frequently outruns the route evidence.",
+        a: "Most rat studies used intraperitoneal or intragastric administration. The oral dose used in Chang et al. 2014 (the non-tendon human pilot) was 50 mcg/kg. Injectable subcutaneous administration, the most common route in the research-chemical channel, has not been directly compared head-to-head with oral or intraperitoneal at human scale in a tendon endpoint. The route assumption in online discussion frequently outruns the route evidence.",
       },
       {
         q: "What would actually change PepVise's assessment?",
-        a: "A published, adequately-powered, placebo-controlled randomized trial of BPC-157 in a defined tendon indication (Achilles, rotator cuff, patellar) with clinically meaningful outcomes (return to activity, re-rupture, patient-reported function) at 6-12 months. That trial does not exist. When it does, we will update. Until then, the tendon-repair claim sits at 'strong preclinical signal, no human validation' — the evidence ledger has not moved in five years.",
+        a: "A published, adequately-powered, placebo-controlled randomized trial of BPC-157 in a defined tendon indication (Achilles, rotator cuff, patellar) with clinically meaningful outcomes (return to activity, re-rupture, patient-reported function) at 6-12 months. That trial does not exist. When it does, we will update. Until then, the tendon-repair claim sits at 'strong preclinical signal, no human validation', the evidence ledger has not moved in five years.",
       },
     ],
     sources: [
       {
-        label: "Staresinic et al. 2003 — J Orthop Res — rat tendon-to-bone",
+        label: "Staresinic et al. 2003, J Orthop Res, rat tendon-to-bone",
         url: "https://pubmed.ncbi.nlm.nih.gov/12919876/",
       },
       {
-        label: "Krivic et al. 2006 — J Orthop Res — rat Achilles",
+        label: "Krivic et al. 2006, J Orthop Res, rat Achilles",
         url: "https://pubmed.ncbi.nlm.nih.gov/16514664/",
       },
       {
-        label: "Gwyer et al. 2019 — Cell and Tissue Research — BPC-157 musculoskeletal review",
+        label: "Gwyer et al. 2019, Cell and Tissue Research, BPC-157 musculoskeletal review",
         url: "https://pubmed.ncbi.nlm.nih.gov/31236620/",
       },
       {
-        label: "Sikiric et al. 2018 — Journal of Physiology and Pharmacology — BPC-157 mechanism review",
+        label: "Sikiric et al. 2018, Journal of Physiology and Pharmacology, BPC-157 mechanism review",
         url: "https://pubmed.ncbi.nlm.nih.gov/30821260/",
       },
       {
-        label: "Chang et al. 2014 — Vojnosanitski Pregled — human pilot (gut, not tendon)",
+        label: "Chang et al. 2014, Vojnosanitski Pregled, human pilot (gut, not tendon)",
         url: "https://pubmed.ncbi.nlm.nih.gov/25518352/",
       },
       {
-        label: "ClinicalTrials.gov — 'BPC-157 tendon' saved search",
+        label: "ClinicalTrials.gov, 'BPC-157 tendon' saved search",
         url: "https://clinicaltrials.gov/search?term=BPC-157+tendon",
       },
     ],
   },
   {
     slug: "how-to-reconstitute-peptides",
-    title: "How to Reconstitute Peptides — the Literature-Based Guide",
+    title: "How to Reconstitute Peptides, the Literature-Based Guide",
     h1: "How to reconstitute peptides",
     description:
       "Step-numbered reconstitution procedure with research-context framing. Pairs with InjectCompass's patient-education version.",
@@ -784,15 +784,15 @@ export const posts: Post[] = [
     status: "published",
     medicalDisclaimer: "required",
     ourPick: {
-      name: "USP General Chapter <797> on Pharmaceutical Compounding — Sterile Preparations",
+      name: "USP General Chapter <797> on Pharmaceutical Compounding, Sterile Preparations",
       tier: "Standards reference",
       reason:
-        "The USP <797> framework is the standards document that licensed pharmacies follow for sterile reconstitution. It is not a home-use guide, and we are not recommending home reconstitution as a practice. We cite USP <797> because it defines what 'correct' looks like, and any actual peptide administration should be happening under a workflow at least inspired by those standards — which is almost always a licensed pharmacy's workflow, not a kitchen counter.",
+        "The USP <797> framework is the standards document that licensed pharmacies follow for sterile reconstitution. It is not a home-use guide, and we are not recommending home reconstitution as a practice. We cite USP <797> because it defines what 'correct' looks like, and any actual peptide administration should be happening under a workflow at least inspired by those standards, which is almost always a licensed pharmacy's workflow, not a kitchen counter.",
     },
     products: [
       {
         rank: 1,
-        name: "USP General Chapter <797> — Sterile Compounding Standards",
+        name: "USP General Chapter <797>, Sterile Compounding Standards",
         tier: "Standards reference",
         summary:
           "The authoritative US standard for sterile preparation. Published by the United States Pharmacopeia. Behind a paywall for the full text, but publicly summarized in multiple FDA and board-of-pharmacy guidance documents. The background we reference when we talk about what 'properly reconstituted' means.",
@@ -802,7 +802,7 @@ export const posts: Post[] = [
         name: "PepVise Peptide Reconstitution Calculator (internal)",
         tier: "Digital tool",
         summary:
-          "Our research-context calculator — takes peptide mass and bacteriostatic-water volume, returns concentration and volume-per-unit-dose from a published protocol. Client-side, unit-tested math, no data retention. The companion to this guide.",
+          "Our research-context calculator, takes peptide mass and bacteriostatic-water volume, returns concentration and volume-per-unit-dose from a published protocol. Client-side, unit-tested math, no data retention. The companion to this guide.",
       },
       {
         rank: 3,
@@ -824,7 +824,7 @@ export const posts: Post[] = [
         rank: 1,
         name: "Step 1: Verify the starting material",
         summary:
-          "A reconstitution procedure is only as good as the input material. Published research protocols operate on drug-substance with a known identity, potency, and purity established by Certificate of Analysis. Research-chemical material often carries a vendor COA of variable rigor. The first step is not pipetting — it is deciding whether the material you have is material the published protocol actually describes.",
+          "A reconstitution procedure is only as good as the input material. Published research protocols operate on drug-substance with a known identity, potency, and purity established by Certificate of Analysis. Research-chemical material often carries a vendor COA of variable rigor. The first step is not pipetting, it is deciding whether the material you have is material the published protocol actually describes.",
       },
       {
         rank: 2,
@@ -842,7 +842,7 @@ export const posts: Post[] = [
         rank: 4,
         name: "Step 4: Introduce diluent along the vial wall, slowly",
         summary:
-          "Lyophilized peptide is a delicate, often static-clumped powder. Dropping diluent directly onto the pellet can foam the preparation, damage fragile peptide chains, and introduce air bubbles that alter measured volume. Standard pharmacy practice is slow addition against the vial wall, followed by a brief rest period — not shaking.",
+          "Lyophilized peptide is a delicate, often static-clumped powder. Dropping diluent directly onto the pellet can foam the preparation, damage fragile peptide chains, and introduce air bubbles that alter measured volume. Standard pharmacy practice is slow addition against the vial wall, followed by a brief rest period, not shaking.",
       },
       {
         rank: 5,
@@ -854,7 +854,7 @@ export const posts: Post[] = [
         rank: 6,
         name: "Step 6: Inspect for clarity and particulates",
         summary:
-          "Correctly reconstituted peptide solutions are typically clear and particulate-free. Visible cloudiness or undissolved material is a disqualifying finding — either the material is off-spec, the diluent is wrong, or the reconstitution technique damaged the peptide. The USP <790> visible particulates framework is the relevant standard.",
+          "Correctly reconstituted peptide solutions are typically clear and particulate-free. Visible cloudiness or undissolved material is a disqualifying finding, either the material is off-spec, the diluent is wrong, or the reconstitution technique damaged the peptide. The USP <790> visible particulates framework is the relevant standard.",
       },
       {
         rank: 7,
@@ -866,7 +866,7 @@ export const posts: Post[] = [
         rank: 8,
         name: "Step 8: Date and label the vial",
         summary:
-          "Every reconstituted vial in a published protocol is labeled with the compound, concentration, reconstitution date, and beyond-use date. This is not bureaucracy — it is what prevents dose errors in a workflow that will run for weeks. USP <797> codifies the labeling requirements for licensed compounding.",
+          "Every reconstituted vial in a published protocol is labeled with the compound, concentration, reconstitution date, and beyond-use date. This is not bureaucracy, it is what prevents dose errors in a workflow that will run for weeks. USP <797> codifies the labeling requirements for licensed compounding.",
       },
       {
         rank: 9,
@@ -878,7 +878,7 @@ export const posts: Post[] = [
         rank: 10,
         name: "Step 10: Discard at the beyond-use date",
         summary:
-          "Even under refrigeration, BAC-water-reconstituted peptides have a finite usable period — typically 14 to 28 days depending on the molecule and the preservation system. Published protocols specify beyond-use dates explicitly. Beyond that window, microbial, oxidative, and hydrolytic degradation compound, and continuing to administer is outside the protocol envelope.",
+          "Even under refrigeration, BAC-water-reconstituted peptides have a finite usable period, typically 14 to 28 days depending on the molecule and the preservation system. Published protocols specify beyond-use dates explicitly. Beyond that window, microbial, oxidative, and hydrolytic degradation compound, and continuing to administer is outside the protocol envelope.",
       },
     ],
     faq: [
@@ -892,7 +892,7 @@ export const posts: Post[] = [
       },
       {
         q: "Why does shaking a peptide vial matter?",
-        a: "Peptides are held in their active conformation by relatively weak hydrogen bonds and hydrophobic interactions. Vigorous shaking introduces air-water interfaces that preferentially denature the peptide at the foam surface, reducing the concentration of correctly folded material. Gentle swirling dissolves the lyophilized pellet without that damage. This is standard laboratory technique — the instruction is in every published peptide reconstitution protocol.",
+        a: "Peptides are held in their active conformation by relatively weak hydrogen bonds and hydrophobic interactions. Vigorous shaking introduces air-water interfaces that preferentially denature the peptide at the foam surface, reducing the concentration of correctly folded material. Gentle swirling dissolves the lyophilized pellet without that damage. This is standard laboratory technique, the instruction is in every published peptide reconstitution protocol.",
       },
       {
         q: "How accurate does my volume measurement need to be?",
@@ -905,23 +905,23 @@ export const posts: Post[] = [
     ],
     sources: [
       {
-        label: "USP General Chapter <797> — Pharmaceutical Compounding, Sterile Preparations",
+        label: "USP General Chapter <797>, Pharmaceutical Compounding, Sterile Preparations",
         url: "https://www.usp.org/compounding/general-chapter-797",
       },
       {
-        label: "USP Monograph — Bacteriostatic Water for Injection",
+        label: "USP Monograph, Bacteriostatic Water for Injection",
         url: "https://www.usp.org/",
       },
       {
-        label: "FDA — Compounding Quality Act / 503A and 503B overview",
+        label: "FDA, Compounding Quality Act / 503A and 503B overview",
         url: "https://www.fda.gov/drugs/guidance-compliance-regulatory-information/human-drug-compounding",
       },
       {
-        label: "Manning et al. 2010 — Pharm Res — stability of protein pharmaceuticals review",
+        label: "Manning et al. 2010, Pharm Res, stability of protein pharmaceuticals review",
         url: "https://pubmed.ncbi.nlm.nih.gov/20333463/",
       },
       {
-        label: "USP General Chapter <790> — Visible Particulates in Injections",
+        label: "USP General Chapter <790>, Visible Particulates in Injections",
         url: "https://www.usp.org/",
       },
     ],
@@ -931,7 +931,7 @@ export const posts: Post[] = [
     title: "Peptide Reconstitution Calculator",
     h1: "Peptide Reconstitution Calculator",
     description:
-      "Research-context calculator — peptide mg plus bacteriostatic-water volume to mg/mL concentration, unit output, and visual syringe.",
+      "Research-context calculator, peptide mg plus bacteriostatic-water volume to mg/mL concentration, unit output, and visual syringe.",
     hub: "reconstitution-and-practical",
     postType: "pillar",
     publishedAt: "2026-04-21",
@@ -958,11 +958,11 @@ export const posts: Post[] = [
         name: "InjectCompass Patient-Education Calculator (sister site)",
         tier: "Digital tool",
         summary:
-          "Same underlying math, different framing. InjectCompass renders the calculator for a patient-education context (compounded-peptide prescription holders). PepVise renders the same math under the research-protocol frame. We keep both because the audiences are different; we do not recommend one over the other for any given reader — pick the frame that matches the reader's actual situation.",
+          "Same underlying math, different framing. InjectCompass renders the calculator for a patient-education context (compounded-peptide prescription holders). PepVise renders the same math under the research-protocol frame. We keep both because the audiences are different; we do not recommend one over the other for any given reader, pick the frame that matches the reader's actual situation.",
       },
       {
         rank: 3,
-        name: "USP <1160> — Pharmaceutical Calculations in Prescription Compounding",
+        name: "USP <1160>, Pharmaceutical Calculations in Prescription Compounding",
         tier: "Standards reference",
         summary:
           "The USP chapter on the math that licensed pharmacies use for compounding calculations. Our calculator implements the same arithmetic, with the important difference that a calculator on the internet is not a licensed pharmacist. Readers verifying the math against the standard should find them aligned.",
@@ -971,7 +971,7 @@ export const posts: Post[] = [
     items: [
       {
         rank: 1,
-        name: "The calculation is simple — the context is not",
+        name: "The calculation is simple, the context is not",
         summary:
           "Concentration = mass / volume. Dose volume = dose / concentration. That is the entire arithmetic. The reason this page runs longer than four lines is that the inputs to the calculation (which mass, which volume, which target dose) are the hard part, and each input has a published-protocol source that matters.",
       },
@@ -979,17 +979,17 @@ export const posts: Post[] = [
         rank: 2,
         name: "The calculator assumes accurate input mass",
         summary:
-          "Every output is only as accurate as the declared mass on the starting vial. Research-chemical vendor labeling accuracy has been flagged in the counterfeit-peptide literature — most notably in independent assay work showing meaningful deviations from declared potency. The calculator cannot detect wrong input.",
+          "Every output is only as accurate as the declared mass on the starting vial. Research-chemical vendor labeling accuracy has been flagged in the counterfeit-peptide literature, most notably in independent assay work showing meaningful deviations from declared potency. The calculator cannot detect wrong input.",
       },
       {
         rank: 3,
-        name: "Target-dose volume is in milliliters — units matter",
+        name: "Target-dose volume is in milliliters, units matter",
         summary:
           "An insulin syringe's markings are in units (100 units = 1 mL for U-100 syringes). The calculator cross-displays mL and insulin-syringe units because dose errors of 10x happen when readers confuse the two. This is a known and documented failure mode in the injectable-therapy literature.",
       },
       {
         rank: 4,
-        name: "Published protocol dose is the reference — not Reddit dose",
+        name: "Published protocol dose is the reference, not Reddit dose",
         summary:
           "The 'dose' input should come from the published paper for the compound and indication in question, not from an aggregated forum recommendation. The difference matters most for compounds like BPC-157, where the online 'standard dose' is an extrapolation from rat mg/kg work rather than a published human-protocol value.",
       },
@@ -1003,7 +1003,7 @@ export const posts: Post[] = [
         rank: 6,
         name: "Beyond-use date is not optional",
         summary:
-          "A reconstituted vial has a finite usable period — often 14 to 28 days under refrigeration, shorter at room temperature. The calculator does not enforce this, but the published protocols do. Storing a reconstituted solution beyond the protocol's stability data is outside the protocol.",
+          "A reconstituted vial has a finite usable period, often 14 to 28 days under refrigeration, shorter at room temperature. The calculator does not enforce this, but the published protocols do. Storing a reconstituted solution beyond the protocol's stability data is outside the protocol.",
       },
       {
         rank: 7,
@@ -1041,11 +1041,11 @@ export const posts: Post[] = [
       },
       {
         q: "What inputs does the calculator not accept?",
-        a: "It does not take compound names and does not look up doses. It takes mass, volume, and target dose — all numeric inputs the user has to source themselves. This is deliberate. A calculator that auto-populated doses by compound name would be a dose-recommendation tool, and a dose-recommendation tool is not within the PepVise editorial scope. The user brings the protocol; the calculator does the arithmetic.",
+        a: "It does not take compound names and does not look up doses. It takes mass, volume, and target dose, all numeric inputs the user has to source themselves. This is deliberate. A calculator that auto-populated doses by compound name would be a dose-recommendation tool, and a dose-recommendation tool is not within the PepVise editorial scope. The user brings the protocol; the calculator does the arithmetic.",
       },
       {
         q: "Can I use the calculator for any peptide?",
-        a: "The arithmetic is compound-agnostic — concentration is mass over volume regardless of what the mass is. What varies by compound is the appropriate starting concentration, the solvent (bacteriostatic water, sterile water, saline), the stability window, and the target dose from the protocol. Those choices belong to the reader and the underlying published protocol, not to the calculator.",
+        a: "The arithmetic is compound-agnostic, concentration is mass over volume regardless of what the mass is. What varies by compound is the appropriate starting concentration, the solvent (bacteriostatic water, sterile water, saline), the stability window, and the target dose from the protocol. Those choices belong to the reader and the underlying published protocol, not to the calculator.",
       },
       {
         q: "Does the calculator store my inputs?",
@@ -1054,30 +1054,30 @@ export const posts: Post[] = [
     ],
     sources: [
       {
-        label: "USP General Chapter <1160> — Pharmaceutical Calculations in Compounding",
+        label: "USP General Chapter <1160>, Pharmaceutical Calculations in Compounding",
         url: "https://www.usp.org/",
       },
       {
-        label: "USP General Chapter <797> — Sterile Compounding Standards",
+        label: "USP General Chapter <797>, Sterile Compounding Standards",
         url: "https://www.usp.org/compounding/general-chapter-797",
       },
       {
-        label: "FDA — Human Drug Compounding overview",
+        label: "FDA, Human Drug Compounding overview",
         url: "https://www.fda.gov/drugs/guidance-compliance-regulatory-information/human-drug-compounding",
       },
       {
-        label: "Institute for Safe Medication Practices — Insulin Syringe Unit/mL Error Alerts",
+        label: "Institute for Safe Medication Practices, Insulin Syringe Unit/mL Error Alerts",
         url: "https://www.ismp.org/",
       },
       {
-        label: "Manning et al. 2010 — Pharm Res — stability of protein pharmaceuticals",
+        label: "Manning et al. 2010, Pharm Res, stability of protein pharmaceuticals",
         url: "https://pubmed.ncbi.nlm.nih.gov/20333463/",
       },
     ],
   },
   {
     slug: "research-use-only-explained",
-    title: "\"Research Use Only\" — What It Actually Means",
+    title: "\"Research Use Only\", What It Actually Means",
     h1: "Research use only",
     description:
       "FDA's position on research-use-only labeling, the 503A/503B distinction, the 2023 enforcement actions, and what this framing means for buyers.",
@@ -1089,7 +1089,7 @@ export const posts: Post[] = [
     status: "published",
     medicalDisclaimer: "required",
     ourPick: {
-      name: "FDA — Compliance Policy Guide and the 2023 bulk-substances decisions",
+      name: "FDA, Compliance Policy Guide and the 2023 bulk-substances decisions",
       tier: "Primary regulatory source",
       reason:
         "The only source worth citing on what 'research use only' means in the FDA's framework is the FDA. The agency's compliance policy guides, warning letters, and the 2023 category-2 decisions on peptide bulk substances are the primary record. Every popular article on RUO is a summary of these documents. Read the documents, not the summaries.",
@@ -1097,21 +1097,21 @@ export const posts: Post[] = [
     products: [
       {
         rank: 1,
-        name: "FDA Drugs@FDA — official approval and labeling database",
+        name: "FDA Drugs@FDA, official approval and labeling database",
         tier: "Primary regulatory source",
         summary:
-          "The FDA's public database of approved drugs, labeling, and regulatory review documents. It is also the clearest way to verify that a given compound is (or is not) FDA-approved for human use — the 'search Drugs@FDA' test is a usable shortcut for any RUO-adjacent claim.",
+          "The FDA's public database of approved drugs, labeling, and regulatory review documents. It is also the clearest way to verify that a given compound is (or is not) FDA-approved for human use, the 'search Drugs@FDA' test is a usable shortcut for any RUO-adjacent claim.",
       },
       {
         rank: 2,
-        name: "FDA — Human Drug Compounding (503A / 503B) landing page",
+        name: "FDA, Human Drug Compounding (503A / 503B) landing page",
         tier: "Primary regulatory source",
         summary:
           "The FDA's own overview of the compounding framework, including the Category 1/2/3 bulk-substance decisions that directly affect peptide availability through 503A pharmacies. The 2023 decision on BPC-157 is indexed here.",
       },
       {
         rank: 3,
-        name: "Bad Blood — John Carreyrou",
+        name: "Bad Blood, John Carreyrou",
         tier: "Popular book",
         summary:
           "Not a peptide book, but the clearest popular-press account of what happens when a lab-use product gets marketed outside its labeled scope. The Theranos story is a case study in 'research-use-only' that was allowed to drift into patient-use territory without the corresponding regulatory clearance. Useful mental model.",
@@ -1121,7 +1121,7 @@ export const posts: Post[] = [
         name: "WADA Prohibited List (current edition)",
         tier: "Regulatory reference",
         summary:
-          "The World Anti-Doping Agency's Prohibited List includes S0 ('non-approved substances') — a category that captures many research-chemical-channel peptides. For athletes, the RUO-label discussion is not abstract: it is the difference between a tested-positive and a not-tested-positive outcome.",
+          "The World Anti-Doping Agency's Prohibited List includes S0 ('non-approved substances'), a category that captures many research-chemical-channel peptides. For athletes, the RUO-label discussion is not abstract: it is the difference between a tested-positive and a not-tested-positive outcome.",
       },
     ],
     items: [
@@ -1129,7 +1129,7 @@ export const posts: Post[] = [
         rank: 1,
         name: "'Research Use Only' is a labeling convention, not a legal safe harbor",
         summary:
-          "The RUO designation is a label signaling that a product is intended for in-vitro or animal research, not human use. It is not an FDA-issued exemption. Sellers cannot use 'RUO' as a shield for marketing a product for human administration — the FDA has been explicit on this since at least the 2013 guidance to in-vitro diagnostic manufacturers and has reinforced it through enforcement against peptide vendors.",
+          "The RUO designation is a label signaling that a product is intended for in-vitro or animal research, not human use. It is not an FDA-issued exemption. Sellers cannot use 'RUO' as a shield for marketing a product for human administration, the FDA has been explicit on this since at least the 2013 guidance to in-vitro diagnostic manufacturers and has reinforced it through enforcement against peptide vendors.",
       },
       {
         rank: 2,
@@ -1141,13 +1141,13 @@ export const posts: Post[] = [
         rank: 3,
         name: "RUO is different from what a 503A pharmacy does",
         summary:
-          "A 503A compounding pharmacy operating with a valid prescription uses bulk drug substances that are on the FDA's approved category-1 list, or that have a USP monograph, or that meet specific statutory criteria. This is a regulated activity under state board of pharmacy oversight. RUO material through a research-chemical supplier is a different supply chain and a different legal frame — not 503A, not a pharmacy, no prescription.",
+          "A 503A compounding pharmacy operating with a valid prescription uses bulk drug substances that are on the FDA's approved category-1 list, or that have a USP monograph, or that meet specific statutory criteria. This is a regulated activity under state board of pharmacy oversight. RUO material through a research-chemical supplier is a different supply chain and a different legal frame, not 503A, not a pharmacy, no prescription.",
       },
       {
         rank: 4,
         name: "The 2023 FDA category-2 decisions reshaped peptide compounding",
         summary:
-          "In 2023, the FDA moved several peptide bulk substances (including BPC-157) into category 2 of the 503A bulk-substances evaluation — effectively meaning the agency had significant safety concerns that excluded them from 503A compounding eligibility. This is the most important single regulatory development in research peptides in the last five years.",
+          "In 2023, the FDA moved several peptide bulk substances (including BPC-157) into category 2 of the 503A bulk-substances evaluation, effectively meaning the agency had significant safety concerns that excluded them from 503A compounding eligibility. This is the most important single regulatory development in research peptides in the last five years.",
       },
       {
         rank: 5,
@@ -1205,7 +1205,7 @@ export const posts: Post[] = [
       },
       {
         q: "What changed in 2023 with the FDA and peptides?",
-        a: "The FDA's ongoing evaluation of bulk drug substances for 503A compounding eligibility placed several peptides, including BPC-157, into category 2 — meaning the agency identified significant safety concerns that made them ineligible for use in 503A pharmacy compounding. That is the specific regulatory action that tightened the legal pathway for compounded peptide access in the US and shifted much of the supply into the RUO research-chemical channel.",
+        a: "The FDA's ongoing evaluation of bulk drug substances for 503A compounding eligibility placed several peptides, including BPC-157, into category 2, meaning the agency identified significant safety concerns that made them ineligible for use in 503A pharmacy compounding. That is the specific regulatory action that tightened the legal pathway for compounded peptide access in the US and shifted much of the supply into the RUO research-chemical channel.",
       },
       {
         q: "Is 'peptide therapy' through a compounding pharmacy the same as buying research chemicals?",
@@ -1213,50 +1213,50 @@ export const posts: Post[] = [
       },
       {
         q: "What about SARMs and other compounds in the same channel?",
-        a: "SARMs (selective androgen receptor modulators) have a different regulatory history — the FDA has issued multiple warnings specifically about SARM marketing and the FTC has pursued enforcement against SARM sellers. The regulatory framework concepts are similar (unapproved-drug status, labeling as 'research chemicals'), but the peptide and SARM categories are legally distinct. This post is specifically about peptide RUO. SARM regulation deserves its own treatment.",
+        a: "SARMs (selective androgen receptor modulators) have a different regulatory history, the FDA has issued multiple warnings specifically about SARM marketing and the FTC has pursued enforcement against SARM sellers. The regulatory framework concepts are similar (unapproved-drug status, labeling as 'research chemicals'), but the peptide and SARM categories are legally distinct. This post is specifically about peptide RUO. SARM regulation deserves its own treatment.",
       },
       {
         q: "So is PepVise saying peptides are illegal?",
-        a: "Not exactly — the picture is more textured. Compounded peptides dispensed by a licensed pharmacy under a valid prescription within 503A rules are legal where those conditions are met. Peptides in active FDA-authorized clinical trials are legal within the trial. RUO research-channel purchases marketed for human use operate outside the FDA-approved framework, and enforcement exists. 'The label on the vial does not determine the legality of what you do with it' is the honest summary.",
+        a: "Not exactly, the picture is more textured. Compounded peptides dispensed by a licensed pharmacy under a valid prescription within 503A rules are legal where those conditions are met. Peptides in active FDA-authorized clinical trials are legal within the trial. RUO research-channel purchases marketed for human use operate outside the FDA-approved framework, and enforcement exists. 'The label on the vial does not determine the legality of what you do with it' is the honest summary.",
       },
       {
         q: "What is the closest thing to a legal pathway for accessing peptides?",
-        a: "For compounds that are still 503A-eligible, the pathway is: licensed physician assessing the patient, writing a prescription for a compounded preparation, a 503A pharmacy dispensing it, with proper informed consent and follow-up. The narrower the compound's approved-use scope, the more scrutiny that prescription gets. PepVise does not refer to specific clinics or prescribers in this post — the pathway is the framework, not a directory.",
+        a: "For compounds that are still 503A-eligible, the pathway is: licensed physician assessing the patient, writing a prescription for a compounded preparation, a 503A pharmacy dispensing it, with proper informed consent and follow-up. The narrower the compound's approved-use scope, the more scrutiny that prescription gets. PepVise does not refer to specific clinics or prescribers in this post, the pathway is the framework, not a directory.",
       },
     ],
     sources: [
       {
-        label: "FDA — Human Drug Compounding landing page",
+        label: "FDA, Human Drug Compounding landing page",
         url: "https://www.fda.gov/drugs/guidance-compliance-regulatory-information/human-drug-compounding",
       },
       {
-        label: "FDA — Bulk Drug Substances Evaluation for 503A Compounding",
+        label: "FDA, Bulk Drug Substances Evaluation for 503A Compounding",
         url: "https://www.fda.gov/drugs/human-drug-compounding/bulk-drug-substances-nominations-received-use-compounding-under-section-503a-fdc-act",
       },
       {
-        label: "FDA — Warning Letters database",
+        label: "FDA, Warning Letters database",
         url: "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/compliance-actions-and-activities/warning-letters",
       },
       {
-        label: "FDA — Drugs@FDA approved drug search",
+        label: "FDA, Drugs@FDA approved drug search",
         url: "https://www.accessdata.fda.gov/scripts/cder/daf/",
       },
       {
-        label: "WADA Prohibited List — S0 Non-approved substances [VERIFY current edition]",
+        label: "WADA Prohibited List, S0 Non-approved substances [VERIFY current edition]",
         url: "https://www.wada-ama.org/en/prohibited-list",
       },
       {
-        label: "FDA Compliance Policy Guide 400.210 — Research Use Only Products",
+        label: "FDA Compliance Policy Guide 400.210, Research Use Only Products",
         url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents",
       },
     ],
   },
   {
     slug: "where-to-buy-peptides-taxonomy",
-    title: "Where to Buy Peptides — The Taxonomy of Vendors",
-    h1: "Where to buy peptides — the taxonomy",
+    title: "Where to Buy Peptides, The Taxonomy of Vendors",
+    h1: "Where to buy peptides, the taxonomy",
     description:
-      "Research-chemical suppliers versus compounding pharmacies versus underground sellers — the legal framework and red flags. No vendor directory.",
+      "Research-chemical suppliers versus compounding pharmacies versus underground sellers, the legal framework and red flags. No vendor directory.",
     hub: "safety-regulation-markets",
     postType: "cluster",
     publishedAt: "2026-04-21",
@@ -1276,7 +1276,7 @@ export const posts: Post[] = [
         name: "FDA Warning Letters database",
         tier: "Primary regulatory source",
         summary:
-          "Free, searchable federal record of FDA enforcement correspondence. Filtering for peptide and compounding entries reveals the public pattern of enforcement — which is the data every 'best peptide vendor' roundup is trying to obscure.",
+          "Free, searchable federal record of FDA enforcement correspondence. Filtering for peptide and compounding entries reveals the public pattern of enforcement, which is the data every 'best peptide vendor' roundup is trying to obscure.",
       },
       {
         rank: 2,
@@ -1297,7 +1297,7 @@ export const posts: Post[] = [
         name: "Goodman & Gilman's Pharmacological Basis of Therapeutics",
         tier: "Reference text",
         summary:
-          "For readers who want to understand why the regulatory framework exists in the form it does — what the difference between 'approved for indication' and 'off-label use' actually looks like in the clinical literature. Not a peptide book, but the reasoning framework.",
+          "For readers who want to understand why the regulatory framework exists in the form it does, what the difference between 'approved for indication' and 'off-label use' actually looks like in the clinical literature. Not a peptide book, but the reasoning framework.",
       },
     ],
     items: [
@@ -1305,13 +1305,13 @@ export const posts: Post[] = [
         rank: 1,
         name: "FDA-approved prescription drugs (Category A)",
         summary:
-          "Peptides approved for specific human indications — semaglutide, tirzepatide, liraglutide, teriparatide, desmopressin, sermorelin (historically), among others. Distributed through normal prescription channels. Regulated at every step. No ambiguity. Not the category most research-peptide discussion is about.",
+          "Peptides approved for specific human indications, semaglutide, tirzepatide, liraglutide, teriparatide, desmopressin, sermorelin (historically), among others. Distributed through normal prescription channels. Regulated at every step. No ambiguity. Not the category most research-peptide discussion is about.",
       },
       {
         rank: 2,
         name: "503A compounding pharmacy output (Category B)",
         summary:
-          "Licensed pharmacies compounding patient-specific preparations against a valid prescription, using bulk substances that are category-1-approved or meet statutory criteria. Subject to state board of pharmacy oversight and FDA inspection. Post-2023, several peptides — including BPC-157 — are no longer 503A-eligible, narrowing this category.",
+          "Licensed pharmacies compounding patient-specific preparations against a valid prescription, using bulk substances that are category-1-approved or meet statutory criteria. Subject to state board of pharmacy oversight and FDA inspection. Post-2023, several peptides, including BPC-157, are no longer 503A-eligible, narrowing this category.",
       },
       {
         rank: 3,
@@ -1335,13 +1335,13 @@ export const posts: Post[] = [
         rank: 6,
         name: "Telehealth peptide clinics (Category F)",
         summary:
-          "Online medical services bundling a consult with a peptide prescription, often via partner 503A pharmacies. The range of rigor is wide — some are legitimate licensed physician practices operating within compounding rules, others are prescription-mill setups with perfunctory consults. The distinction requires reading each clinic's specific compliance posture, not brand-level assumption.",
+          "Online medical services bundling a consult with a peptide prescription, often via partner 503A pharmacies. The range of rigor is wide, some are legitimate licensed physician practices operating within compounding rules, others are prescription-mill setups with perfunctory consults. The distinction requires reading each clinic's specific compliance posture, not brand-level assumption.",
       },
       {
         rank: 7,
         name: "Underground and gray-market sellers (Category G)",
         summary:
-          "Sellers operating outside any regulatory framework — social media DMs, encrypted chat groups, peer-to-peer. No labeling, no documentation, no recourse. The highest-risk category across every dimension (purity, identity, legal exposure, counterfeit risk). The category that serious safety-conscious readers avoid most carefully.",
+          "Sellers operating outside any regulatory framework, social media DMs, encrypted chat groups, peer-to-peer. No labeling, no documentation, no recourse. The highest-risk category across every dimension (purity, identity, legal exposure, counterfeit risk). The category that serious safety-conscious readers avoid most carefully.",
       },
       {
         rank: 8,
@@ -1377,11 +1377,11 @@ export const posts: Post[] = [
     faq: [
       {
         q: "Will PepVise recommend a peptide vendor?",
-        a: "No. Ever. This is the hardest editorial line at PepVise and it is not a commercial choice — it is what lets the site be trusted on everything else. We do not recommend research-chemical vendors, compounding pharmacies, or telehealth peptide clinics. We describe the taxonomy, the regulatory framework, and the red flags. The specific decision of where to obtain a compound is between a reader and their licensed physician, operating within the compliance framework their situation demands.",
+        a: "No. Ever. This is the hardest editorial line at PepVise and it is not a commercial choice, it is what lets the site be trusted on everything else. We do not recommend research-chemical vendors, compounding pharmacies, or telehealth peptide clinics. We describe the taxonomy, the regulatory framework, and the red flags. The specific decision of where to obtain a compound is between a reader and their licensed physician, operating within the compliance framework their situation demands.",
       },
       {
         q: "Is there really a difference between a '503A pharmacy' and a 'research-chemical supplier'?",
-        a: "Yes — a substantial one. A 503A pharmacy holds state board of pharmacy licensure, dispenses against valid patient-specific prescriptions, uses permitted bulk drug substances, and is subject to FDA inspection. A research-chemical supplier holds none of those things. Verifying a claimed 503A pharmacy is a thirty-second check on the state board's license lookup. Verifying a research-chemical vendor's claims is substantially harder because there is rarely an analogous registry.",
+        a: "Yes, a substantial one. A 503A pharmacy holds state board of pharmacy licensure, dispenses against valid patient-specific prescriptions, uses permitted bulk drug substances, and is subject to FDA inspection. A research-chemical supplier holds none of those things. Verifying a claimed 503A pharmacy is a thirty-second check on the state board's license lookup. Verifying a research-chemical vendor's claims is substantially harder because there is rarely an analogous registry.",
       },
       {
         q: "What is the single most informative red flag?",
@@ -1397,32 +1397,32 @@ export const posts: Post[] = [
       },
       {
         q: "Why not just publish which vendors are good?",
-        a: "Because we have no independent assay operation, no ongoing audit of any vendor, and no way to verify purity at any given shipment. A 'best vendor' recommendation from PepVise would be exactly the kind of content the site was founded to replace — the vendor-owned 'educational' post dressed as editorial. The taxonomy, the red flags, and the regulatory framework are what we can speak to with integrity. The specific purchase decision is not.",
+        a: "Because we have no independent assay operation, no ongoing audit of any vendor, and no way to verify purity at any given shipment. A 'best vendor' recommendation from PepVise would be exactly the kind of content the site was founded to replace, the vendor-owned 'educational' post dressed as editorial. The taxonomy, the red flags, and the regulatory framework are what we can speak to with integrity. The specific purchase decision is not.",
       },
     ],
     sources: [
       {
-        label: "FDA — Human Drug Compounding (503A/503B) overview",
+        label: "FDA, Human Drug Compounding (503A/503B) overview",
         url: "https://www.fda.gov/drugs/guidance-compliance-regulatory-information/human-drug-compounding",
       },
       {
-        label: "FDA — Warning Letters database",
+        label: "FDA, Warning Letters database",
         url: "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/compliance-actions-and-activities/warning-letters",
       },
       {
-        label: "FDA — Bulk Drug Substances Evaluation for 503A Compounding",
+        label: "FDA, Bulk Drug Substances Evaluation for 503A Compounding",
         url: "https://www.fda.gov/drugs/human-drug-compounding/bulk-drug-substances-nominations-received-use-compounding-under-section-503a-fdc-act",
       },
       {
-        label: "NABP — National Association of Boards of Pharmacy (state license lookup hub)",
+        label: "NABP, National Association of Boards of Pharmacy (state license lookup hub)",
         url: "https://nabp.pharmacy/",
       },
       {
-        label: "FDA Office of Regulatory Affairs — Import Operations overview",
+        label: "FDA Office of Regulatory Affairs, Import Operations overview",
         url: "https://www.fda.gov/industry/import-program-resources",
       },
       {
-        label: "USP General Chapter <797> — Sterile Compounding Standards",
+        label: "USP General Chapter <797>, Sterile Compounding Standards",
         url: "https://www.usp.org/compounding/general-chapter-797",
       },
     ],

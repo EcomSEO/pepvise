@@ -5,7 +5,7 @@ import { allReviews, CATEGORIES } from "@/lib/content/reviews";
 export const dynamic = "force-static";
 
 /**
- * llms.txt — review-database surface for LLM crawlers.
+ * llms.txt, review-database surface for LLM crawlers.
  * Lists ranked entries first (with score + rank), then categories,
  * methodology, pipeline, and editorial governance.
  */
@@ -23,7 +23,7 @@ export function GET() {
     "## Top-ranked reviews",
     ...reviews.map(
       (r) =>
-        `- #${r.rank} ${r.name} — ${r.total.toFixed(1)}/10 — [${r.oneLineVerdict}](${SITE.url}/${r.slug})`,
+        `- #${r.rank} ${r.name}, ${r.total.toFixed(1)}/10, [${r.oneLineVerdict}](${SITE.url}/${r.slug})`,
     ),
     "",
     "## Browse",
@@ -36,7 +36,7 @@ export function GET() {
     "",
     "## Methodology",
     `- [How we score (overview)](${SITE.url}/methodology)`,
-    `- [Methodology v1.2 — current](${SITE.url}/methodology/v1-2)`,
+    `- [Methodology v1.2, current](${SITE.url}/methodology/v1-2)`,
     "",
     "## Pipeline",
     `- [What we are reviewing next](${SITE.url}/pipeline)`,

@@ -17,7 +17,7 @@ import {
 import { pageMetadata } from "@/lib/seo";
 import { routing, type Locale } from "@/i18n/routing";
 
-// Avoid colliding with /about, /contact, etc — static pages take precedence over this dynamic route.
+// Avoid colliding with /about, /contact, etc, static pages take precedence over this dynamic route.
 const RESERVED = new Set([
   "about",
   "contact",
@@ -57,7 +57,7 @@ export async function generateMetadata({
   const review = reviewBySlug(slug);
   if (review) {
     return pageMetadata({
-      title: `${review.name} review — ${review.total.toFixed(1)}/10 (Pepvise)`,
+      title: `${review.name} review, ${review.total.toFixed(1)}/10 (Pepvise)`,
       description: review.oneLineVerdict,
       path: `/${review.slug}`,
       ogType: "article",
@@ -90,7 +90,7 @@ export default async function PostPage({
 
   if (RESERVED.has(slug)) notFound();
 
-  // Review-database template takes precedence — wirecutter-style
+  // Review-database template takes precedence, wirecutter-style
   // verdict block, score grid, comparison table, pros/cons.
   const review = reviewBySlug(slug);
   if (review) {

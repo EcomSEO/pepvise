@@ -1,15 +1,15 @@
 import type { ReactNode } from "react";
 
 /**
- * Cite — a footnote-style citation marker. On desktop (hover-capable
+ * Cite, a footnote-style citation marker. On desktop (hover-capable
  * pointers) it reveals a bone-on-inknavy popover with the source details
  * inline. On mobile it falls back to a plain anchor that links out.
  *
- * Pure CSS + ARIA — no JS. Styles live in globals.css under `.cite`.
+ * Pure CSS + ARIA, no JS. Styles live in globals.css under `.cite`.
  *
  * Usage:
  *   <Cite n={1} href="https://pubmed.ncbi.nlm.nih.gov/…">
- *     Chang CH et al., 2014 — <em>J Appl Physiol</em>, n=12 pilot.
+ *     Chang CH et al., 2014, <em>J Appl Physiol</em>, n=12 pilot.
  *   </Cite>
  */
 export function Cite({

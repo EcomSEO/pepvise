@@ -6,12 +6,12 @@ import { useTranslations } from "next-intl";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 
 /**
- * HeaderRD — pepvise review-database header.
+ * HeaderRD, pepvise review-database header.
  *
  * - Paper-white bar, h-14 (56px), thin 1px ink-rule under it.
  * - LEFT: serif wordmark "Pepvise" (Source Serif 4, 22px).
  * - CENTER: small-caps nav (REVIEWS · COMPARISONS · CATEGORIES ·
- *   METHODOLOGY · PIPELINE) — no central rounded search input
+ *   METHODOLOGY · PIPELINE), no central rounded search input
  *   (peptips), no monospace status bar (circadianstack).
  * - RIGHT: narrow inline "Search reviews" input + locale switcher.
  * - Mobile: collapses nav into hamburger; search becomes an icon.
@@ -39,7 +39,7 @@ export function HeaderRD() {
     <header className="sticky top-0 z-40 bg-paper border-b border-ink/90">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="flex items-center gap-5 md:gap-8 h-14">
-          {/* LEFT — wordmark */}
+          {/* LEFT, wordmark */}
           <Link
             href={"/" as never}
             aria-label={t("logoAria")}
@@ -58,7 +58,7 @@ export function HeaderRD() {
             </span>
           </Link>
 
-          {/* CENTER — small-caps nav */}
+          {/* CENTER, small-caps nav */}
           <nav className="hidden md:flex items-center gap-6 lg:gap-8 mx-auto">
             <Link href={"/reviews" as never} className="nav-link">
               {t("navReviews")}
@@ -77,7 +77,7 @@ export function HeaderRD() {
             </Link>
           </nav>
 
-          {/* RIGHT — narrow search + locale */}
+          {/* RIGHT, narrow search + locale */}
           <div className="ml-auto flex items-center gap-4">
             <form
               role="search"
