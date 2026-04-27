@@ -1,0 +1,194 @@
+{
+  "common": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content",
+    "minRead": "{n} min read",
+    "by": "By",
+    "updated": "Updated {date}",
+    "lastUpdated": "Last updated {date}",
+    "readReview": "Read review",
+    "viewMethodology": "View methodology",
+    "backToHome": "Back to home"
+  },
+  "header": {
+    "logoAria": "Pepvise — home",
+    "wordmark": "Pepvise",
+    "tagline": "Reviews of the research-peptide literature.",
+    "navReviews": "Reviews",
+    "navComparisons": "Comparisons",
+    "navCategories": "Categories",
+    "navMethodology": "Methodology",
+    "navPipeline": "Pipeline",
+    "searchPlaceholder": "Search reviews",
+    "searchAria": "Search reviews",
+    "searchSubmit": "Search"
+  },
+  "footer": {
+    "leadParagraph": "Pepvise reviews the published peptide literature the way Wirecutter reviews mattresses — every entry ranked, every score on the same yardstick, no vendor links, no dosing prescriptions.",
+    "sectionReviews": "Reviews",
+    "sectionAbout": "About",
+    "sectionFinePrint": "Fine print",
+    "linkAllReviews": "All reviews",
+    "linkComparisons": "Comparison tables",
+    "linkCategories": "Browse categories",
+    "linkMethodology": "How we score",
+    "linkPipeline": "What we are testing next",
+    "linkAbout": "About",
+    "linkEditorialStandards": "Editorial standards",
+    "linkContact": "Contact",
+    "linkNewsletter": "Newsletter",
+    "linkAffiliateDisclosure": "Affiliate disclosure",
+    "linkPrivacy": "Privacy",
+    "linkTerms": "Terms",
+    "linkMedicalDisclaimer": "Medical disclaimer",
+    "footerNote": "Pepvise reviews are not medical advice. We do not sell peptides, take peptide-vendor sponsorship, or recommend a compound for any individual. Talk to a licensed physician working within FDA-compliant pathways before any administration."
+  },
+  "home": {
+    "hero": {
+      "ribbon": "REVIEW DATABASE",
+      "h1": "Peptide reviews on one yardstick.",
+      "lede": "Every compound scored on the same five dimensions — published evidence, mechanism plausibility, human data, vendor trust, regulatory posture — and ranked. Last database refresh {date}.",
+      "ctaPrimary": "See the top picks",
+      "ctaSecondary": "How we score"
+    },
+    "rankIndex": {
+      "eyebrow": "THE TOP RANKED",
+      "heading": "Our picks across the research-peptide category.",
+      "caption": "Twelve compounds in active rotation, scored on a 10-point composite. Updated quarterly.",
+      "colRank": "RANK",
+      "colName": "COMPOUND",
+      "colSummary": "ONE-LINE VERDICT",
+      "colEvidence": "EVIDENCE",
+      "colSafety": "SAFETY",
+      "colTotal": "TOTAL",
+      "ourPick": "OUR PICK",
+      "budget": "BUDGET PICK",
+      "upgrade": "UPGRADE PICK",
+      "runnerUp": "RUNNER-UP",
+      "alsoRan": "ALSO TESTED",
+      "readReview": "Read review"
+    },
+    "comparison": {
+      "eyebrow": "SIDE BY SIDE",
+      "heading": "Top four on every dimension.",
+      "caption": "Higher is better. Numbers are tabular, the methodology is on the methodology page, and yes — vendor trust counts because counterfeit risk is real.",
+      "colCompound": "COMPOUND",
+      "colEvidence": "EVIDENCE",
+      "colMechanism": "MECHANISM",
+      "colHuman": "HUMAN DATA",
+      "colVendor": "VENDOR TRUST",
+      "colSafety": "SAFETY",
+      "colTotal": "TOTAL"
+    },
+    "categories": {
+      "eyebrow": "BROWSE BY CATEGORY",
+      "heading": "Five shelves. Every review fits one.",
+      "caption": "Each shelf carries the reviews and the comparison tables for a single research domain."
+    },
+    "methodology": {
+      "eyebrow": "HOW WE SCORE",
+      "heading": "Five dimensions, weighted, on every review.",
+      "caption": "Every score on Pepvise breaks down into the same five components. Read the full methodology if you want to argue with the weights — we will hear you out.",
+      "items": [
+        {
+          "label": "Published evidence",
+          "weight": "25%",
+          "body": "Sample size, replication count, and study design across PubMed, ClinicalTrials.gov, and FDA filings. Mouse-only literature gets capped."
+        },
+        {
+          "label": "Mechanism plausibility",
+          "weight": "15%",
+          "body": "Whether the proposed mechanism is consistent with established cell biology, or whether it is back-fitted to the marketing claim."
+        },
+        {
+          "label": "Human data",
+          "weight": "25%",
+          "body": "Trial phase, sample size, follow-up length, and the gap between rodent dose and the human dose actually studied."
+        },
+        {
+          "label": "Vendor trust",
+          "weight": "15%",
+          "body": "Counterfeit incidence, third-party assay availability, regulatory posture of typical sources. Not an endorsement of any vendor."
+        },
+        {
+          "label": "Regulatory posture",
+          "weight": "20%",
+          "body": "FDA approval status, 503A/503B compoundability, WADA status, and the realistic legal pathway for a US patient or athlete."
+        }
+      ],
+      "ctaRead": "Read the full methodology",
+      "ctaVersion": "Methodology v1.2"
+    },
+    "pipeline": {
+      "eyebrow": "WHAT IS NEXT",
+      "heading": "On the pipeline.",
+      "caption": "Twelve reviews live, eight more in active drafting. Here is what is coming and when.",
+      "ctaSeeFull": "See the full pipeline"
+    },
+    "newsletter": {
+      "eyebrow": "THE DISPATCH",
+      "heading": "One review a week. No vendor links. Ever.",
+      "caption": "When a new compound enters the database — or when an existing review gets a score change — subscribers hear about it first.",
+      "placeholder": "you@domain.com",
+      "submit": "Subscribe",
+      "consent": "By subscribing you accept the privacy policy. One-click unsubscribe."
+    }
+  },
+  "review": {
+    "verdict": {
+      "rank": "RANK",
+      "score": "SCORE",
+      "tier": "TIER",
+      "verdictLabel": "VERDICT",
+      "lastUpdated": "Last updated {date}",
+      "methodologyLink": "How we score"
+    },
+    "specs": {
+      "heading": "Specs",
+      "labelEvidence": "Evidence",
+      "labelMechanism": "Mechanism",
+      "labelHuman": "Human data",
+      "labelVendor": "Vendor trust",
+      "labelSafety": "Safety",
+      "labelFda": "FDA status",
+      "labelWada": "WADA status"
+    },
+    "toc": {
+      "heading": "Contents"
+    },
+    "prosCons": {
+      "heading": "Pros and cons",
+      "prosLabel": "WHAT WORKS",
+      "consLabel": "WHAT DOES NOT"
+    },
+    "alternatives": {
+      "heading": "Alternatives we tested",
+      "caption": "Three compounds that came up in the same comparison set."
+    },
+    "references": {
+      "heading": "References"
+    },
+    "moreInCategory": {
+      "heading": "Other reviews in this category"
+    }
+  },
+  "methodologyPage": {
+    "h1": "How we score peptide reviews.",
+    "lede": "Pepvise grades every research peptide on a 10-point composite drawn from five weighted components. The weights are public, the inputs are public, and the version history is public — that is the only way a score system survives contact with smart readers.",
+    "currentVersion": "v1.2 — current",
+    "previousVersion": "v1.1 — superseded {date}"
+  },
+  "methodologyV12": {
+    "h1": "Methodology v1.2.",
+    "lede": "Released {date}. Tightens the human-data weighting after Reta-1 and Surv-3 publication, raises the vendor-trust ceiling, and removes the legacy WADA bonus that double-counted regulatory posture."
+  },
+  "pipelinePage": {
+    "h1": "On the pipeline.",
+    "lede": "Reviews currently in drafting, in third-party review, or in pre-publication hold. Pepvise publishes when the citation pack is complete and the methodology lands at v1.2 or later — not before.",
+    "colCompound": "COMPOUND",
+    "colStage": "STAGE",
+    "colReviewer": "EDITOR",
+    "colTargetPub": "TARGET PUB"
+  }
+}

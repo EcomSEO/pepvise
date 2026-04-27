@@ -1,0 +1,194 @@
+{
+  "common": {
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "skipToContent": "Ir al contenido",
+    "minRead": "{n} min de lectura",
+    "by": "Por",
+    "updated": "Actualizado el {date}",
+    "lastUpdated": "Última actualización {date}",
+    "readReview": "Leer la reseña",
+    "viewMethodology": "Ver metodología",
+    "backToHome": "Volver al inicio"
+  },
+  "header": {
+    "logoAria": "Pepvise — inicio",
+    "wordmark": "Pepvise",
+    "tagline": "Reseñas de la literatura de péptidos de investigación.",
+    "navReviews": "Reseñas",
+    "navComparisons": "Comparativas",
+    "navCategories": "Categorías",
+    "navMethodology": "Metodología",
+    "navPipeline": "Pipeline",
+    "searchPlaceholder": "Buscar reseñas",
+    "searchAria": "Buscar reseñas",
+    "searchSubmit": "Buscar"
+  },
+  "footer": {
+    "leadParagraph": "Pepvise reseña la literatura publicada de péptidos como Wirecutter reseña colchones — cada entrada clasificada, cada puntuación con la misma vara, sin enlaces a vendedores, sin prescripciones de dosis.",
+    "sectionReviews": "Reseñas",
+    "sectionAbout": "Quiénes somos",
+    "sectionFinePrint": "Avisos",
+    "linkAllReviews": "Todas las reseñas",
+    "linkComparisons": "Tablas comparativas",
+    "linkCategories": "Categorías",
+    "linkMethodology": "Cómo puntuamos",
+    "linkPipeline": "Lo que viene",
+    "linkAbout": "Quiénes somos",
+    "linkEditorialStandards": "Estándares editoriales",
+    "linkContact": "Contacto",
+    "linkNewsletter": "Boletín",
+    "linkAffiliateDisclosure": "Aviso de afiliados",
+    "linkPrivacy": "Privacidad",
+    "linkTerms": "Términos",
+    "linkMedicalDisclaimer": "Aviso médico",
+    "footerNote": "Las reseñas de Pepvise no son consejo médico. No vendemos péptidos, no aceptamos patrocinio de vendedores y no recomendamos un compuesto a ningún individuo. Habla con un médico colegiado que opere en vías compatibles con la FDA antes de cualquier administración."
+  },
+  "home": {
+    "hero": {
+      "ribbon": "BASE DE RESEÑAS",
+      "h1": "Reseñas de péptidos en la misma vara.",
+      "lede": "Cada compuesto valorado en las mismas cinco dimensiones — evidencia publicada, plausibilidad del mecanismo, datos humanos, fiabilidad del vendedor, postura regulatoria — y clasificado. Última actualización de la base el {date}.",
+      "ctaPrimary": "Ver las mejores",
+      "ctaSecondary": "Cómo puntuamos"
+    },
+    "rankIndex": {
+      "eyebrow": "LOS MEJOR CLASIFICADOS",
+      "heading": "Nuestras elecciones en la categoría péptidos de investigación.",
+      "caption": "Doce compuestos en rotación activa, puntuados sobre 10 puntos compuestos. Actualizado cada trimestre.",
+      "colRank": "PUESTO",
+      "colName": "COMPUESTO",
+      "colSummary": "VEREDICTO EN UNA LÍNEA",
+      "colEvidence": "EVIDENCIA",
+      "colSafety": "SEGURIDAD",
+      "colTotal": "TOTAL",
+      "ourPick": "NUESTRA ELECCIÓN",
+      "budget": "OPCIÓN ECONÓMICA",
+      "upgrade": "OPCIÓN PREMIUM",
+      "runnerUp": "SEGUNDO PUESTO",
+      "alsoRan": "TAMBIÉN PROBADO",
+      "readReview": "Leer la reseña"
+    },
+    "comparison": {
+      "eyebrow": "FRENTE A FRENTE",
+      "heading": "Top cuatro en cada dimensión.",
+      "caption": "Más alto es mejor. Números tabulares, la metodología en su propia página, y sí — la fiabilidad del vendedor cuenta porque el riesgo de falsificación es real.",
+      "colCompound": "COMPUESTO",
+      "colEvidence": "EVIDENCIA",
+      "colMechanism": "MECANISMO",
+      "colHuman": "DATOS HUMANOS",
+      "colVendor": "VENDEDOR",
+      "colSafety": "SEGURIDAD",
+      "colTotal": "TOTAL"
+    },
+    "categories": {
+      "eyebrow": "POR CATEGORÍA",
+      "heading": "Cinco estanterías. Cada reseña va en una.",
+      "caption": "Cada estantería reúne las reseñas y las tablas comparativas de un único dominio de investigación."
+    },
+    "methodology": {
+      "eyebrow": "CÓMO PUNTUAMOS",
+      "heading": "Cinco dimensiones ponderadas en cada reseña.",
+      "caption": "Cada puntuación de Pepvise se descompone en las mismas cinco componentes. Lee la metodología completa si quieres discutir los pesos — te escuchamos.",
+      "items": [
+        {
+          "label": "Evidencia publicada",
+          "weight": "25%",
+          "body": "Tamaño muestral, número de réplicas y diseño en PubMed, ClinicalTrials.gov y archivos FDA. La literatura solo en ratón tiene techo."
+        },
+        {
+          "label": "Plausibilidad del mecanismo",
+          "weight": "15%",
+          "body": "Si el mecanismo propuesto es coherente con la biología celular establecida, o si se ajusta a la promesa de marketing."
+        },
+        {
+          "label": "Datos humanos",
+          "weight": "25%",
+          "body": "Fase del ensayo, tamaño muestral, duración del seguimiento, brecha entre la dosis en roedor y la dosis humana realmente estudiada."
+        },
+        {
+          "label": "Fiabilidad del vendedor",
+          "weight": "15%",
+          "body": "Incidencia de falsificaciones, ensayos de terceros disponibles, postura regulatoria de las fuentes habituales. No es un aval a ningún vendedor."
+        },
+        {
+          "label": "Postura regulatoria",
+          "weight": "20%",
+          "body": "Aprobación FDA, elegibilidad 503A/503B, estado WADA, vía legal realista para un paciente o atleta de EE. UU."
+        }
+      ],
+      "ctaRead": "Leer la metodología completa",
+      "ctaVersion": "Metodología v1.2"
+    },
+    "pipeline": {
+      "eyebrow": "LO QUE VIENE",
+      "heading": "En pipeline.",
+      "caption": "Doce reseñas en línea, ocho más en redacción activa. Esto es lo que llega y cuándo.",
+      "ctaSeeFull": "Ver la pipeline completa"
+    },
+    "newsletter": {
+      "eyebrow": "EL DESPACHO",
+      "heading": "Una reseña a la semana. Sin enlaces a vendedores. Nunca.",
+      "caption": "Cuando un compuesto nuevo entra en la base — o una reseña existente cambia de puntuación — los suscriptores se enteran primero.",
+      "placeholder": "tu@dominio.es",
+      "submit": "Suscribirme",
+      "consent": "Al suscribirte aceptas la política de privacidad. Baja con un clic."
+    }
+  },
+  "review": {
+    "verdict": {
+      "rank": "PUESTO",
+      "score": "PUNTUACIÓN",
+      "tier": "NIVEL",
+      "verdictLabel": "VEREDICTO",
+      "lastUpdated": "Última actualización {date}",
+      "methodologyLink": "Cómo puntuamos"
+    },
+    "specs": {
+      "heading": "Ficha",
+      "labelEvidence": "Evidencia",
+      "labelMechanism": "Mecanismo",
+      "labelHuman": "Datos humanos",
+      "labelVendor": "Vendedor",
+      "labelSafety": "Seguridad",
+      "labelFda": "Estado FDA",
+      "labelWada": "Estado WADA"
+    },
+    "toc": {
+      "heading": "Índice"
+    },
+    "prosCons": {
+      "heading": "Pros y contras",
+      "prosLabel": "QUÉ FUNCIONA",
+      "consLabel": "QUÉ NO FUNCIONA"
+    },
+    "alternatives": {
+      "heading": "Alternativas que probamos",
+      "caption": "Tres compuestos del mismo conjunto comparado."
+    },
+    "references": {
+      "heading": "Referencias"
+    },
+    "moreInCategory": {
+      "heading": "Otras reseñas de esta categoría"
+    }
+  },
+  "methodologyPage": {
+    "h1": "Cómo puntuamos las reseñas de péptidos.",
+    "lede": "Pepvise valora cada péptido de investigación en una puntuación compuesta de 10, sacada de cinco componentes ponderados. Los pesos son públicos, los datos de entrada son públicos, y la historia de versiones es pública — es la única forma en que un sistema de puntuación sobrevive al contacto con lectores rigurosos.",
+    "currentVersion": "v1.2 — vigente",
+    "previousVersion": "v1.1 — sustituida el {date}"
+  },
+  "methodologyV12": {
+    "h1": "Metodología v1.2.",
+    "lede": "Publicada el {date}. Endurece el peso de los datos humanos tras Reta-1 y Surv-3, eleva el techo de fiabilidad del vendedor y elimina el bonus WADA heredado que contaba doble la postura regulatoria."
+  },
+  "pipelinePage": {
+    "h1": "En pipeline.",
+    "lede": "Reseñas en redacción, en revisión externa, o en espera de publicación. Pepvise publica cuando el paquete de citas está completo y la metodología está en v1.2 o posterior — no antes.",
+    "colCompound": "COMPUESTO",
+    "colStage": "ETAPA",
+    "colReviewer": "EDITOR",
+    "colTargetPub": "PUBLICACIÓN OBJETIVO"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "common": {
+    "openMenu": "Öppna meny",
+    "closeMenu": "Stäng meny",
+    "skipToContent": "Hoppa till innehåll",
+    "minRead": "{n} min läsning",
+    "by": "Av",
+    "updated": "Uppdaterad {date}",
+    "lastUpdated": "Senast uppdaterad {date}",
+    "readReview": "Läs recensionen",
+    "viewMethodology": "Se metodik",
+    "backToHome": "Tillbaka till start"
+  },
+  "header": {
+    "logoAria": "Pepvise — start",
+    "wordmark": "Pepvise",
+    "tagline": "Recensioner av forskningspeptidernas litteratur.",
+    "navReviews": "Recensioner",
+    "navComparisons": "Jämförelser",
+    "navCategories": "Kategorier",
+    "navMethodology": "Metodik",
+    "navPipeline": "Pipeline",
+    "searchPlaceholder": "Sök recensioner",
+    "searchAria": "Sök recensioner",
+    "searchSubmit": "Sök"
+  },
+  "footer": {
+    "leadParagraph": "Pepvise recenserar den publicerade peptidlitteraturen på samma sätt som Wirecutter recenserar madrasser — varje post rankad, varje poäng på samma måttstock, inga säljarlänkar, inga doseringsrecept.",
+    "sectionReviews": "Recensioner",
+    "sectionAbout": "Om oss",
+    "sectionFinePrint": "Finstilt",
+    "linkAllReviews": "Alla recensioner",
+    "linkComparisons": "Jämförelsetabeller",
+    "linkCategories": "Kategorier",
+    "linkMethodology": "Så betygsätter vi",
+    "linkPipeline": "Vad vi testar härnäst",
+    "linkAbout": "Om oss",
+    "linkEditorialStandards": "Redaktionella regler",
+    "linkContact": "Kontakt",
+    "linkNewsletter": "Nyhetsbrev",
+    "linkAffiliateDisclosure": "Affiliate-information",
+    "linkPrivacy": "Integritet",
+    "linkTerms": "Villkor",
+    "linkMedicalDisclaimer": "Medicinsk friskrivning",
+    "footerNote": "Pepvise-recensioner är inte medicinsk rådgivning. Vi säljer inga peptider, tar inte emot sponsring från peptidsäljare och rekommenderar inget preparat till någon individ. Tala med en legitimerad läkare som arbetar inom FDA-konforma vägar före varje administrering."
+  },
+  "home": {
+    "hero": {
+      "ribbon": "RECENSIONSDATABAS",
+      "h1": "Peptidrecensioner på en måttstock.",
+      "lede": "Varje förening bedöms på samma fem dimensioner — publicerad evidens, mekanismens trovärdighet, humandata, säljarens pålitlighet, regulatorisk status — och rankas. Senaste databasuppdatering {date}.",
+      "ctaPrimary": "Se topplistan",
+      "ctaSecondary": "Så betygsätter vi"
+    },
+    "rankIndex": {
+      "eyebrow": "BÄST RANKADE",
+      "heading": "Våra val i kategorin forskningspeptider.",
+      "caption": "Tolv föreningar i aktiv rotation, betygsatta på en sammansatt 10-poängsskala. Uppdateras kvartalsvis.",
+      "colRank": "PLATS",
+      "colName": "FÖRENING",
+      "colSummary": "ENRADIGT UTLÅTANDE",
+      "colEvidence": "EVIDENS",
+      "colSafety": "SÄKERHET",
+      "colTotal": "TOTALT",
+      "ourPick": "VÅRT VAL",
+      "budget": "BUDGETVAL",
+      "upgrade": "UPPGRADERINGSVAL",
+      "runnerUp": "ANDRAPLATS",
+      "alsoRan": "OCKSÅ TESTAD",
+      "readReview": "Läs recensionen"
+    },
+    "comparison": {
+      "eyebrow": "SIDA VID SIDA",
+      "heading": "Fyra i topp på varje dimension.",
+      "caption": "Högre är bättre. Tabellerade tal, metodik på egen sida, och ja — säljarpålitlighet räknas eftersom förfalskningsrisken är reell.",
+      "colCompound": "FÖRENING",
+      "colEvidence": "EVIDENS",
+      "colMechanism": "MEKANISM",
+      "colHuman": "HUMAN",
+      "colVendor": "SÄLJARE",
+      "colSafety": "SÄKERHET",
+      "colTotal": "TOTALT"
+    },
+    "categories": {
+      "eyebrow": "EFTER KATEGORI",
+      "heading": "Fem hyllor. Varje recension får plats på en.",
+      "caption": "Varje hylla rymmer recensionerna och jämförelsetabellerna för ett enda forskningsfält."
+    },
+    "methodology": {
+      "eyebrow": "SÅ BETYGSÄTTER VI",
+      "heading": "Fem viktade dimensioner i varje recension.",
+      "caption": "Varje Pepvise-poäng bryts ned i samma fem komponenter. Läs den fullständiga metodiken om du vill argumentera om vikterna — vi lyssnar.",
+      "items": [
+        {
+          "label": "Publicerad evidens",
+          "weight": "25%",
+          "body": "Stickprovsstorlek, antal replikationer och studiedesign i PubMed, ClinicalTrials.gov och FDA-akter. Endast-mus-litteratur har tak."
+        },
+        {
+          "label": "Mekanismens trovärdighet",
+          "weight": "15%",
+          "body": "Om den föreslagna mekanismen är förenlig med etablerad cellbiologi, eller om den anpassats till marknadsföringspåståendet."
+        },
+        {
+          "label": "Humandata",
+          "weight": "25%",
+          "body": "Studiefas, stickprovsstorlek, uppföljningstid och avståndet mellan gnagardos och den humandos som faktiskt studerats."
+        },
+        {
+          "label": "Säljarens pålitlighet",
+          "weight": "15%",
+          "body": "Förekomst av förfalskning, tillgång till tredjepartsanalys, regulatorisk hållning hos vanliga källor. Ingen rekommendation av någon säljare."
+        },
+        {
+          "label": "Regulatorisk status",
+          "weight": "20%",
+          "body": "FDA-godkännande, 503A/503B-behörighet, WADA-status och den realistiska juridiska vägen för en amerikansk patient eller idrottare."
+        }
+      ],
+      "ctaRead": "Läs hela metodiken",
+      "ctaVersion": "Metodik v1.2"
+    },
+    "pipeline": {
+      "eyebrow": "VAD KOMMER",
+      "heading": "I pipelinen.",
+      "caption": "Tolv recensioner live, åtta till i aktiv skrivning. Här är vad som kommer och när.",
+      "ctaSeeFull": "Se hela pipelinen"
+    },
+    "newsletter": {
+      "eyebrow": "DEPECHEN",
+      "heading": "En recension i veckan. Inga säljarlänkar. Aldrig.",
+      "caption": "När en ny förening kommer in i databasen — eller en befintlig recension ändrar poäng — får prenumeranter veta först.",
+      "placeholder": "du@domän.se",
+      "submit": "Prenumerera",
+      "consent": "Genom att prenumerera godkänner du integritetspolicyn. Avsluta med ett klick."
+    }
+  },
+  "review": {
+    "verdict": {
+      "rank": "PLATS",
+      "score": "POÄNG",
+      "tier": "NIVÅ",
+      "verdictLabel": "UTLÅTANDE",
+      "lastUpdated": "Senast uppdaterad {date}",
+      "methodologyLink": "Så betygsätter vi"
+    },
+    "specs": {
+      "heading": "Specifikation",
+      "labelEvidence": "Evidens",
+      "labelMechanism": "Mekanism",
+      "labelHuman": "Humandata",
+      "labelVendor": "Säljare",
+      "labelSafety": "Säkerhet",
+      "labelFda": "FDA-status",
+      "labelWada": "WADA-status"
+    },
+    "toc": {
+      "heading": "Innehåll"
+    },
+    "prosCons": {
+      "heading": "För och emot",
+      "prosLabel": "VAD SOM FUNGERAR",
+      "consLabel": "VAD SOM INTE FUNGERAR"
+    },
+    "alternatives": {
+      "heading": "Testade alternativ",
+      "caption": "Tre föreningar ur samma jämförelseuppsättning."
+    },
+    "references": {
+      "heading": "Källor"
+    },
+    "moreInCategory": {
+      "heading": "Andra recensioner i denna kategori"
+    }
+  },
+  "methodologyPage": {
+    "h1": "Så betygsätter vi peptidrecensioner.",
+    "lede": "Pepvise betygsätter varje forskningspeptid på en sammansatt 10-poängsskala från fem viktade komponenter. Vikterna är offentliga, ingångarna är offentliga, och versionshistoriken är offentlig — annars överlever inget poängsystem kontakten med skarpa läsare.",
+    "currentVersion": "v1.2 — aktuell",
+    "previousVersion": "v1.1 — ersatt {date}"
+  },
+  "methodologyV12": {
+    "h1": "Metodik v1.2.",
+    "lede": "Publicerad {date}. Skärper vikten på humandata efter Reta-1 och Surv-3, höjer taket för säljarpålitlighet och tar bort den gamla WADA-bonusen som dubbelräknade regulatorisk status."
+  },
+  "pipelinePage": {
+    "h1": "I pipelinen.",
+    "lede": "Recensioner just nu i utkast, i tredjepartsgranskning eller i för-publiceringspaus. Pepvise publicerar när källpaketet är komplett och metodiken står på v1.2 eller senare — inte tidigare.",
+    "colCompound": "FÖRENING",
+    "colStage": "STEG",
+    "colReviewer": "REDAKTÖR",
+    "colTargetPub": "MÅLPUBLICERING"
+  }
+}

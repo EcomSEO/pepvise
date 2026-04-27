@@ -1,0 +1,194 @@
+{
+  "common": {
+    "openMenu": "Deschide meniul",
+    "closeMenu": "Închide meniul",
+    "skipToContent": "Sari la conținut",
+    "minRead": "{n} min de citit",
+    "by": "De",
+    "updated": "Actualizat {date}",
+    "lastUpdated": "Ultima actualizare {date}",
+    "readReview": "Citește recenzia",
+    "viewMethodology": "Vezi metodologia",
+    "backToHome": "Înapoi la pagina principală"
+  },
+  "header": {
+    "logoAria": "Pepvise — pagina principală",
+    "wordmark": "Pepvise",
+    "tagline": "Recenzii ale literaturii despre peptide de cercetare.",
+    "navReviews": "Recenzii",
+    "navComparisons": "Comparații",
+    "navCategories": "Categorii",
+    "navMethodology": "Metodologie",
+    "navPipeline": "Pipeline",
+    "searchPlaceholder": "Caută recenzii",
+    "searchAria": "Caută recenzii",
+    "searchSubmit": "Caută"
+  },
+  "footer": {
+    "leadParagraph": "Pepvise recenzează literatura publicată despre peptide așa cum Wirecutter recenzează saltelele — fiecare intrare clasată, fiecare scor pe aceeași riglă, fără linkuri de vânzători, fără prescripții de doză.",
+    "sectionReviews": "Recenzii",
+    "sectionAbout": "Despre",
+    "sectionFinePrint": "Mențiuni",
+    "linkAllReviews": "Toate recenziile",
+    "linkComparisons": "Tabele comparative",
+    "linkCategories": "Categorii",
+    "linkMethodology": "Cum punctăm",
+    "linkPipeline": "Ce urmează",
+    "linkAbout": "Despre",
+    "linkEditorialStandards": "Standarde editoriale",
+    "linkContact": "Contact",
+    "linkNewsletter": "Newsletter",
+    "linkAffiliateDisclosure": "Mențiuni afiliere",
+    "linkPrivacy": "Confidențialitate",
+    "linkTerms": "Termeni",
+    "linkMedicalDisclaimer": "Aviz medical",
+    "footerNote": "Recenziile Pepvise nu sunt sfat medical. Nu vindem peptide, nu acceptăm sponsorizare de la vânzători de peptide și nu recomandăm niciun compus vreunui individ. Discută cu un medic licențiat care lucrează pe căi conforme FDA înainte de orice administrare."
+  },
+  "home": {
+    "hero": {
+      "ribbon": "BAZĂ DE RECENZII",
+      "h1": "Recenzii de peptide pe aceeași riglă.",
+      "lede": "Fiecare compus evaluat pe aceleași cinci dimensiuni — dovezi publicate, plauzibilitatea mecanismului, date umane, încrederea în vânzător, postură regulatoare — și clasat. Ultima actualizare a bazei {date}.",
+      "ctaPrimary": "Vezi alegerile de top",
+      "ctaSecondary": "Cum punctăm"
+    },
+    "rankIndex": {
+      "eyebrow": "CEL MAI BINE CLASATE",
+      "heading": "Alegerile noastre în categoria peptide de cercetare.",
+      "caption": "Douăsprezece compuse în rotație activă, evaluate pe un scor compus de 10 puncte. Actualizate trimestrial.",
+      "colRank": "LOC",
+      "colName": "COMPUS",
+      "colSummary": "VERDICT ÎNTR-UN RÂND",
+      "colEvidence": "DOVEZI",
+      "colSafety": "SIGURANȚĂ",
+      "colTotal": "TOTAL",
+      "ourPick": "ALEGEREA NOASTRĂ",
+      "budget": "ALEGERE BUGET",
+      "upgrade": "ALEGERE PREMIUM",
+      "runnerUp": "LOCUL DOI",
+      "alsoRan": "DE ASEMENEA TESTATE",
+      "readReview": "Citește recenzia"
+    },
+    "comparison": {
+      "eyebrow": "FAȚĂ ÎN FAȚĂ",
+      "heading": "Top patru pe fiecare dimensiune.",
+      "caption": "Mai mare e mai bine. Cifre tabulare, metodologia pe pagina sa, și da — încrederea în vânzător contează pentru că riscul de contrafacere este real.",
+      "colCompound": "COMPUS",
+      "colEvidence": "DOVEZI",
+      "colMechanism": "MECANISM",
+      "colHuman": "UMAN",
+      "colVendor": "VÂNZĂTOR",
+      "colSafety": "SIGURANȚĂ",
+      "colTotal": "TOTAL"
+    },
+    "categories": {
+      "eyebrow": "PE CATEGORIE",
+      "heading": "Cinci rafturi. Fiecare recenzie pe unul.",
+      "caption": "Fiecare raft adună recenziile și tabelele comparative pentru un singur domeniu de cercetare."
+    },
+    "methodology": {
+      "eyebrow": "CUM PUNCTĂM",
+      "heading": "Cinci dimensiuni ponderate, în fiecare recenzie.",
+      "caption": "Fiecare scor Pepvise se descompune în aceleași cinci componente. Citește metodologia completă dacă vrei să dezbați ponderile — ascultăm.",
+      "items": [
+        {
+          "label": "Dovezi publicate",
+          "weight": "25%",
+          "body": "Mărime eșantion, număr de replicări și design în PubMed, ClinicalTrials.gov și dosare FDA. Literatura doar pe șoarece are plafon."
+        },
+        {
+          "label": "Plauzibilitatea mecanismului",
+          "weight": "15%",
+          "body": "Dacă mecanismul propus e coerent cu biologia celulară stabilită, sau dacă a fost ajustat după promisiunea de marketing."
+        },
+        {
+          "label": "Date umane",
+          "weight": "25%",
+          "body": "Faza studiului, mărime eșantion, durata urmăririi, și distanța între doza la rozătoare și doza umană efectiv studiată."
+        },
+        {
+          "label": "Încrederea în vânzător",
+          "weight": "15%",
+          "body": "Incidența contrafacerii, disponibilitatea analizelor terțe, postura regulatoare a surselor obișnuite. Nu este o recomandare a niciunui vânzător."
+        },
+        {
+          "label": "Postură regulatoare",
+          "weight": "20%",
+          "body": "Aprobare FDA, eligibilitate 503A/503B, status WADA, și calea legală realistă pentru un pacient sau sportiv din SUA."
+        }
+      ],
+      "ctaRead": "Citește metodologia completă",
+      "ctaVersion": "Metodologie v1.2"
+    },
+    "pipeline": {
+      "eyebrow": "CE URMEAZĂ",
+      "heading": "În pipeline.",
+      "caption": "Douăsprezece recenzii live, alte opt în scriere activă. Iată ce urmează și când.",
+      "ctaSeeFull": "Vezi pipeline-ul complet"
+    },
+    "newsletter": {
+      "eyebrow": "DEPEȘA",
+      "heading": "O recenzie pe săptămână. Fără linkuri de vânzători. Niciodată.",
+      "caption": "Când un compus nou intră în bază — sau o recenzie existentă își schimbă scorul — abonații află primii.",
+      "placeholder": "tu@domeniu.ro",
+      "submit": "Abonează-te",
+      "consent": "Abonarea înseamnă acceptarea politicii de confidențialitate. Dezabonare cu un clic."
+    }
+  },
+  "review": {
+    "verdict": {
+      "rank": "LOC",
+      "score": "SCOR",
+      "tier": "NIVEL",
+      "verdictLabel": "VERDICT",
+      "lastUpdated": "Ultima actualizare {date}",
+      "methodologyLink": "Cum punctăm"
+    },
+    "specs": {
+      "heading": "Specificații",
+      "labelEvidence": "Dovezi",
+      "labelMechanism": "Mecanism",
+      "labelHuman": "Uman",
+      "labelVendor": "Vânzător",
+      "labelSafety": "Siguranță",
+      "labelFda": "Status FDA",
+      "labelWada": "Status WADA"
+    },
+    "toc": {
+      "heading": "Cuprins"
+    },
+    "prosCons": {
+      "heading": "Pro și contra",
+      "prosLabel": "CE FUNCȚIONEAZĂ",
+      "consLabel": "CE NU FUNCȚIONEAZĂ"
+    },
+    "alternatives": {
+      "heading": "Alternative testate",
+      "caption": "Trei compuse din același set comparativ."
+    },
+    "references": {
+      "heading": "Referințe"
+    },
+    "moreInCategory": {
+      "heading": "Alte recenzii din această categorie"
+    }
+  },
+  "methodologyPage": {
+    "h1": "Cum punctăm recenziile de peptide.",
+    "lede": "Pepvise punctează fiecare peptidă de cercetare pe un scor compus de 10 puncte, tras din cinci componente ponderate. Ponderile sunt publice, intrările sunt publice, istoricul versiunilor este public — altfel un sistem de scoruri nu supraviețuiește contactului cu cititori atenți.",
+    "currentVersion": "v1.2 — curentă",
+    "previousVersion": "v1.1 — înlocuită {date}"
+  },
+  "methodologyV12": {
+    "h1": "Metodologie v1.2.",
+    "lede": "Publicată {date}. Strânge ponderea datelor umane după Reta-1 și Surv-3, ridică plafonul de încredere în vânzător și elimină vechiul bonus WADA care dubla postura regulatoare."
+  },
+  "pipelinePage": {
+    "h1": "În pipeline.",
+    "lede": "Recenzii actualmente în redactare, în revizuire terță sau în pre-publicare. Pepvise publică atunci când pachetul de citate este complet și metodologia este la v1.2 sau ulterioară — nu mai devreme.",
+    "colCompound": "COMPUS",
+    "colStage": "ETAPĂ",
+    "colReviewer": "EDITOR",
+    "colTargetPub": "PUBLICARE PROPUSĂ"
+  }
+}

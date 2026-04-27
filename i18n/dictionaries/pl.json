@@ -1,0 +1,194 @@
+{
+  "common": {
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu",
+    "skipToContent": "Przejdź do treści",
+    "minRead": "{n} min czytania",
+    "by": "Przez",
+    "updated": "Zaktualizowano {date}",
+    "lastUpdated": "Ostatnia aktualizacja {date}",
+    "readReview": "Czytaj recenzję",
+    "viewMethodology": "Zobacz metodologię",
+    "backToHome": "Wróć na stronę główną"
+  },
+  "header": {
+    "logoAria": "Pepvise — strona główna",
+    "wordmark": "Pepvise",
+    "tagline": "Recenzje literatury o peptydach badawczych.",
+    "navReviews": "Recenzje",
+    "navComparisons": "Porównania",
+    "navCategories": "Kategorie",
+    "navMethodology": "Metodologia",
+    "navPipeline": "Lista projektów",
+    "searchPlaceholder": "Szukaj recenzji",
+    "searchAria": "Szukaj recenzji",
+    "searchSubmit": "Szukaj"
+  },
+  "footer": {
+    "leadParagraph": "Pepvise recenzuje opublikowaną literaturę o peptydach tak, jak Wirecutter recenzuje materace — każdy wpis sklasyfikowany, każda ocena na tej samej skali, bez linków sprzedawców, bez zaleceń dawkowania.",
+    "sectionReviews": "Recenzje",
+    "sectionAbout": "O nas",
+    "sectionFinePrint": "Drobny druk",
+    "linkAllReviews": "Wszystkie recenzje",
+    "linkComparisons": "Tabele porównawcze",
+    "linkCategories": "Kategorie",
+    "linkMethodology": "Jak oceniamy",
+    "linkPipeline": "Co testujemy dalej",
+    "linkAbout": "O nas",
+    "linkEditorialStandards": "Standardy redakcyjne",
+    "linkContact": "Kontakt",
+    "linkNewsletter": "Newsletter",
+    "linkAffiliateDisclosure": "Informacja o afiliacji",
+    "linkPrivacy": "Prywatność",
+    "linkTerms": "Regulamin",
+    "linkMedicalDisclaimer": "Klauzula medyczna",
+    "footerNote": "Recenzje Pepvise nie są poradą medyczną. Nie sprzedajemy peptydów, nie przyjmujemy sponsoringu od sprzedawców peptydów i nie zalecamy konkretnego związku żadnej osobie. Porozmawiaj z licencjonowanym lekarzem działającym w trybach zgodnych z FDA przed jakimkolwiek podaniem."
+  },
+  "home": {
+    "hero": {
+      "ribbon": "BAZA RECENZJI",
+      "h1": "Recenzje peptydów na tej samej skali.",
+      "lede": "Każdy związek oceniany w tych samych pięciu wymiarach — opublikowane dowody, prawdopodobieństwo mechanizmu, dane ludzkie, wiarygodność sprzedawcy, status regulacyjny — i sklasyfikowany. Ostatnia aktualizacja bazy {date}.",
+      "ctaPrimary": "Zobacz najlepsze",
+      "ctaSecondary": "Jak oceniamy"
+    },
+    "rankIndex": {
+      "eyebrow": "NAJWYŻEJ NOTOWANE",
+      "heading": "Nasze wybory w kategorii peptydów badawczych.",
+      "caption": "Dwanaście związków w aktywnej rotacji, ocenianych na 10-punktowej skali zbiorczej. Aktualizowane co kwartał.",
+      "colRank": "MIEJSCE",
+      "colName": "ZWIĄZEK",
+      "colSummary": "WERDYKT W JEDNEJ LINII",
+      "colEvidence": "DOWODY",
+      "colSafety": "BEZPIECZEŃSTWO",
+      "colTotal": "ŁĄCZNIE",
+      "ourPick": "NASZ WYBÓR",
+      "budget": "WYBÓR BUDŻETOWY",
+      "upgrade": "WYBÓR PREMIUM",
+      "runnerUp": "DRUGIE MIEJSCE",
+      "alsoRan": "TEŻ TESTOWANE",
+      "readReview": "Czytaj recenzję"
+    },
+    "comparison": {
+      "eyebrow": "OBOK SIEBIE",
+      "heading": "Pierwsza czwórka w każdym wymiarze.",
+      "caption": "Wyżej znaczy lepiej. Liczby tabelaryczne, metodologia na osobnej stronie, i tak — wiarygodność sprzedawcy się liczy, bo ryzyko podróbek jest realne.",
+      "colCompound": "ZWIĄZEK",
+      "colEvidence": "DOWODY",
+      "colMechanism": "MECHANIZM",
+      "colHuman": "LUDZIE",
+      "colVendor": "SPRZEDAWCA",
+      "colSafety": "BEZPIECZEŃSTWO",
+      "colTotal": "ŁĄCZNIE"
+    },
+    "categories": {
+      "eyebrow": "WG KATEGORII",
+      "heading": "Pięć półek. Każda recenzja na jedną.",
+      "caption": "Każda półka zbiera recenzje i tabele porównawcze dla jednej dziedziny badawczej."
+    },
+    "methodology": {
+      "eyebrow": "JAK OCENIAMY",
+      "heading": "Pięć ważonych wymiarów w każdej recenzji.",
+      "caption": "Każda ocena na Pepvise rozkłada się na te same pięć składowych. Przeczytaj pełną metodologię, jeśli chcesz dyskutować o wagach — wysłuchamy.",
+      "items": [
+        {
+          "label": "Opublikowane dowody",
+          "weight": "25%",
+          "body": "Wielkość próby, liczba replikacji, projekt badania w PubMed, ClinicalTrials.gov i dokumentacji FDA. Literatura wyłącznie myszowa ma sufit."
+        },
+        {
+          "label": "Prawdopodobieństwo mechanizmu",
+          "weight": "15%",
+          "body": "Czy proponowany mechanizm jest spójny z ustaloną biologią komórki, czy dopasowany do marketingu."
+        },
+        {
+          "label": "Dane ludzkie",
+          "weight": "25%",
+          "body": "Faza badania, wielkość próby, długość obserwacji, dystans między dawką u gryzonia a dawką ludzką faktycznie zbadaną."
+        },
+        {
+          "label": "Wiarygodność sprzedawcy",
+          "weight": "15%",
+          "body": "Częstość podróbek, dostępność niezależnych analiz, status regulacyjny typowych źródeł. To nie polecenie żadnego sprzedawcy."
+        },
+        {
+          "label": "Status regulacyjny",
+          "weight": "20%",
+          "body": "Zgoda FDA, kwalifikacja 503A/503B, status WADA, realistyczna ścieżka prawna dla pacjenta lub sportowca w USA."
+        }
+      ],
+      "ctaRead": "Czytaj pełną metodologię",
+      "ctaVersion": "Metodologia v1.2"
+    },
+    "pipeline": {
+      "eyebrow": "CO DALEJ",
+      "heading": "Na liście projektów.",
+      "caption": "Dwanaście recenzji online, kolejne osiem w aktywnym pisaniu. Oto co i kiedy.",
+      "ctaSeeFull": "Zobacz pełną listę"
+    },
+    "newsletter": {
+      "eyebrow": "DEPESZA",
+      "heading": "Jedna recenzja w tygodniu. Bez linków sprzedawców. Nigdy.",
+      "caption": "Gdy nowy związek wchodzi do bazy — lub istniejąca recenzja zmienia ocenę — subskrybenci dowiadują się pierwsi.",
+      "placeholder": "ty@domena.pl",
+      "submit": "Zapisz się",
+      "consent": "Subskrybując akceptujesz politykę prywatności. Wypisz jednym kliknięciem."
+    }
+  },
+  "review": {
+    "verdict": {
+      "rank": "MIEJSCE",
+      "score": "OCENA",
+      "tier": "POZIOM",
+      "verdictLabel": "WERDYKT",
+      "lastUpdated": "Ostatnia aktualizacja {date}",
+      "methodologyLink": "Jak oceniamy"
+    },
+    "specs": {
+      "heading": "Specyfikacja",
+      "labelEvidence": "Dowody",
+      "labelMechanism": "Mechanizm",
+      "labelHuman": "Ludzie",
+      "labelVendor": "Sprzedawca",
+      "labelSafety": "Bezpieczeństwo",
+      "labelFda": "Status FDA",
+      "labelWada": "Status WADA"
+    },
+    "toc": {
+      "heading": "Spis treści"
+    },
+    "prosCons": {
+      "heading": "Plusy i minusy",
+      "prosLabel": "CO DZIAŁA",
+      "consLabel": "CO NIE DZIAŁA"
+    },
+    "alternatives": {
+      "heading": "Testowane alternatywy",
+      "caption": "Trzy związki z tego samego zestawu porównawczego."
+    },
+    "references": {
+      "heading": "Źródła"
+    },
+    "moreInCategory": {
+      "heading": "Inne recenzje w tej kategorii"
+    }
+  },
+  "methodologyPage": {
+    "h1": "Jak oceniamy recenzje peptydów.",
+    "lede": "Pepvise ocenia każdy peptyd badawczy na 10-punktowej skali zbiorczej z pięciu ważonych komponentów. Wagi są publiczne, dane wejściowe są publiczne, historia wersji jest publiczna — inaczej system ocen nie przetrwa kontaktu z bystrymi czytelnikami.",
+    "currentVersion": "v1.2 — bieżąca",
+    "previousVersion": "v1.1 — zastąpiona {date}"
+  },
+  "methodologyV12": {
+    "h1": "Metodologia v1.2.",
+    "lede": "Wydana {date}. Zwiększa wagę danych ludzkich po Reta-1 i Surv-3, podnosi pułap wiarygodności sprzedawcy i usuwa stary bonus WADA, który podwójnie liczył status regulacyjny."
+  },
+  "pipelinePage": {
+    "h1": "Na liście projektów.",
+    "lede": "Recenzje obecnie pisane, w recenzji zewnętrznej, lub w wstrzymaniu przed publikacją. Pepvise publikuje, gdy pakiet cytatów jest kompletny, a metodologia jest co najmniej v1.2 — nie wcześniej.",
+    "colCompound": "ZWIĄZEK",
+    "colStage": "ETAP",
+    "colReviewer": "REDAKTOR",
+    "colTargetPub": "PLANOWANA PUBLIKACJA"
+  }
+}

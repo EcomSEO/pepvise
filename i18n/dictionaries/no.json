@@ -1,0 +1,194 @@
+{
+  "common": {
+    "openMenu": "Åpne meny",
+    "closeMenu": "Lukk meny",
+    "skipToContent": "Hopp til innhold",
+    "minRead": "{n} min lesing",
+    "by": "Av",
+    "updated": "Oppdatert {date}",
+    "lastUpdated": "Sist oppdatert {date}",
+    "readReview": "Les omtalen",
+    "viewMethodology": "Se metodikk",
+    "backToHome": "Tilbake til forsiden"
+  },
+  "header": {
+    "logoAria": "Pepvise — forside",
+    "wordmark": "Pepvise",
+    "tagline": "Omtaler av forskningspeptidlitteraturen.",
+    "navReviews": "Omtaler",
+    "navComparisons": "Sammenligninger",
+    "navCategories": "Kategorier",
+    "navMethodology": "Metodikk",
+    "navPipeline": "Pipeline",
+    "searchPlaceholder": "Søk i omtaler",
+    "searchAria": "Søk i omtaler",
+    "searchSubmit": "Søk"
+  },
+  "footer": {
+    "leadParagraph": "Pepvise omtaler den publiserte peptidlitteraturen slik Wirecutter omtaler madrasser — hver oppføring rangert, hver poengsum på samme stokk, ingen selgerlenker, ingen doseringsforskrifter.",
+    "sectionReviews": "Omtaler",
+    "sectionAbout": "Om oss",
+    "sectionFinePrint": "Liten skrift",
+    "linkAllReviews": "Alle omtaler",
+    "linkComparisons": "Sammenligningstabeller",
+    "linkCategories": "Kategorier",
+    "linkMethodology": "Slik scorer vi",
+    "linkPipeline": "Hva vi tester neste",
+    "linkAbout": "Om oss",
+    "linkEditorialStandards": "Redaksjonelle standarder",
+    "linkContact": "Kontakt",
+    "linkNewsletter": "Nyhetsbrev",
+    "linkAffiliateDisclosure": "Affiliate-info",
+    "linkPrivacy": "Personvern",
+    "linkTerms": "Vilkår",
+    "linkMedicalDisclaimer": "Medisinsk forbehold",
+    "footerNote": "Pepvise-omtaler er ikke medisinsk råd. Vi selger ikke peptider, tar ikke imot sponsing fra peptidselgere, og anbefaler ingen forbindelse til en enkeltperson. Snakk med en autorisert lege som arbeider innenfor FDA-konforme baner før enhver administrasjon."
+  },
+  "home": {
+    "hero": {
+      "ribbon": "OMTALEDATABASE",
+      "h1": "Peptidomtaler på samme stokk.",
+      "lede": "Hver forbindelse vurdert på de samme fem dimensjonene — publisert evidens, mekanismens troverdighet, humandata, selgertillit, regulatorisk status — og rangert. Siste databaseoppdatering {date}.",
+      "ctaPrimary": "Se toppvalgene",
+      "ctaSecondary": "Slik scorer vi"
+    },
+    "rankIndex": {
+      "eyebrow": "BEST RANGERT",
+      "heading": "Våre valg i kategorien forskningspeptider.",
+      "caption": "Tolv forbindelser i aktiv rotasjon, vurdert på en samlet 10-poengskala. Oppdatert kvartalsvis.",
+      "colRank": "PLASS",
+      "colName": "FORBINDELSE",
+      "colSummary": "ÉN-LINJES DOM",
+      "colEvidence": "EVIDENS",
+      "colSafety": "SIKKERHET",
+      "colTotal": "TOTALT",
+      "ourPick": "VÅRT VALG",
+      "budget": "BUDSJETTVALG",
+      "upgrade": "OPPGRADERINGSVALG",
+      "runnerUp": "ANDRE PLASS",
+      "alsoRan": "OGSÅ TESTET",
+      "readReview": "Les omtalen"
+    },
+    "comparison": {
+      "eyebrow": "SIDE OM SIDE",
+      "heading": "Topp fire på hver dimensjon.",
+      "caption": "Høyere er bedre. Tabulariske tall, metodikken på egen side, og ja — selgertillit teller fordi forfalskningsrisikoen er reell.",
+      "colCompound": "FORBINDELSE",
+      "colEvidence": "EVIDENS",
+      "colMechanism": "MEKANISME",
+      "colHuman": "HUMAN",
+      "colVendor": "SELGER",
+      "colSafety": "SIKKERHET",
+      "colTotal": "TOTALT"
+    },
+    "categories": {
+      "eyebrow": "ETTER KATEGORI",
+      "heading": "Fem hyller. Hver omtale hører til én.",
+      "caption": "Hver hylle bærer omtalene og sammenligningstabellene for ett enkelt forskningsfelt."
+    },
+    "methodology": {
+      "eyebrow": "SLIK SCORER VI",
+      "heading": "Fem vektede dimensjoner i hver omtale.",
+      "caption": "Hver Pepvise-poengsum brytes ned i de samme fem komponentene. Les hele metodikken hvis du vil diskutere vektene — vi lytter.",
+      "items": [
+        {
+          "label": "Publisert evidens",
+          "weight": "25%",
+          "body": "Utvalgsstørrelse, replikasjonsantall og studiedesign i PubMed, ClinicalTrials.gov og FDA-dokumenter. Bare-mus-litteratur har tak."
+        },
+        {
+          "label": "Mekanismens troverdighet",
+          "weight": "15%",
+          "body": "Om den foreslåtte mekanismen samsvarer med etablert cellebiologi, eller om den er tilpasset markedsføringspåstanden."
+        },
+        {
+          "label": "Humandata",
+          "weight": "25%",
+          "body": "Studiefase, utvalgsstørrelse, oppfølgingstid, og avstanden mellom gnagerdose og humandosen som faktisk er studert."
+        },
+        {
+          "label": "Selgertillit",
+          "weight": "15%",
+          "body": "Forfalskningsfrekvens, tilgang til tredjepartsanalyse, regulatorisk holdning hos vanlige kilder. Ingen anbefaling av noen selger."
+        },
+        {
+          "label": "Regulatorisk status",
+          "weight": "20%",
+          "body": "FDA-godkjenning, 503A/503B-egnethet, WADA-status, og den realistiske juridiske banen for en amerikansk pasient eller idrettsutøver."
+        }
+      ],
+      "ctaRead": "Les hele metodikken",
+      "ctaVersion": "Metodikk v1.2"
+    },
+    "pipeline": {
+      "eyebrow": "HVA KOMMER",
+      "heading": "I pipelinen.",
+      "caption": "Tolv omtaler live, åtte til i aktiv skriving. Her er hva som kommer og når.",
+      "ctaSeeFull": "Se hele pipelinen"
+    },
+    "newsletter": {
+      "eyebrow": "DEPESJEN",
+      "heading": "Én omtale i uken. Ingen selgerlenker. Aldri.",
+      "caption": "Når en ny forbindelse går inn i databasen — eller en eksisterende omtale endrer poengsum — får abonnenter vite først.",
+      "placeholder": "du@domene.no",
+      "submit": "Abonnér",
+      "consent": "Abonnement betyr at du godtar personvernerklæringen. Avslutt med ett klikk."
+    }
+  },
+  "review": {
+    "verdict": {
+      "rank": "PLASS",
+      "score": "POENG",
+      "tier": "NIVÅ",
+      "verdictLabel": "DOM",
+      "lastUpdated": "Sist oppdatert {date}",
+      "methodologyLink": "Slik scorer vi"
+    },
+    "specs": {
+      "heading": "Spesifikasjoner",
+      "labelEvidence": "Evidens",
+      "labelMechanism": "Mekanisme",
+      "labelHuman": "Human",
+      "labelVendor": "Selger",
+      "labelSafety": "Sikkerhet",
+      "labelFda": "FDA-status",
+      "labelWada": "WADA-status"
+    },
+    "toc": {
+      "heading": "Innhold"
+    },
+    "prosCons": {
+      "heading": "For og imot",
+      "prosLabel": "DET SOM FUNGERER",
+      "consLabel": "DET SOM IKKE FUNGERER"
+    },
+    "alternatives": {
+      "heading": "Testede alternativer",
+      "caption": "Tre forbindelser fra det samme sammenligningssettet."
+    },
+    "references": {
+      "heading": "Kilder"
+    },
+    "moreInCategory": {
+      "heading": "Andre omtaler i denne kategorien"
+    }
+  },
+  "methodologyPage": {
+    "h1": "Slik scorer vi peptidomtaler.",
+    "lede": "Pepvise scorer hvert forskningspeptid på en samlet 10-poengskala fra fem vektede komponenter. Vektene er offentlige, inputene er offentlige, og versjonshistorien er offentlig — ellers overlever ikke et poengsystem møtet med skarpe lesere.",
+    "currentVersion": "v1.2 — gjeldende",
+    "previousVersion": "v1.1 — erstattet {date}"
+  },
+  "methodologyV12": {
+    "h1": "Metodikk v1.2.",
+    "lede": "Publisert {date}. Strammer vekten av humandata etter Reta-1 og Surv-3, hever taket for selgertillit, og fjerner det gamle WADA-tillegget som dobbelttalte regulatorisk status."
+  },
+  "pipelinePage": {
+    "h1": "I pipelinen.",
+    "lede": "Omtaler for tiden i utkast, i tredjepartsgjennomgang, eller i pre-publiseringspause. Pepvise publiserer når sitatpakken er komplett og metodikken er på v1.2 eller senere — ikke før.",
+    "colCompound": "FORBINDELSE",
+    "colStage": "FASE",
+    "colReviewer": "REDAKTØR",
+    "colTargetPub": "PLANLAGT UTGIVELSE"
+  }
+}

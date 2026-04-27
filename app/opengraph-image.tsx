@@ -7,16 +7,11 @@ export const contentType = "image/png";
 export const size = { width: 1200, height: 630 };
 
 /**
- * Open Graph / social share card — bone parchment background, literary
- * masthead composition. Includes a small medical disclaimer line
- * (regulatory rail) and the dateline at the bottom.
+ * Open Graph card — review-database masthead.
  *
- * Palette pinned to tailwind.config.ts:
- *   bone    #F0EBE0
- *   paper   #F7F3EA
- *   inknavy #192642
- *   oxblood #7A2E3B
- *   slate   #5A6374
+ * Paper-white field, ink wordmark, forest accent rule, methodology
+ * version + entry-count chips. No literary dateline (the cookbook
+ * & magazine sites own that). Wirecutter-style trust + numerics.
  */
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -25,7 +20,7 @@ export default function OpengraphImage() {
         style={{
           width: "100%",
           height: "100%",
-          background: "#F0EBE0",
+          background: "#FAFAF7",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
@@ -34,7 +29,7 @@ export default function OpengraphImage() {
           position: "relative",
         }}
       >
-        {/* Top rail: oxblood hairline + caps dateline */}
+        {/* Top rail: forest hairline + caps version chip */}
         <div
           style={{
             display: "flex",
@@ -45,9 +40,9 @@ export default function OpengraphImage() {
         >
           <span
             style={{
-              height: 2,
-              width: 72,
-              background: "#7A2E3B",
+              width: 10,
+              height: 10,
+              background: "#1F5F3F",
               display: "flex",
             }}
           />
@@ -55,19 +50,20 @@ export default function OpengraphImage() {
             style={{
               fontFamily: "'Inter', system-ui, sans-serif",
               fontSize: 14,
-              letterSpacing: "0.24em",
+              letterSpacing: "0.22em",
               textTransform: "uppercase",
-              color: "#5A6374",
-              fontWeight: 500,
+              color: "#1F5F3F",
+              fontWeight: 600,
             }}
           >
-            {SITE.dateline} &nbsp;&middot;&nbsp; {SITE.volume} &nbsp;&middot;&nbsp; {SITE.issue}
+            REVIEW DATABASE &nbsp;&middot;&nbsp; {SITE.databaseEntries} entries
+            &nbsp;&middot;&nbsp; methodology {SITE.methodologyVersion}
           </span>
           <span
             style={{
               flex: 1,
               height: 1,
-              background: "rgba(25, 38, 66, 0.18)",
+              background: "#1F2024",
               display: "flex",
             }}
           />
@@ -83,78 +79,45 @@ export default function OpengraphImage() {
             marginTop: -24,
           }}
         >
-          {/* Wordmark: Pep (inknavy) + Vise (oxblood italic) + oxblood dot */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "baseline",
-            }}
-          >
+          <div style={{ display: "flex", alignItems: "baseline" }}>
             <span
               style={{
                 fontFamily:
-                  '"Newsreader", "Source Serif 4", "Tiempos Text", Georgia, serif',
+                  '"Source Serif 4", "Tiempos Text", Georgia, serif',
                 fontWeight: 600,
                 fontSize: 168,
-                color: "#192642",
+                color: "#16181A",
                 lineHeight: 1,
-                letterSpacing: "-0.035em",
+                letterSpacing: "-0.028em",
               }}
             >
-              Pep
+              Pepvise
             </span>
-            <span
-              style={{
-                fontFamily:
-                  '"Newsreader", "Source Serif 4", "Tiempos Text", Georgia, serif',
-                fontWeight: 600,
-                fontStyle: "italic",
-                fontSize: 168,
-                color: "#7A2E3B",
-                lineHeight: 1,
-                letterSpacing: "-0.035em",
-              }}
-            >
-              Vise
-            </span>
-            <span
-              style={{
-                marginLeft: 10,
-                marginBottom: 22,
-                width: 18,
-                height: 18,
-                borderRadius: "50%",
-                background: "#7A2E3B",
-                display: "flex",
-              }}
-            />
           </div>
 
-          {/* Tagline — italic serif */}
           <div
             style={{
-              marginTop: 28,
+              marginTop: 24,
               fontFamily:
-                '"Newsreader", "Source Serif 4", "Tiempos Text", Georgia, serif',
-              fontStyle: "italic",
+                '"Source Serif 4", "Tiempos Text", Georgia, serif',
               fontWeight: 400,
-              fontSize: 48,
-              color: "#192642",
+              fontSize: 42,
+              color: "#16181A",
               letterSpacing: "-0.012em",
-              lineHeight: 1.15,
+              lineHeight: 1.18,
               display: "flex",
+              maxWidth: 920,
             }}
           >
-            {SITE.tagline}
+            {SITE.shortTagline}
           </div>
 
-          {/* Medical disclaimer line — regulatory rail */}
           <div
             style={{
-              marginTop: 22,
+              marginTop: 20,
               fontFamily: "'Inter', system-ui, sans-serif",
               fontSize: 18,
-              color: "#5A6374",
+              color: "#3B3F44",
               fontWeight: 500,
               letterSpacing: "0.01em",
               display: "flex",
@@ -164,18 +127,17 @@ export default function OpengraphImage() {
           >
             <span
               style={{
-                width: 6,
-                height: 6,
-                borderRadius: "50%",
-                background: "#7A2E3B",
+                width: 8,
+                height: 8,
+                background: "#1F5F3F",
                 display: "flex",
               }}
             />
-            Educational. No dosing advice. Not medical advice.
+            Educational. No vendor links. Not medical advice.
           </div>
         </div>
 
-        {/* Bottom: caps dateline with domain */}
+        {/* Bottom rule + domain */}
         <div
           style={{
             display: "flex",
@@ -188,7 +150,7 @@ export default function OpengraphImage() {
             style={{
               flex: 1,
               height: 1,
-              background: "rgba(25, 38, 66, 0.18)",
+              background: "#1F2024",
               display: "flex",
             }}
           />
@@ -196,19 +158,19 @@ export default function OpengraphImage() {
             style={{
               fontFamily: "'Inter', system-ui, sans-serif",
               fontSize: 14,
-              letterSpacing: "0.24em",
+              letterSpacing: "0.22em",
               textTransform: "uppercase",
-              color: "#5A6374",
-              fontWeight: 500,
+              color: "#3B3F44",
+              fontWeight: 600,
             }}
           >
-            {SITE.dateline} &nbsp;&middot;&nbsp; {SITE.volume} &nbsp;&middot;&nbsp; {SITE.issue} &nbsp;&middot;&nbsp; pepvise.com
+            pepvise.com &nbsp;&middot;&nbsp; refreshed {SITE.lastDatabaseRefresh}
           </span>
           <span
             style={{
-              height: 2,
-              width: 72,
-              background: "#7A2E3B",
+              width: 10,
+              height: 10,
+              background: "#1F5F3F",
               display: "flex",
             }}
           />

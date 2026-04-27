@@ -1,0 +1,194 @@
+{
+  "common": {
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "skipToContent": "Aller au contenu",
+    "minRead": "{n} min de lecture",
+    "by": "Par",
+    "updated": "Mis à jour le {date}",
+    "lastUpdated": "Dernière mise à jour {date}",
+    "readReview": "Lire le test",
+    "viewMethodology": "Voir la méthodologie",
+    "backToHome": "Retour à l'accueil"
+  },
+  "header": {
+    "logoAria": "Pepvise — accueil",
+    "wordmark": "Pepvise",
+    "tagline": "Tests de la littérature sur les peptides de recherche.",
+    "navReviews": "Tests",
+    "navComparisons": "Comparatifs",
+    "navCategories": "Catégories",
+    "navMethodology": "Méthodologie",
+    "navPipeline": "Pipeline",
+    "searchPlaceholder": "Rechercher",
+    "searchAria": "Rechercher des tests",
+    "searchSubmit": "Chercher"
+  },
+  "footer": {
+    "leadParagraph": "Pepvise teste la littérature publiée sur les peptides comme Wirecutter teste les matelas — chaque entrée classée, chaque note sur le même barème, aucun lien vendeur, aucune prescription de dose.",
+    "sectionReviews": "Tests",
+    "sectionAbout": "À propos",
+    "sectionFinePrint": "Mentions",
+    "linkAllReviews": "Tous les tests",
+    "linkComparisons": "Tableaux comparatifs",
+    "linkCategories": "Parcourir par catégorie",
+    "linkMethodology": "Comment nous notons",
+    "linkPipeline": "Ce qu'on teste ensuite",
+    "linkAbout": "À propos",
+    "linkEditorialStandards": "Standards éditoriaux",
+    "linkContact": "Contact",
+    "linkNewsletter": "Newsletter",
+    "linkAffiliateDisclosure": "Mentions d'affiliation",
+    "linkPrivacy": "Confidentialité",
+    "linkTerms": "Conditions",
+    "linkMedicalDisclaimer": "Avis médical",
+    "footerNote": "Les tests Pepvise ne sont pas un avis médical. Nous ne vendons pas de peptides, n'acceptons pas de sponsorisation de vendeurs, et ne recommandons pas un composé à un individu. Consultez un médecin agréé travaillant dans un cadre conforme à la FDA avant toute administration."
+  },
+  "home": {
+    "hero": {
+      "ribbon": "BASE DE TESTS",
+      "h1": "Les peptides notés au même barème.",
+      "lede": "Chaque composé évalué sur les cinq mêmes dimensions — preuves publiées, plausibilité du mécanisme, données humaines, fiabilité du vendeur, statut réglementaire — et classé. Dernière mise à jour de la base le {date}.",
+      "ctaPrimary": "Voir les meilleurs choix",
+      "ctaSecondary": "Comment nous notons"
+    },
+    "rankIndex": {
+      "eyebrow": "LES MIEUX CLASSÉS",
+      "heading": "Nos choix dans la catégorie peptides de recherche.",
+      "caption": "Douze composés en rotation active, notés sur 10 points au total. Mis à jour chaque trimestre.",
+      "colRank": "RANG",
+      "colName": "COMPOSÉ",
+      "colSummary": "VERDICT EN UNE LIGNE",
+      "colEvidence": "PREUVES",
+      "colSafety": "SÉCURITÉ",
+      "colTotal": "TOTAL",
+      "ourPick": "NOTRE CHOIX",
+      "budget": "CHOIX BUDGET",
+      "upgrade": "CHOIX HAUT DE GAMME",
+      "runnerUp": "DAUPHIN",
+      "alsoRan": "AUSSI TESTÉ",
+      "readReview": "Lire le test"
+    },
+    "comparison": {
+      "eyebrow": "FACE À FACE",
+      "heading": "Top quatre sur chaque dimension.",
+      "caption": "Plus c'est haut, mieux c'est. Chiffres tabulaires, méthodologie sur sa propre page, et oui — la fiabilité du vendeur compte parce que le risque de contrefaçon est réel.",
+      "colCompound": "COMPOSÉ",
+      "colEvidence": "PREUVES",
+      "colMechanism": "MÉCANISME",
+      "colHuman": "HUMAIN",
+      "colVendor": "VENDEUR",
+      "colSafety": "SÉCURITÉ",
+      "colTotal": "TOTAL"
+    },
+    "categories": {
+      "eyebrow": "PAR CATÉGORIE",
+      "heading": "Cinq rayons. Chaque test trouve sa place.",
+      "caption": "Chaque rayon porte les tests et les comparatifs d'un seul domaine de recherche."
+    },
+    "methodology": {
+      "eyebrow": "COMMENT NOUS NOTONS",
+      "heading": "Cinq dimensions pondérées dans chaque test.",
+      "caption": "Chaque note Pepvise se décompose dans les cinq mêmes composantes. Lisez la méthodologie complète si vous voulez débattre des poids — on vous écoutera.",
+      "items": [
+        {
+          "label": "Preuves publiées",
+          "weight": "25%",
+          "body": "Taille d'échantillon, nombre de réplications, plan d'étude — sur PubMed, ClinicalTrials.gov, dossiers FDA. La littérature 100% murine est plafonnée."
+        },
+        {
+          "label": "Plausibilité du mécanisme",
+          "weight": "15%",
+          "body": "Si le mécanisme proposé est cohérent avec la biologie cellulaire établie, ou s'il a été ajusté à la promesse marketing."
+        },
+        {
+          "label": "Données humaines",
+          "weight": "25%",
+          "body": "Phase d'essai, taille d'échantillon, durée du suivi, écart entre la dose rongeur et la dose humaine effectivement étudiée."
+        },
+        {
+          "label": "Fiabilité du vendeur",
+          "weight": "15%",
+          "body": "Incidence de contrefaçon, dosages tiers disponibles, posture réglementaire des sources usuelles. Pas une recommandation de vendeur."
+        },
+        {
+          "label": "Statut réglementaire",
+          "weight": "20%",
+          "body": "Approbation FDA, éligibilité 503A/503B, statut WADA, voie légale réaliste pour un patient ou athlète américain."
+        }
+      ],
+      "ctaRead": "Lire la méthodologie complète",
+      "ctaVersion": "Méthodologie v1.2"
+    },
+    "pipeline": {
+      "eyebrow": "À VENIR",
+      "heading": "Dans le pipeline.",
+      "caption": "Douze tests en ligne, huit autres en rédaction active. Voici ce qui arrive et quand.",
+      "ctaSeeFull": "Voir le pipeline complet"
+    },
+    "newsletter": {
+      "eyebrow": "LA DÉPÊCHE",
+      "heading": "Un test par semaine. Aucun lien vendeur. Jamais.",
+      "caption": "Quand un nouveau composé entre dans la base — ou quand un test change de note — les abonnés sont au courant en premier.",
+      "placeholder": "vous@domaine.fr",
+      "submit": "S'abonner",
+      "consent": "En vous abonnant vous acceptez la politique de confidentialité. Désabonnement en un clic."
+    }
+  },
+  "review": {
+    "verdict": {
+      "rank": "RANG",
+      "score": "NOTE",
+      "tier": "PALIER",
+      "verdictLabel": "VERDICT",
+      "lastUpdated": "Dernière mise à jour {date}",
+      "methodologyLink": "Comment nous notons"
+    },
+    "specs": {
+      "heading": "Fiche",
+      "labelEvidence": "Preuves",
+      "labelMechanism": "Mécanisme",
+      "labelHuman": "Humain",
+      "labelVendor": "Vendeur",
+      "labelSafety": "Sécurité",
+      "labelFda": "Statut FDA",
+      "labelWada": "Statut WADA"
+    },
+    "toc": {
+      "heading": "Sommaire"
+    },
+    "prosCons": {
+      "heading": "Avantages et inconvénients",
+      "prosLabel": "CE QUI MARCHE",
+      "consLabel": "CE QUI MARCHE PAS"
+    },
+    "alternatives": {
+      "heading": "Alternatives testées",
+      "caption": "Trois composés issus du même comparatif."
+    },
+    "references": {
+      "heading": "Références"
+    },
+    "moreInCategory": {
+      "heading": "Autres tests de cette catégorie"
+    }
+  },
+  "methodologyPage": {
+    "h1": "Comment nous notons les peptides.",
+    "lede": "Pepvise note chaque peptide de recherche sur 10 points au total, tirés de cinq composantes pondérées. Les poids sont publics, les entrées sont publiques, l'historique des versions est public — autrement un système de notation ne survit pas à des lecteurs exigeants.",
+    "currentVersion": "v1.2 — actuelle",
+    "previousVersion": "v1.1 — remplacée le {date}"
+  },
+  "methodologyV12": {
+    "h1": "Méthodologie v1.2.",
+    "lede": "Publiée le {date}. Renforce le poids des données humaines après Reta-1 et Surv-3, relève le plafond de fiabilité vendeur, et supprime le bonus WADA hérité qui comptait deux fois la posture réglementaire."
+  },
+  "pipelinePage": {
+    "h1": "Dans le pipeline.",
+    "lede": "Tests en cours de rédaction, en relecture tierce, ou en attente de publication. Pepvise publie quand le dossier de citations est complet et que la méthodologie est en v1.2 ou ultérieure — pas avant.",
+    "colCompound": "COMPOSÉ",
+    "colStage": "ÉTAPE",
+    "colReviewer": "ÉDITEUR",
+    "colTargetPub": "PUBLICATION CIBLE"
+  }
+}

@@ -1,28 +1,7 @@
-import type { Metadata } from "next";
-import { Playfair_Display } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { CookieBanner } from "@/components/CookieBanner";
-import { MedicalDisclaimerFooter } from "@/components/MedicalDisclaimer";
-import { OrganizationJsonLd } from "@/components/schema/OrganizationJsonLd";
 import { SITE } from "@/lib/content/site";
 import { robotsMeta } from "@/lib/seo";
-
-/**
- * Playfair Display — a single decorative display serif used only for the
- * hero eyebrow flourish and the 404 floating quote. Loaded via next/font so
- * it ships a preloaded variable subset with no FOUT.
- *
- * Body + headlines remain Newsreader / Tiempos. Palette is untouched.
- */
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
-  display: "swap",
-  variable: "--font-display-flourish",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -31,40 +10,37 @@ export const metadata: Metadata = {
     template: `%s — ${SITE.name}`,
   },
   description: SITE.description,
-  openGraph: {
-    type: "website",
-    siteName: SITE.name,
-    locale: "en_US",
-  },
-  twitter: {
-    card: "summary_large_image",
-  },
   robots: robotsMeta(),
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#FAFAF7",
+  colorScheme: "light",
+};
+
+/**
+ * Root layout — thin shell. The locale layout (`app/[locale]/layout.tsx`)
+ * carries the actual <html> attributes via next-intl. We only emit the
+ * Google Fonts preconnect and the global CSS here.
+ */
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={playfair.variable}>
+    <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body>
-        <OrganizationJsonLd />
-        <Header />
-        {children}
-        <MedicalDisclaimerFooter />
-        <Footer />
-        <CookieBanner />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

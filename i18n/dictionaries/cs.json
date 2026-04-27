@@ -1,0 +1,194 @@
+{
+  "common": {
+    "openMenu": "Otevřít menu",
+    "closeMenu": "Zavřít menu",
+    "skipToContent": "Přejít na obsah",
+    "minRead": "{n} min čtení",
+    "by": "Autor",
+    "updated": "Aktualizováno {date}",
+    "lastUpdated": "Poslední aktualizace {date}",
+    "readReview": "Číst recenzi",
+    "viewMethodology": "Zobrazit metodiku",
+    "backToHome": "Zpět na úvod"
+  },
+  "header": {
+    "logoAria": "Pepvise — domů",
+    "wordmark": "Pepvise",
+    "tagline": "Recenze literatury o výzkumných peptidech.",
+    "navReviews": "Recenze",
+    "navComparisons": "Srovnání",
+    "navCategories": "Kategorie",
+    "navMethodology": "Metodika",
+    "navPipeline": "Pipeline",
+    "searchPlaceholder": "Hledat recenze",
+    "searchAria": "Hledat recenze",
+    "searchSubmit": "Hledat"
+  },
+  "footer": {
+    "leadParagraph": "Pepvise recenzuje publikovanou literaturu o peptidech tak, jako Wirecutter recenzuje matrace — každá položka zařazená, každé skóre na stejném metru, žádné odkazy na prodejce, žádné předpisy dávek.",
+    "sectionReviews": "Recenze",
+    "sectionAbout": "O nás",
+    "sectionFinePrint": "Drobné písmo",
+    "linkAllReviews": "Všechny recenze",
+    "linkComparisons": "Srovnávací tabulky",
+    "linkCategories": "Kategorie",
+    "linkMethodology": "Jak hodnotíme",
+    "linkPipeline": "Co zkoušíme příště",
+    "linkAbout": "O nás",
+    "linkEditorialStandards": "Redakční standardy",
+    "linkContact": "Kontakt",
+    "linkNewsletter": "Newsletter",
+    "linkAffiliateDisclosure": "Informace o affiliate",
+    "linkPrivacy": "Soukromí",
+    "linkTerms": "Podmínky",
+    "linkMedicalDisclaimer": "Lékařské upozornění",
+    "footerNote": "Recenze Pepvise nejsou lékařskou radou. Neprodáváme peptidy, nepřijímáme sponzoring od prodejců peptidů a nedoporučujeme jakoukoli sloučeninu žádné osobě. Před jakýmkoli podáním se poraďte s licencovaným lékařem pracujícím v rámci postupů odpovídajících FDA."
+  },
+  "home": {
+    "hero": {
+      "ribbon": "DATABÁZE RECENZÍ",
+      "h1": "Recenze peptidů na stejném metru.",
+      "lede": "Každá sloučenina hodnocena na stejných pěti dimenzích — publikované důkazy, věrohodnost mechanismu, lidská data, důvěra k prodejci, regulační status — a zařazená. Poslední aktualizace databáze {date}.",
+      "ctaPrimary": "Zobrazit nejlepší volby",
+      "ctaSecondary": "Jak hodnotíme"
+    },
+    "rankIndex": {
+      "eyebrow": "NEJLÉPE HODNOCENÉ",
+      "heading": "Naše volby v kategorii výzkumných peptidů.",
+      "caption": "Dvanáct sloučenin v aktivní rotaci, hodnoceno na desetibodové souhrnné škále. Aktualizováno čtvrtletně.",
+      "colRank": "POZICE",
+      "colName": "SLOUČENINA",
+      "colSummary": "VERDIKT V JEDNÉ ŘÁDCE",
+      "colEvidence": "DŮKAZY",
+      "colSafety": "BEZPEČNOST",
+      "colTotal": "CELKEM",
+      "ourPick": "NAŠE VOLBA",
+      "budget": "ROZPOČTOVÁ VOLBA",
+      "upgrade": "PREMIUM VOLBA",
+      "runnerUp": "DRUHÉ MÍSTO",
+      "alsoRan": "TAKÉ TESTOVÁNO",
+      "readReview": "Číst recenzi"
+    },
+    "comparison": {
+      "eyebrow": "VEDLE SEBE",
+      "heading": "Top čtyři na každé dimenzi.",
+      "caption": "Vyšší je lepší. Tabulkové číslice, metodika na vlastní stránce, a ano — důvěra k prodejci se počítá, protože riziko padělků je reálné.",
+      "colCompound": "SLOUČENINA",
+      "colEvidence": "DŮKAZY",
+      "colMechanism": "MECHANISMUS",
+      "colHuman": "LIDÉ",
+      "colVendor": "PRODEJCE",
+      "colSafety": "BEZPEČNOST",
+      "colTotal": "CELKEM"
+    },
+    "categories": {
+      "eyebrow": "PODLE KATEGORIE",
+      "heading": "Pět polic. Každá recenze patří na jednu.",
+      "caption": "Každá police nese recenze a srovnávací tabulky pro jeden výzkumný obor."
+    },
+    "methodology": {
+      "eyebrow": "JAK HODNOTÍME",
+      "heading": "Pět vážených dimenzí v každé recenzi.",
+      "caption": "Každé skóre Pepvise se rozkládá do stejných pěti složek. Přečtěte si plnou metodiku, pokud chcete váhy probrat — posloucháme.",
+      "items": [
+        {
+          "label": "Publikované důkazy",
+          "weight": "25%",
+          "body": "Velikost vzorku, počet replikací, design studie na PubMed, ClinicalTrials.gov a v dokumentech FDA. Pouze myší literatura má strop."
+        },
+        {
+          "label": "Věrohodnost mechanismu",
+          "weight": "15%",
+          "body": "Zda navržený mechanismus odpovídá zavedené buněčné biologii, nebo byl dotlačen k marketingovému tvrzení."
+        },
+        {
+          "label": "Lidská data",
+          "weight": "25%",
+          "body": "Fáze studie, velikost vzorku, doba sledování a propast mezi dávkou na hlodavci a humánní dávkou skutečně studovanou."
+        },
+        {
+          "label": "Důvěra k prodejci",
+          "weight": "15%",
+          "body": "Výskyt padělků, dostupnost nezávislé analýzy, regulační postoj typických zdrojů. Nejde o doporučení žádného prodejce."
+        },
+        {
+          "label": "Regulační status",
+          "weight": "20%",
+          "body": "Schválení FDA, způsobilost 503A/503B, status WADA a realistická právní cesta pro pacienta či sportovce v USA."
+        }
+      ],
+      "ctaRead": "Přečíst plnou metodiku",
+      "ctaVersion": "Metodika v1.2"
+    },
+    "pipeline": {
+      "eyebrow": "CO PŘÍŠTĚ",
+      "heading": "V pipeline.",
+      "caption": "Dvanáct recenzí online, dalších osm v aktivní redakci. Tady je co přijde a kdy.",
+      "ctaSeeFull": "Zobrazit celou pipeline"
+    },
+    "newsletter": {
+      "eyebrow": "DEPEŠE",
+      "heading": "Jedna recenze týdně. Žádné odkazy na prodejce. Nikdy.",
+      "caption": "Když do databáze přibude nová sloučenina — nebo když existující recenze změní skóre — odběratelé se to dozvědí jako první.",
+      "placeholder": "vy@domena.cz",
+      "submit": "Přihlásit se",
+      "consent": "Přihlášením přijímáte zásady ochrany soukromí. Odhlášení jedním kliknutím."
+    }
+  },
+  "review": {
+    "verdict": {
+      "rank": "POZICE",
+      "score": "SKÓRE",
+      "tier": "ÚROVEŇ",
+      "verdictLabel": "VERDIKT",
+      "lastUpdated": "Poslední aktualizace {date}",
+      "methodologyLink": "Jak hodnotíme"
+    },
+    "specs": {
+      "heading": "Specifikace",
+      "labelEvidence": "Důkazy",
+      "labelMechanism": "Mechanismus",
+      "labelHuman": "Lidé",
+      "labelVendor": "Prodejce",
+      "labelSafety": "Bezpečnost",
+      "labelFda": "Status FDA",
+      "labelWada": "Status WADA"
+    },
+    "toc": {
+      "heading": "Obsah"
+    },
+    "prosCons": {
+      "heading": "Pro a proti",
+      "prosLabel": "CO FUNGUJE",
+      "consLabel": "CO NEFUNGUJE"
+    },
+    "alternatives": {
+      "heading": "Testované alternativy",
+      "caption": "Tři sloučeniny ze stejné srovnávací sady."
+    },
+    "references": {
+      "heading": "Zdroje"
+    },
+    "moreInCategory": {
+      "heading": "Další recenze v této kategorii"
+    }
+  },
+  "methodologyPage": {
+    "h1": "Jak hodnotíme peptidové recenze.",
+    "lede": "Pepvise hodnotí každý výzkumný peptid na desetibodové souhrnné škále z pěti vážených složek. Váhy jsou veřejné, vstupy jsou veřejné, historie verzí je veřejná — jinak hodnotící systém nepřežije kontakt s pozornými čtenáři.",
+    "currentVersion": "v1.2 — aktuální",
+    "previousVersion": "v1.1 — nahrazena {date}"
+  },
+  "methodologyV12": {
+    "h1": "Metodika v1.2.",
+    "lede": "Vydáno {date}. Zpřísňuje váhu lidských dat po Reta-1 a Surv-3, zvyšuje strop důvěry k prodejci a odstraňuje starý WADA bonus, který dvakrát počítal regulační status."
+  },
+  "pipelinePage": {
+    "h1": "V pipeline.",
+    "lede": "Recenze aktuálně v psaní, v externí revizi, nebo v předpublikační pauze. Pepvise publikuje, jakmile je citační balíček úplný a metodika je v1.2 nebo novější — ne dříve.",
+    "colCompound": "SLOUČENINA",
+    "colStage": "FÁZE",
+    "colReviewer": "REDAKTOR",
+    "colTargetPub": "CÍLOVÉ VYDÁNÍ"
+  }
+}

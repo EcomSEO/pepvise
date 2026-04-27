@@ -1,0 +1,194 @@
+{
+  "common": {
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
+    "skipToContent": "Naar inhoud",
+    "minRead": "{n} min leestijd",
+    "by": "Door",
+    "updated": "Bijgewerkt op {date}",
+    "lastUpdated": "Laatst bijgewerkt {date}",
+    "readReview": "Review lezen",
+    "viewMethodology": "Methodologie bekijken",
+    "backToHome": "Terug naar home"
+  },
+  "header": {
+    "logoAria": "Pepvise — home",
+    "wordmark": "Pepvise",
+    "tagline": "Reviews van de literatuur over onderzoekspeptiden.",
+    "navReviews": "Reviews",
+    "navComparisons": "Vergelijkingen",
+    "navCategories": "Categorieën",
+    "navMethodology": "Methodologie",
+    "navPipeline": "Pipeline",
+    "searchPlaceholder": "Zoek reviews",
+    "searchAria": "Zoek reviews",
+    "searchSubmit": "Zoek"
+  },
+  "footer": {
+    "leadParagraph": "Pepvise reviewt de gepubliceerde peptidenliteratuur zoals Wirecutter matrassen reviewt — elke vermelding gerangschikt, elke score op dezelfde meetlat, geen verkoperslinks, geen doseringsvoorschriften.",
+    "sectionReviews": "Reviews",
+    "sectionAbout": "Over ons",
+    "sectionFinePrint": "Kleine letters",
+    "linkAllReviews": "Alle reviews",
+    "linkComparisons": "Vergelijkingstabellen",
+    "linkCategories": "Categorieën",
+    "linkMethodology": "Hoe we scoren",
+    "linkPipeline": "Wat we hierna testen",
+    "linkAbout": "Over ons",
+    "linkEditorialStandards": "Redactionele normen",
+    "linkContact": "Contact",
+    "linkNewsletter": "Nieuwsbrief",
+    "linkAffiliateDisclosure": "Affiliate-toelichting",
+    "linkPrivacy": "Privacy",
+    "linkTerms": "Voorwaarden",
+    "linkMedicalDisclaimer": "Medische disclaimer",
+    "footerNote": "Pepvise-reviews zijn geen medisch advies. We verkopen geen peptiden, accepteren geen sponsoring van peptidenverkopers, en raden geen verbinding aan een individu aan. Spreek met een geregistreerd arts die binnen FDA-conforme paden werkt voor enige toediening."
+  },
+  "home": {
+    "hero": {
+      "ribbon": "REVIEW-DATABASE",
+      "h1": "Peptidenreviews op één meetlat.",
+      "lede": "Elke verbinding gescoord op dezelfde vijf dimensies — gepubliceerd bewijs, mechanisme-plausibiliteit, humane data, betrouwbaarheid van de verkoper, regulatoire status — en gerangschikt. Laatste databasetweak op {date}.",
+      "ctaPrimary": "Bekijk de toppers",
+      "ctaSecondary": "Hoe we scoren"
+    },
+    "rankIndex": {
+      "eyebrow": "DE BEST GERANGSCHIKTE",
+      "heading": "Onze keuzes binnen de onderzoekspeptidencategorie.",
+      "caption": "Twaalf verbindingen actief in rotatie, gescoord op een 10-punts samengestelde score. Per kwartaal bijgewerkt.",
+      "colRank": "RANG",
+      "colName": "VERBINDING",
+      "colSummary": "VERDICT IN ÉÉN REGEL",
+      "colEvidence": "BEWIJS",
+      "colSafety": "VEILIGHEID",
+      "colTotal": "TOTAAL",
+      "ourPick": "ONZE KEUZE",
+      "budget": "BUDGETKEUZE",
+      "upgrade": "UPGRADE-KEUZE",
+      "runnerUp": "TWEEDE PLAATS",
+      "alsoRan": "OOK GETEST",
+      "readReview": "Review lezen"
+    },
+    "comparison": {
+      "eyebrow": "ZIJ AAN ZIJ",
+      "heading": "Top vier op elke dimensie.",
+      "caption": "Hoger is beter. Tabulaire cijfers, methodologie staat op een eigen pagina, en ja — verkopersbetrouwbaarheid telt omdat het vervalsingsrisico reëel is.",
+      "colCompound": "VERBINDING",
+      "colEvidence": "BEWIJS",
+      "colMechanism": "MECHANISME",
+      "colHuman": "HUMAAN",
+      "colVendor": "VERKOPER",
+      "colSafety": "VEILIGHEID",
+      "colTotal": "TOTAAL"
+    },
+    "categories": {
+      "eyebrow": "PER CATEGORIE",
+      "heading": "Vijf planken. Elke review past op één.",
+      "caption": "Elke plank draagt de reviews en de vergelijkingstabellen voor één enkel onderzoeksdomein."
+    },
+    "methodology": {
+      "eyebrow": "HOE WE SCOREN",
+      "heading": "Vijf gewogen dimensies in elke review.",
+      "caption": "Elke Pepvise-score valt uiteen in dezelfde vijf componenten. Lees de volledige methodologie als je over de gewichten wilt discussiëren — we luisteren.",
+      "items": [
+        {
+          "label": "Gepubliceerd bewijs",
+          "weight": "25%",
+          "body": "Steekproefgrootte, replicatieaantal en studieopzet in PubMed, ClinicalTrials.gov en FDA-dossiers. Alleen-muizen-literatuur heeft een plafond."
+        },
+        {
+          "label": "Mechanisme-plausibiliteit",
+          "weight": "15%",
+          "body": "Of het voorgestelde mechanisme strookt met gevestigde celbiologie, of dat het op de marketingclaim is geplakt."
+        },
+        {
+          "label": "Humane data",
+          "weight": "25%",
+          "body": "Fase, steekproefgrootte, duur van follow-up, en de kloof tussen knaagdier-dosis en de daadwerkelijk bestudeerde humane dosis."
+        },
+        {
+          "label": "Betrouwbaarheid verkoper",
+          "weight": "15%",
+          "body": "Vervalsingsincidenten, beschikbaarheid van derdenanalyses, regulatoire status van typische bronnen. Geen aanbeveling van enige verkoper."
+        },
+        {
+          "label": "Regulatoire status",
+          "weight": "20%",
+          "body": "FDA-goedkeuring, 503A/503B-geschiktheid, WADA-status, en het realistische juridische pad voor een Amerikaanse patiënt of atleet."
+        }
+      ],
+      "ctaRead": "Lees de volledige methodologie",
+      "ctaVersion": "Methodologie v1.2"
+    },
+    "pipeline": {
+      "eyebrow": "WAT KOMT ERAAN",
+      "heading": "In de pipeline.",
+      "caption": "Twaalf reviews live, acht meer in actief schrijven. Hier is wat eraan komt en wanneer.",
+      "ctaSeeFull": "Bekijk de volledige pipeline"
+    },
+    "newsletter": {
+      "eyebrow": "DE DEPECHE",
+      "heading": "Eén review per week. Geen verkoperslinks. Nooit.",
+      "caption": "Wanneer een nieuwe verbinding de database betreedt — of een bestaande review van score verandert — horen abonnees het eerst.",
+      "placeholder": "jij@domein.nl",
+      "submit": "Inschrijven",
+      "consent": "Door in te schrijven accepteer je het privacybeleid. Eén-klik uitschrijven."
+    }
+  },
+  "review": {
+    "verdict": {
+      "rank": "RANG",
+      "score": "SCORE",
+      "tier": "NIVEAU",
+      "verdictLabel": "VERDICT",
+      "lastUpdated": "Laatst bijgewerkt {date}",
+      "methodologyLink": "Hoe we scoren"
+    },
+    "specs": {
+      "heading": "Specificaties",
+      "labelEvidence": "Bewijs",
+      "labelMechanism": "Mechanisme",
+      "labelHuman": "Humaan",
+      "labelVendor": "Verkoper",
+      "labelSafety": "Veiligheid",
+      "labelFda": "FDA-status",
+      "labelWada": "WADA-status"
+    },
+    "toc": {
+      "heading": "Inhoud"
+    },
+    "prosCons": {
+      "heading": "Voor- en nadelen",
+      "prosLabel": "WAT WERKT",
+      "consLabel": "WAT NIET WERKT"
+    },
+    "alternatives": {
+      "heading": "Geteste alternatieven",
+      "caption": "Drie verbindingen uit dezelfde vergelijkingsset."
+    },
+    "references": {
+      "heading": "Bronnen"
+    },
+    "moreInCategory": {
+      "heading": "Andere reviews in deze categorie"
+    }
+  },
+  "methodologyPage": {
+    "h1": "Hoe we peptidenreviews scoren.",
+    "lede": "Pepvise scoort elk onderzoekspeptide op een 10-punts samengestelde score, opgebouwd uit vijf gewogen componenten. De gewichten zijn openbaar, de inputs zijn openbaar, en de versiehistorie is openbaar — anders overleeft een scoresysteem het contact met scherpe lezers niet.",
+    "currentVersion": "v1.2 — actueel",
+    "previousVersion": "v1.1 — vervangen op {date}"
+  },
+  "methodologyV12": {
+    "h1": "Methodologie v1.2.",
+    "lede": "Gepubliceerd op {date}. Verzwaart het gewicht van humane data na Reta-1 en Surv-3, verhoogt het plafond voor verkopersbetrouwbaarheid en verwijdert de oude WADA-bonus die de regulatoire status dubbel telde."
+  },
+  "pipelinePage": {
+    "h1": "In de pipeline.",
+    "lede": "Reviews momenteel in concept, in externe review, of in pre-publicatie hold. Pepvise publiceert wanneer het citatiepakket compleet is en de methodologie minstens v1.2 staat — niet eerder.",
+    "colCompound": "VERBINDING",
+    "colStage": "FASE",
+    "colReviewer": "REDACTEUR",
+    "colTargetPub": "DOELPUBLICATIE"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "common": {
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "skipToContent": "Zum Inhalt springen",
+    "minRead": "{n} Min. Lesezeit",
+    "by": "Von",
+    "updated": "Aktualisiert {date}",
+    "lastUpdated": "Zuletzt aktualisiert {date}",
+    "readReview": "Review lesen",
+    "viewMethodology": "Methodik ansehen",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "header": {
+    "logoAria": "Pepvise — Startseite",
+    "wordmark": "Pepvise",
+    "tagline": "Reviews der Forschungs-Peptid-Literatur.",
+    "navReviews": "Reviews",
+    "navComparisons": "Vergleiche",
+    "navCategories": "Kategorien",
+    "navMethodology": "Methodik",
+    "navPipeline": "Pipeline",
+    "searchPlaceholder": "Reviews durchsuchen",
+    "searchAria": "Reviews durchsuchen",
+    "searchSubmit": "Suchen"
+  },
+  "footer": {
+    "leadParagraph": "Pepvise rezensiert die veröffentlichte Peptid-Literatur so, wie Wirecutter Matratzen rezensiert — jeder Eintrag bewertet, jeder Score am gleichen Maßstab, keine Anbieter-Links, keine Dosierungsempfehlungen.",
+    "sectionReviews": "Reviews",
+    "sectionAbout": "Über uns",
+    "sectionFinePrint": "Kleingedrucktes",
+    "linkAllReviews": "Alle Reviews",
+    "linkComparisons": "Vergleichstabellen",
+    "linkCategories": "Kategorien",
+    "linkMethodology": "Wie wir bewerten",
+    "linkPipeline": "Was als Nächstes getestet wird",
+    "linkAbout": "Über uns",
+    "linkEditorialStandards": "Redaktionsstandards",
+    "linkContact": "Kontakt",
+    "linkNewsletter": "Newsletter",
+    "linkAffiliateDisclosure": "Affiliate-Hinweis",
+    "linkPrivacy": "Datenschutz",
+    "linkTerms": "AGB",
+    "linkMedicalDisclaimer": "Medizinischer Hinweis",
+    "footerNote": "Pepvise-Reviews sind keine medizinische Beratung. Wir verkaufen keine Peptide, akzeptieren kein Sponsoring von Peptid-Anbietern und empfehlen keinem Einzelnen ein Präparat. Sprechen Sie vor jeder Anwendung mit einem zugelassenen Arzt, der innerhalb FDA-konformer Wege arbeitet."
+  },
+  "home": {
+    "hero": {
+      "ribbon": "REVIEW-DATENBANK",
+      "h1": "Peptid-Reviews am gleichen Maßstab.",
+      "lede": "Jede Substanz auf den gleichen fünf Dimensionen bewertet — publizierte Evidenz, Mechanismus-Plausibilität, Humandaten, Anbieter-Verlässlichkeit, regulatorischer Status — und gerankt. Letzte Datenbank-Aktualisierung {date}.",
+      "ctaPrimary": "Top-Empfehlungen ansehen",
+      "ctaSecondary": "Wie wir bewerten"
+    },
+    "rankIndex": {
+      "eyebrow": "DIE TOP-PLATZIERUNGEN",
+      "heading": "Unsere Empfehlungen über die Forschungs-Peptid-Kategorie hinweg.",
+      "caption": "Zwölf Substanzen aktiv in Rotation, bewertet auf einer 10-Punkte-Gesamtnote. Vierteljährlich aktualisiert.",
+      "colRank": "RANG",
+      "colName": "SUBSTANZ",
+      "colSummary": "EIN-SATZ-VERDIKT",
+      "colEvidence": "EVIDENZ",
+      "colSafety": "SICHERHEIT",
+      "colTotal": "GESAMT",
+      "ourPick": "UNSERE WAHL",
+      "budget": "BUDGET-WAHL",
+      "upgrade": "UPGRADE-WAHL",
+      "runnerUp": "ZWEITPLATZIERTER",
+      "alsoRan": "AUCH GETESTET",
+      "readReview": "Review lesen"
+    },
+    "comparison": {
+      "eyebrow": "DIREKTVERGLEICH",
+      "heading": "Top vier auf jeder Dimension.",
+      "caption": "Höher ist besser. Zahlen sind tabellarisch, die Methodik steht auf der Methodik-Seite, und ja — Anbieter-Verlässlichkeit zählt, weil das Fälschungsrisiko real ist.",
+      "colCompound": "SUBSTANZ",
+      "colEvidence": "EVIDENZ",
+      "colMechanism": "MECHANISMUS",
+      "colHuman": "HUMANDATEN",
+      "colVendor": "ANBIETER",
+      "colSafety": "SICHERHEIT",
+      "colTotal": "GESAMT"
+    },
+    "categories": {
+      "eyebrow": "NACH KATEGORIE",
+      "heading": "Fünf Regale. Jedes Review passt in eines.",
+      "caption": "Jedes Regal trägt die Reviews und die Vergleichstabellen für ein einzelnes Forschungsfeld."
+    },
+    "methodology": {
+      "eyebrow": "WIE WIR BEWERTEN",
+      "heading": "Fünf gewichtete Dimensionen in jedem Review.",
+      "caption": "Jeder Score auf Pepvise zerfällt in die gleichen fünf Komponenten. Lesen Sie die vollständige Methodik, wenn Sie über die Gewichtungen streiten möchten — wir hören zu.",
+      "items": [
+        {
+          "label": "Publizierte Evidenz",
+          "weight": "25%",
+          "body": "Stichprobengröße, Replikationszahl und Studiendesign über PubMed, ClinicalTrials.gov und FDA-Akten. Maus-Literatur wird gedeckelt."
+        },
+        {
+          "label": "Mechanismus-Plausibilität",
+          "weight": "15%",
+          "body": "Ob der vorgeschlagene Mechanismus mit etablierter Zellbiologie konsistent ist — oder an die Marketing-Behauptung angepasst wurde."
+        },
+        {
+          "label": "Humandaten",
+          "weight": "25%",
+          "body": "Phasen-Status, Stichprobengröße, Beobachtungszeitraum und der Abstand zwischen Nager-Dosis und tatsächlich studierter Humandosis."
+        },
+        {
+          "label": "Anbieter-Verlässlichkeit",
+          "weight": "15%",
+          "body": "Fälschungs-Vorkommnisse, Verfügbarkeit von Drittanalyse, regulatorische Lage typischer Quellen. Keine Empfehlung eines Anbieters."
+        },
+        {
+          "label": "Regulatorischer Status",
+          "weight": "20%",
+          "body": "FDA-Zulassung, 503A/503B-Compoundability, WADA-Status und der realistische Rechtsweg für US-Patienten oder Athleten."
+        }
+      ],
+      "ctaRead": "Vollständige Methodik lesen",
+      "ctaVersion": "Methodik v1.2"
+    },
+    "pipeline": {
+      "eyebrow": "WAS ALS NÄCHSTES",
+      "heading": "In der Pipeline.",
+      "caption": "Zwölf Reviews live, acht weitere in aktiver Bearbeitung. Hier ist, was kommt und wann.",
+      "ctaSeeFull": "Die vollständige Pipeline ansehen"
+    },
+    "newsletter": {
+      "eyebrow": "DER VERSAND",
+      "heading": "Ein Review pro Woche. Keine Anbieter-Links. Niemals.",
+      "caption": "Wenn eine neue Substanz in die Datenbank kommt — oder ein bestehendes Review eine Score-Änderung erhält — erfahren es Abonnenten zuerst.",
+      "placeholder": "ihr@domain.de",
+      "submit": "Abonnieren",
+      "consent": "Mit dem Abonnement akzeptieren Sie die Datenschutzerklärung. Ein-Klick-Abmeldung."
+    }
+  },
+  "review": {
+    "verdict": {
+      "rank": "RANG",
+      "score": "SCORE",
+      "tier": "STUFE",
+      "verdictLabel": "VERDIKT",
+      "lastUpdated": "Zuletzt aktualisiert {date}",
+      "methodologyLink": "Wie wir bewerten"
+    },
+    "specs": {
+      "heading": "Spezifikationen",
+      "labelEvidence": "Evidenz",
+      "labelMechanism": "Mechanismus",
+      "labelHuman": "Humandaten",
+      "labelVendor": "Anbieter",
+      "labelSafety": "Sicherheit",
+      "labelFda": "FDA-Status",
+      "labelWada": "WADA-Status"
+    },
+    "toc": {
+      "heading": "Inhalt"
+    },
+    "prosCons": {
+      "heading": "Vor- und Nachteile",
+      "prosLabel": "WAS FUNKTIONIERT",
+      "consLabel": "WAS NICHT FUNKTIONIERT"
+    },
+    "alternatives": {
+      "heading": "Alternativen, die wir getestet haben",
+      "caption": "Drei Substanzen, die im selben Vergleichsset auftauchten."
+    },
+    "references": {
+      "heading": "Quellen"
+    },
+    "moreInCategory": {
+      "heading": "Weitere Reviews in dieser Kategorie"
+    }
+  },
+  "methodologyPage": {
+    "h1": "Wie wir Peptid-Reviews bewerten.",
+    "lede": "Pepvise bewertet jedes Forschungs-Peptid auf einer 10-Punkte-Gesamtnote, gezogen aus fünf gewichteten Komponenten. Die Gewichte sind öffentlich, die Inputs sind öffentlich, und die Versionshistorie ist öffentlich — anders überlebt ein Score-System den Kontakt mit klugen Lesern nicht.",
+    "currentVersion": "v1.2 — aktuell",
+    "previousVersion": "v1.1 — abgelöst {date}"
+  },
+  "methodologyV12": {
+    "h1": "Methodik v1.2.",
+    "lede": "Veröffentlicht {date}. Verschärft die Gewichtung von Humandaten nach Reta-1 und Surv-3, hebt die Anbieter-Vertrauens-Obergrenze an und entfernt den alten WADA-Bonus, der den regulatorischen Status doppelt zählte."
+  },
+  "pipelinePage": {
+    "h1": "In der Pipeline.",
+    "lede": "Reviews aktuell in Bearbeitung, in Drittprüfung oder im Vor-Veröffentlichungs-Halt. Pepvise veröffentlicht erst, wenn das Quellenpaket vollständig ist und die Methodik bei v1.2 oder höher steht — nicht früher.",
+    "colCompound": "SUBSTANZ",
+    "colStage": "STADIUM",
+    "colReviewer": "REDAKTEUR",
+    "colTargetPub": "ZIEL-VERÖFFENTLICHUNG"
+  }
+}
