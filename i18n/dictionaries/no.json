@@ -42,7 +42,10 @@
     "linkPrivacy": "Personvern",
     "linkTerms": "Vilkår",
     "linkMedicalDisclaimer": "Medisinsk forbehold",
-    "footerNote": "Pepvise-omtaler er ikke medisinsk råd. Vi selger ikke peptider, tar ikke imot sponsing fra peptidselgere, og anbefaler ingen forbindelse til en enkeltperson. Snakk med en autorisert lege som arbeider innenfor FDA-konforme baner før enhver administrasjon."
+    "footerNote": "Pepvise-omtaler er ikke medisinsk råd. Vi selger ikke peptider, tar ikke imot sponsing fra peptidselgere, og anbefaler ingen forbindelse til en enkeltperson. Snakk med en autorisert lege som arbeider innenfor FDA-konforme baner før enhver administrasjon.",
+    "cookie_preferences": "Informasjonskapsler",
+    "cookies_link": "Retningslinjer for informasjonskapsler",
+    "impressum_link": "Impressum"
   },
   "home": {
     "hero": {
@@ -196,5 +199,35 @@
     "colStage": "FASE",
     "colReviewer": "REDAKTØR",
     "colTargetPub": "PLANLAGT UTGIVELSE"
+  },
+  "cookieConsent": {
+    "aria_label": "Samtykke til informasjonskapsler",
+    "heading": "Vi bruker informasjonskapsler",
+    "body": "Vi bruker strengt nødvendige informasjonskapsler for å drifte nettstedet. Analyse- og markedsføringskapsler aktiveres kun etter ditt samtykke. Du kan endre valget når som helst.",
+    "read_more": "Les erklæringen om informasjonskapsler",
+    "accept_all": "Godta alle",
+    "reject_all": "Avvis alle",
+    "customize": "Tilpass",
+    "customize_heading": "Innstillinger for informasjonskapsler",
+    "customize_body": "Velg kategoriene du vil tillate.",
+    "necessary_label": "Nødvendige",
+    "necessary_desc": "Nødvendige for at nettstedet skal fungere. Alltid aktive.",
+    "analytics_label": "Analyse",
+    "analytics_desc": "Aggregert, pseudonymisert statistikk.",
+    "marketing_label": "Markedsføring",
+    "marketing_desc": "Måling av annonseeffektivitet. Av som standard.",
+    "save_choices": "Lagre valg"
+  },
+  "educationalBanner": {
+    "aria_label": "Pedagogisk merknad",
+    "eyebrow": "Kun til informasjon — ikke medisinsk råd.",
+    "body": "Pepvise-anmeldelser er i informasjonsøyemed. Det er ikke medisinske råd. Rådfør deg med forskriveren før du starter et peptidprotokoll."
+  },
+  "regulatoryAuthorities": {
+    "heading": "Tilsynsmyndigheter"
+  },
+  "impressum": {
+    "heading": "Impressum",
+    "linkLabel": "Kolofon"
   }
 }

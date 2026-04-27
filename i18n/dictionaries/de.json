@@ -42,7 +42,10 @@
     "linkPrivacy": "Datenschutz",
     "linkTerms": "AGB",
     "linkMedicalDisclaimer": "Medizinischer Hinweis",
-    "footerNote": "Pepvise-Reviews sind keine medizinische Beratung. Wir verkaufen keine Peptide, akzeptieren kein Sponsoring von Peptid-Anbietern und empfehlen keinem Einzelnen ein Präparat. Sprechen Sie vor jeder Anwendung mit einem zugelassenen Arzt, der innerhalb FDA-konformer Wege arbeitet."
+    "footerNote": "Pepvise-Reviews sind keine medizinische Beratung. Wir verkaufen keine Peptide, akzeptieren kein Sponsoring von Peptid-Anbietern und empfehlen keinem Einzelnen ein Präparat. Sprechen Sie vor jeder Anwendung mit einem zugelassenen Arzt, der innerhalb FDA-konformer Wege arbeitet.",
+    "cookie_preferences": "Cookie-Einstellungen",
+    "cookies_link": "Cookie-Richtlinie",
+    "impressum_link": "Impressum"
   },
   "home": {
     "hero": {
@@ -196,5 +199,35 @@
     "colStage": "STADIUM",
     "colReviewer": "REDAKTEUR",
     "colTargetPub": "ZIEL-VERÖFFENTLICHUNG"
+  },
+  "cookieConsent": {
+    "aria_label": "Cookie-Einwilligung",
+    "heading": "Wir verwenden Cookies",
+    "body": "Wir setzen ausschließlich technisch notwendige Cookies. Analyse- oder Marketing-Cookies werden erst nach Ihrer Einwilligung gesetzt. Sie können Ihre Auswahl jederzeit anpassen.",
+    "read_more": "Cookie-Richtlinie lesen",
+    "accept_all": "Alle akzeptieren",
+    "reject_all": "Alle ablehnen",
+    "customize": "Anpassen",
+    "customize_heading": "Cookie-Einstellungen",
+    "customize_body": "Wählen Sie die Kategorien, denen Sie zustimmen möchten.",
+    "necessary_label": "Notwendig",
+    "necessary_desc": "Für den Betrieb der Website erforderlich. Immer aktiv.",
+    "analytics_label": "Analyse",
+    "analytics_desc": "Pseudonyme, aggregierte Reichweitenmessung.",
+    "marketing_label": "Marketing",
+    "marketing_desc": "Erfolgsmessung für Werbung. Standardmäßig deaktiviert.",
+    "save_choices": "Auswahl speichern"
+  },
+  "educationalBanner": {
+    "aria_label": "Hinweis zu Bildungsinhalten",
+    "eyebrow": "Nur zur Information — keine medizinische Beratung.",
+    "body": "Pepvise-Reviews dienen der Information. Sie sind keine medizinische Beratung. Sprechen Sie mit Ihrer Ärztin oder Ihrem Arzt, bevor Sie ein Peptid-Protokoll beginnen."
+  },
+  "regulatoryAuthorities": {
+    "heading": "Zuständige Behörden"
+  },
+  "impressum": {
+    "heading": "Impressum",
+    "linkLabel": "Impressum"
   }
 }

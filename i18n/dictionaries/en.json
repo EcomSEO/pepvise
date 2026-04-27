@@ -42,7 +42,10 @@
     "linkPrivacy": "Privacy",
     "linkTerms": "Terms",
     "linkMedicalDisclaimer": "Medical disclaimer",
-    "footerNote": "Pepvise reviews are not medical advice. We do not sell peptides, take peptide-vendor sponsorship, or recommend a compound for any individual. Talk to a licensed physician working within FDA-compliant pathways before any administration."
+    "footerNote": "Pepvise reviews are not medical advice. We do not sell peptides, take peptide-vendor sponsorship, or recommend a compound for any individual. Talk to a licensed physician working within FDA-compliant pathways before any administration.",
+    "cookie_preferences": "Cookie preferences",
+    "cookies_link": "Cookie policy",
+    "impressum_link": "Impressum"
   },
   "home": {
     "hero": {
@@ -196,5 +199,35 @@
     "colStage": "STAGE",
     "colReviewer": "EDITOR",
     "colTargetPub": "TARGET PUB"
+  },
+  "cookieConsent": {
+    "aria_label": "Cookie consent",
+    "heading": "We use cookies",
+    "body": "We use strictly necessary cookies to operate the site. Optional analytics or marketing cookies are only used after you consent. You can change your choice any time.",
+    "read_more": "Read the cookie policy",
+    "accept_all": "Accept all",
+    "reject_all": "Reject all",
+    "customize": "Customize",
+    "customize_heading": "Cookie preferences",
+    "customize_body": "Choose which categories of cookies you want to allow.",
+    "necessary_label": "Necessary",
+    "necessary_desc": "Required for the site to function. Always on.",
+    "analytics_label": "Analytics",
+    "analytics_desc": "Aggregated, pseudonymous traffic measurement.",
+    "marketing_label": "Marketing",
+    "marketing_desc": "Conversion measurement for advertising. Off by default.",
+    "save_choices": "Save choices"
+  },
+  "educationalBanner": {
+    "aria_label": "Educational notice",
+    "eyebrow": "Educational only — not medical advice.",
+    "body": "Pepvise reviews are educational. They are not medical advice. Consult your prescriber before starting any peptide protocol."
+  },
+  "regulatoryAuthorities": {
+    "heading": "Regulatory authorities"
+  },
+  "impressum": {
+    "heading": "Impressum",
+    "linkLabel": "Impressum"
   }
 }

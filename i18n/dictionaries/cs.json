@@ -42,7 +42,10 @@
     "linkPrivacy": "Soukromí",
     "linkTerms": "Podmínky",
     "linkMedicalDisclaimer": "Lékařské upozornění",
-    "footerNote": "Recenze Pepvise nejsou lékařskou radou. Neprodáváme peptidy, nepřijímáme sponzoring od prodejců peptidů a nedoporučujeme jakoukoli sloučeninu žádné osobě. Před jakýmkoli podáním se poraďte s licencovaným lékařem pracujícím v rámci postupů odpovídajících FDA."
+    "footerNote": "Recenze Pepvise nejsou lékařskou radou. Neprodáváme peptidy, nepřijímáme sponzoring od prodejců peptidů a nedoporučujeme jakoukoli sloučeninu žádné osobě. Před jakýmkoli podáním se poraďte s licencovaným lékařem pracujícím v rámci postupů odpovídajících FDA.",
+    "cookie_preferences": "Předvolby souborů cookie",
+    "cookies_link": "Zásady souborů cookie",
+    "impressum_link": "Impressum"
   },
   "home": {
     "hero": {
@@ -196,5 +199,35 @@
     "colStage": "FÁZE",
     "colReviewer": "REDAKTOR",
     "colTargetPub": "CÍLOVÉ VYDÁNÍ"
+  },
+  "cookieConsent": {
+    "aria_label": "Souhlas s cookies",
+    "heading": "Používáme cookies",
+    "body": "Používáme pouze nezbytné cookies. Analytické a marketingové cookies jsou aktivovány pouze s Vaším souhlasem. Volbu můžete kdykoli změnit.",
+    "read_more": "Zásady používání cookies",
+    "accept_all": "Přijmout vše",
+    "reject_all": "Odmítnout vše",
+    "customize": "Přizpůsobit",
+    "customize_heading": "Nastavení cookies",
+    "customize_body": "Vyberte kategorie, které chcete povolit.",
+    "necessary_label": "Nezbytné",
+    "necessary_desc": "Nutné pro fungování webu. Vždy aktivní.",
+    "analytics_label": "Analytické",
+    "analytics_desc": "Agregovaná pseudonymizovaná statistika.",
+    "marketing_label": "Marketingové",
+    "marketing_desc": "Měření výkonu reklamy. Ve výchozím stavu vypnuto.",
+    "save_choices": "Uložit volbu"
+  },
+  "educationalBanner": {
+    "aria_label": "Vzdělávací upozornění",
+    "eyebrow": "Pouze pro vzdělávací účely — nejde o lékařskou radu.",
+    "body": "Recenze Pepvise mají vzdělávací charakter. Nejde o lékařskou radu. Před zahájením peptidového protokolu se poraďte se svým lékařem."
+  },
+  "regulatoryAuthorities": {
+    "heading": "Dozorové orgány"
+  },
+  "impressum": {
+    "heading": "Impressum",
+    "linkLabel": "Tiráž"
   }
 }

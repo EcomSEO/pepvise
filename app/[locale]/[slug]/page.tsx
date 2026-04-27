@@ -9,6 +9,11 @@ import { PillarTemplate } from "@/components/templates/PillarTemplate";
 import { ComparisonTemplate } from "@/components/templates/ComparisonTemplate";
 import { ClusterTemplate } from "@/components/templates/ClusterTemplate";
 import { ListicleTemplate } from "@/components/templates/ListicleTemplate";
+import { EducationalBanner } from "@/components/EducationalBanner";
+import {
+  isSwedenBlocked,
+  SWEDEN_BLOCKED_NOTICE_SV,
+} from "@/lib/compliance/sweden-restrictions";
 import { pageMetadata } from "@/lib/seo";
 import { routing, type Locale } from "@/i18n/routing";
 
@@ -89,7 +94,35 @@ export default async function PostPage({
   // verdict block, score grid, comparison table, pros/cons.
   const review = reviewBySlug(slug);
   if (review) {
-    return <ReviewTemplate entry={review} />;
+    // Sweden compliance: render a stub when locale=sv and the compound
+    // matches the Läkemedelsverket blocked list (BPC-157, TB-500,
+    // compounded semaglutide, Melanotan).
+    if (
+      locale === "sv" &&
+      isSwedenBlocked({ slug: review.slug, title: review.name })
+    ) {
+      return (
+        <article className="mx-auto max-w-3xl px-6 py-16">
+          <h1 className="text-3xl font-serif text-inknavy mb-4">
+            {review.name}
+          </h1>
+          <div
+            role="note"
+            className="rounded-md border-l-4 border-amber-700 bg-amber-50 px-4 py-3 text-sm text-amber-950 leading-relaxed"
+          >
+            {SWEDEN_BLOCKED_NOTICE_SV}
+          </div>
+        </article>
+      );
+    }
+    return (
+      <>
+        <div className="mx-auto max-w-6xl px-5 md:px-8 pt-6">
+          <EducationalBanner />
+        </div>
+        <ReviewTemplate entry={review} />
+      </>
+    );
   }
 
   const post = getPost(slug);

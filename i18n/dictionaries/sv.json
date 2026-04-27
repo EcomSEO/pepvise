@@ -42,7 +42,10 @@
     "linkPrivacy": "Integritet",
     "linkTerms": "Villkor",
     "linkMedicalDisclaimer": "Medicinsk friskrivning",
-    "footerNote": "Pepvise-recensioner är inte medicinsk rådgivning. Vi säljer inga peptider, tar inte emot sponsring från peptidsäljare och rekommenderar inget preparat till någon individ. Tala med en legitimerad läkare som arbetar inom FDA-konforma vägar före varje administrering."
+    "footerNote": "Pepvise-recensioner är inte medicinsk rådgivning. Vi säljer inga peptider, tar inte emot sponsring från peptidsäljare och rekommenderar inget preparat till någon individ. Tala med en legitimerad läkare som arbetar inom FDA-konforma vägar före varje administrering.",
+    "cookie_preferences": "Cookie-inställningar",
+    "cookies_link": "Cookiepolicy",
+    "impressum_link": "Impressum"
   },
   "home": {
     "hero": {
@@ -196,5 +199,35 @@
     "colStage": "STEG",
     "colReviewer": "REDAKTÖR",
     "colTargetPub": "MÅLPUBLICERING"
+  },
+  "cookieConsent": {
+    "aria_label": "Samtycke till kakor",
+    "heading": "Vi använder kakor",
+    "body": "Vi använder strikt nödvändiga kakor för att webbplatsen ska fungera. Analys- eller marknadsföringskakor används endast efter ditt samtycke. Du kan ändra ditt val när som helst.",
+    "read_more": "Läs kakpolicyn",
+    "accept_all": "Acceptera alla",
+    "reject_all": "Avvisa alla",
+    "customize": "Anpassa",
+    "customize_heading": "Kakinställningar",
+    "customize_body": "Välj de kategorier du vill tillåta.",
+    "necessary_label": "Nödvändiga",
+    "necessary_desc": "Krävs för att webbplatsen ska fungera. Alltid aktiva.",
+    "analytics_label": "Analys",
+    "analytics_desc": "Aggregerad, pseudonymiserad statistik.",
+    "marketing_label": "Marknadsföring",
+    "marketing_desc": "Mätning av annonsprestanda. Avstängt som standard.",
+    "save_choices": "Spara val"
+  },
+  "educationalBanner": {
+    "aria_label": "Pedagogisk notis",
+    "eyebrow": "Endast i utbildningssyfte — inte medicinsk rådgivning.",
+    "body": "Pepvise-recensioner är i utbildningssyfte. De är inte medicinsk rådgivning. Rådfråga din förskrivare innan du påbörjar ett peptidprotokoll."
+  },
+  "regulatoryAuthorities": {
+    "heading": "Tillsynsmyndigheter"
+  },
+  "impressum": {
+    "heading": "Impressum",
+    "linkLabel": "Utgivare"
   }
 }

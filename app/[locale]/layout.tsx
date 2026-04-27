@@ -4,6 +4,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { HeaderRD } from "@/components/HeaderRD";
 import { FooterRD } from "@/components/FooterRD";
+import { CookieConsent } from "@/components/CookieConsent";
 import { OrganizationJsonLd } from "@/components/schema/OrganizationJsonLd";
 import { SITE, siteTagline, siteDescription } from "@/lib/content/site";
 import { robotsMeta, localeUrl } from "@/lib/seo";
@@ -89,6 +90,7 @@ export default async function LocaleLayout({
       <HeaderRD />
       <main>{children}</main>
       <FooterRD />
+      <CookieConsent />
     </NextIntlClientProvider>
   );
 }

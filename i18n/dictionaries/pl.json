@@ -42,7 +42,10 @@
     "linkPrivacy": "Prywatność",
     "linkTerms": "Regulamin",
     "linkMedicalDisclaimer": "Klauzula medyczna",
-    "footerNote": "Recenzje Pepvise nie są poradą medyczną. Nie sprzedajemy peptydów, nie przyjmujemy sponsoringu od sprzedawców peptydów i nie zalecamy konkretnego związku żadnej osobie. Porozmawiaj z licencjonowanym lekarzem działającym w trybach zgodnych z FDA przed jakimkolwiek podaniem."
+    "footerNote": "Recenzje Pepvise nie są poradą medyczną. Nie sprzedajemy peptydów, nie przyjmujemy sponsoringu od sprzedawców peptydów i nie zalecamy konkretnego związku żadnej osobie. Porozmawiaj z licencjonowanym lekarzem działającym w trybach zgodnych z FDA przed jakimkolwiek podaniem.",
+    "cookie_preferences": "Preferencje plików cookie",
+    "cookies_link": "Polityka plików cookie",
+    "impressum_link": "Impressum"
   },
   "home": {
     "hero": {
@@ -196,5 +199,35 @@
     "colStage": "ETAP",
     "colReviewer": "REDAKTOR",
     "colTargetPub": "PLANOWANA PUBLIKACJA"
+  },
+  "cookieConsent": {
+    "aria_label": "Zgoda na cookies",
+    "heading": "Używamy plików cookies",
+    "body": "Stosujemy wyłącznie pliki cookies niezbędne do działania serwisu. Pliki analityczne i marketingowe są aktywowane wyłącznie po wyrażeniu zgody. Wybór można zmienić w dowolnej chwili.",
+    "read_more": "Polityka cookies",
+    "accept_all": "Akceptuję wszystkie",
+    "reject_all": "Odrzuć wszystkie",
+    "customize": "Dostosuj",
+    "customize_heading": "Preferencje cookies",
+    "customize_body": "Wybierz kategorie, na które wyrażasz zgodę.",
+    "necessary_label": "Niezbędne",
+    "necessary_desc": "Niezbędne do działania witryny. Zawsze aktywne.",
+    "analytics_label": "Analityczne",
+    "analytics_desc": "Zagregowane statystyki pseudonimowe.",
+    "marketing_label": "Marketingowe",
+    "marketing_desc": "Pomiar skuteczności reklam. Domyślnie wyłączone.",
+    "save_choices": "Zapisz wybór"
+  },
+  "educationalBanner": {
+    "aria_label": "Informacja edukacyjna",
+    "eyebrow": "Wyłącznie edukacyjne — nie stanowi porady medycznej.",
+    "body": "Recenzje Pepvise mają charakter edukacyjny. Nie stanowią porady medycznej. Skonsultuj się z lekarzem przed rozpoczęciem jakiegokolwiek protokołu peptydowego."
+  },
+  "regulatoryAuthorities": {
+    "heading": "Organy nadzoru"
+  },
+  "impressum": {
+    "heading": "Impressum",
+    "linkLabel": "Nota prawna"
   }
 }

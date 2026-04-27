@@ -42,7 +42,10 @@
     "linkPrivacy": "Privacy",
     "linkTerms": "Voorwaarden",
     "linkMedicalDisclaimer": "Medische disclaimer",
-    "footerNote": "Pepvise-reviews zijn geen medisch advies. We verkopen geen peptiden, accepteren geen sponsoring van peptidenverkopers, en raden geen verbinding aan een individu aan. Spreek met een geregistreerd arts die binnen FDA-conforme paden werkt voor enige toediening."
+    "footerNote": "Pepvise-reviews zijn geen medisch advies. We verkopen geen peptiden, accepteren geen sponsoring van peptidenverkopers, en raden geen verbinding aan een individu aan. Spreek met een geregistreerd arts die binnen FDA-conforme paden werkt voor enige toediening.",
+    "cookie_preferences": "Cookievoorkeuren",
+    "cookies_link": "Cookiebeleid",
+    "impressum_link": "Impressum"
   },
   "home": {
     "hero": {
@@ -196,5 +199,35 @@
     "colStage": "FASE",
     "colReviewer": "REDACTEUR",
     "colTargetPub": "DOELPUBLICATIE"
+  },
+  "cookieConsent": {
+    "aria_label": "Cookie-toestemming",
+    "heading": "We gebruiken cookies",
+    "body": "We gebruiken strikt noodzakelijke cookies voor het functioneren van de website. Analytische of marketingcookies worden uitsluitend met uw toestemming geplaatst. U kunt uw keuze op ieder moment wijzigen.",
+    "read_more": "Cookiebeleid lezen",
+    "accept_all": "Alles accepteren",
+    "reject_all": "Alles weigeren",
+    "customize": "Aanpassen",
+    "customize_heading": "Cookievoorkeuren",
+    "customize_body": "Kies de categorieën die u wilt toestaan.",
+    "necessary_label": "Noodzakelijk",
+    "necessary_desc": "Onmisbaar voor de werking van de site. Altijd actief.",
+    "analytics_label": "Analytisch",
+    "analytics_desc": "Geaggregeerde, gepseudonimiseerde meting.",
+    "marketing_label": "Marketing",
+    "marketing_desc": "Conversiemeting voor advertenties. Standaard uit.",
+    "save_choices": "Keuzes opslaan"
+  },
+  "educationalBanner": {
+    "aria_label": "Educatieve mededeling",
+    "eyebrow": "Alleen educatief — geen medisch advies.",
+    "body": "Pepvise-recensies zijn educatief. Het is geen medisch advies. Raadpleeg uw voorschrijver voordat u een peptideprotocol begint."
+  },
+  "regulatoryAuthorities": {
+    "heading": "Toezichthouders"
+  },
+  "impressum": {
+    "heading": "Impressum",
+    "linkLabel": "Colofon"
   }
 }

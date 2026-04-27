@@ -42,7 +42,10 @@
     "linkPrivacy": "Confidențialitate",
     "linkTerms": "Termeni",
     "linkMedicalDisclaimer": "Aviz medical",
-    "footerNote": "Recenziile Pepvise nu sunt sfat medical. Nu vindem peptide, nu acceptăm sponsorizare de la vânzători de peptide și nu recomandăm niciun compus vreunui individ. Discută cu un medic licențiat care lucrează pe căi conforme FDA înainte de orice administrare."
+    "footerNote": "Recenziile Pepvise nu sunt sfat medical. Nu vindem peptide, nu acceptăm sponsorizare de la vânzători de peptide și nu recomandăm niciun compus vreunui individ. Discută cu un medic licențiat care lucrează pe căi conforme FDA înainte de orice administrare.",
+    "cookie_preferences": "Preferințe cookie",
+    "cookies_link": "Politică cookie",
+    "impressum_link": "Impressum"
   },
   "home": {
     "hero": {
@@ -196,5 +199,35 @@
     "colStage": "ETAPĂ",
     "colReviewer": "EDITOR",
     "colTargetPub": "PUBLICARE PROPUSĂ"
+  },
+  "cookieConsent": {
+    "aria_label": "Consimțământ cookie",
+    "heading": "Folosim cookie-uri",
+    "body": "Folosim cookie-uri strict necesare pentru funcționarea site-ului. Cookie-urile de analiză sau marketing sunt activate doar cu consimțământul dvs. Vă puteți modifica alegerea oricând.",
+    "read_more": "Citește politica cookie",
+    "accept_all": "Acceptă tot",
+    "reject_all": "Respinge tot",
+    "customize": "Personalizează",
+    "customize_heading": "Preferințe cookie",
+    "customize_body": "Alegeți categoriile pe care doriți să le permiteți.",
+    "necessary_label": "Necesare",
+    "necessary_desc": "Indispensabile pentru funcționarea site-ului. Active permanent.",
+    "analytics_label": "Analiză",
+    "analytics_desc": "Statistici agregate și pseudonimizate.",
+    "marketing_label": "Marketing",
+    "marketing_desc": "Măsurarea performanței publicitare. Dezactivate implicit.",
+    "save_choices": "Salvează alegerile"
+  },
+  "educationalBanner": {
+    "aria_label": "Notă educațională",
+    "eyebrow": "Doar în scop educativ — nu este sfat medical.",
+    "body": "Recenziile Pepvise au scop educativ. Nu reprezintă sfaturi medicale. Consultați medicul înainte de a începe orice protocol peptidic."
+  },
+  "regulatoryAuthorities": {
+    "heading": "Autorități de reglementare"
+  },
+  "impressum": {
+    "heading": "Impressum",
+    "linkLabel": "Date editor"
   }
 }

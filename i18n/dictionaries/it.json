@@ -42,7 +42,10 @@
     "linkPrivacy": "Privacy",
     "linkTerms": "Termini",
     "linkMedicalDisclaimer": "Avviso medico",
-    "footerNote": "Le recensioni Pepvise non sono consulenza medica. Non vendiamo peptidi, non accettiamo sponsorizzazioni da venditori, non raccomandiamo un composto a nessun individuo. Parla con un medico abilitato che operi entro percorsi conformi FDA prima di qualsiasi somministrazione."
+    "footerNote": "Le recensioni Pepvise non sono consulenza medica. Non vendiamo peptidi, non accettiamo sponsorizzazioni da venditori, non raccomandiamo un composto a nessun individuo. Parla con un medico abilitato che operi entro percorsi conformi FDA prima di qualsiasi somministrazione.",
+    "cookie_preferences": "Preferenze cookie",
+    "cookies_link": "Politica cookie",
+    "impressum_link": "Impressum"
   },
   "home": {
     "hero": {
@@ -196,5 +199,35 @@
     "colStage": "FASE",
     "colReviewer": "EDITORE",
     "colTargetPub": "PUBBLICAZIONE PREVISTA"
+  },
+  "cookieConsent": {
+    "aria_label": "Consenso ai cookie",
+    "heading": "Utilizziamo cookie",
+    "body": "Utilizziamo cookie strettamente necessari al funzionamento del sito. I cookie analitici o di marketing si attivano solo previo consenso. Può modificare la propria scelta in qualsiasi momento.",
+    "read_more": "Leggi la cookie policy",
+    "accept_all": "Accetta tutto",
+    "reject_all": "Rifiuta tutto",
+    "customize": "Personalizza",
+    "customize_heading": "Preferenze cookie",
+    "customize_body": "Scegli le categorie che desideri autorizzare.",
+    "necessary_label": "Necessari",
+    "necessary_desc": "Indispensabili per il funzionamento del sito. Sempre attivi.",
+    "analytics_label": "Statistici",
+    "analytics_desc": "Statistiche aggregate e pseudonimizzate.",
+    "marketing_label": "Marketing",
+    "marketing_desc": "Misurazione delle conversioni pubblicitarie. Disattivati per impostazione predefinita.",
+    "save_choices": "Salva le scelte"
+  },
+  "educationalBanner": {
+    "aria_label": "Nota educativa",
+    "eyebrow": "Solo a scopo informativo — non un consiglio medico.",
+    "body": "Le recensioni di Pepvise sono a scopo informativo. Non costituiscono un consiglio medico. Consultate il vostro medico prima di iniziare qualsiasi protocollo peptidico."
+  },
+  "regulatoryAuthorities": {
+    "heading": "Autorità competenti"
+  },
+  "impressum": {
+    "heading": "Impressum",
+    "linkLabel": "Note legali"
   }
 }

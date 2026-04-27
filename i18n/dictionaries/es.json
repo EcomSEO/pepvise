@@ -42,7 +42,10 @@
     "linkPrivacy": "Privacidad",
     "linkTerms": "Términos",
     "linkMedicalDisclaimer": "Aviso médico",
-    "footerNote": "Las reseñas de Pepvise no son consejo médico. No vendemos péptidos, no aceptamos patrocinio de vendedores y no recomendamos un compuesto a ningún individuo. Habla con un médico colegiado que opere en vías compatibles con la FDA antes de cualquier administración."
+    "footerNote": "Las reseñas de Pepvise no son consejo médico. No vendemos péptidos, no aceptamos patrocinio de vendedores y no recomendamos un compuesto a ningún individuo. Habla con un médico colegiado que opere en vías compatibles con la FDA antes de cualquier administración.",
+    "cookie_preferences": "Preferencias de cookies",
+    "cookies_link": "Política de cookies",
+    "impressum_link": "Impressum"
   },
   "home": {
     "hero": {
@@ -196,5 +199,35 @@
     "colStage": "ETAPA",
     "colReviewer": "EDITOR",
     "colTargetPub": "PUBLICACIÓN OBJETIVO"
+  },
+  "cookieConsent": {
+    "aria_label": "Consentimiento de cookies",
+    "heading": "Utilizamos cookies",
+    "body": "Utilizamos cookies estrictamente necesarias para el funcionamiento del sitio. Las cookies analíticas o de marketing solo se activan con su consentimiento. Puede modificar su elección en cualquier momento.",
+    "read_more": "Leer la política de cookies",
+    "accept_all": "Aceptar todo",
+    "reject_all": "Rechazar todo",
+    "customize": "Personalizar",
+    "customize_heading": "Preferencias de cookies",
+    "customize_body": "Elija las categorías que desea permitir.",
+    "necessary_label": "Necesarias",
+    "necessary_desc": "Imprescindibles para el funcionamiento del sitio. Siempre activas.",
+    "analytics_label": "Analíticas",
+    "analytics_desc": "Métricas agregadas y seudonimizadas.",
+    "marketing_label": "Marketing",
+    "marketing_desc": "Medición de conversión publicitaria. Desactivadas por defecto.",
+    "save_choices": "Guardar elecciones"
+  },
+  "educationalBanner": {
+    "aria_label": "Nota educativa",
+    "eyebrow": "Solo educativo — no es un consejo médico.",
+    "body": "Las reseñas de Pepvise son educativas. No son consejos médicos. Consulte a su médico antes de iniciar cualquier protocolo de péptidos."
+  },
+  "regulatoryAuthorities": {
+    "heading": "Autoridades reguladoras"
+  },
+  "impressum": {
+    "heading": "Impressum",
+    "linkLabel": "Aviso legal"
   }
 }

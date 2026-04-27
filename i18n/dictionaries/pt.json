@@ -42,7 +42,10 @@
     "linkPrivacy": "Privacidade",
     "linkTerms": "Termos",
     "linkMedicalDisclaimer": "Aviso médico",
-    "footerNote": "As análises da Pepvise não são aconselhamento médico. Não vendemos péptidos, não aceitamos patrocínio de vendedores de péptidos e não recomendamos qualquer composto a um indivíduo. Fale com um médico licenciado que opere dentro de vias conformes com a FDA antes de qualquer administração."
+    "footerNote": "As análises da Pepvise não são aconselhamento médico. Não vendemos péptidos, não aceitamos patrocínio de vendedores de péptidos e não recomendamos qualquer composto a um indivíduo. Fale com um médico licenciado que opere dentro de vias conformes com a FDA antes de qualquer administração.",
+    "cookie_preferences": "Preferências de cookies",
+    "cookies_link": "Política de cookies",
+    "impressum_link": "Impressum"
   },
   "home": {
     "hero": {
@@ -196,5 +199,35 @@
     "colStage": "FASE",
     "colReviewer": "EDITOR",
     "colTargetPub": "PUBLICAÇÃO PREVISTA"
+  },
+  "cookieConsent": {
+    "aria_label": "Consentimento de cookies",
+    "heading": "Utilizamos cookies",
+    "body": "Utilizamos cookies estritamente necessários ao funcionamento do site. Os cookies analíticos ou de marketing apenas são ativados após o seu consentimento. Pode alterar a sua escolha a qualquer momento.",
+    "read_more": "Ler a política de cookies",
+    "accept_all": "Aceitar tudo",
+    "reject_all": "Rejeitar tudo",
+    "customize": "Personalizar",
+    "customize_heading": "Preferências de cookies",
+    "customize_body": "Escolha as categorias que pretende autorizar.",
+    "necessary_label": "Necessários",
+    "necessary_desc": "Indispensáveis ao funcionamento do site. Sempre ativos.",
+    "analytics_label": "Análise",
+    "analytics_desc": "Estatísticas agregadas e pseudonimizadas.",
+    "marketing_label": "Marketing",
+    "marketing_desc": "Medição da eficácia publicitária. Desativados por defeito.",
+    "save_choices": "Guardar escolhas"
+  },
+  "educationalBanner": {
+    "aria_label": "Aviso educativo",
+    "eyebrow": "Apenas educativo — não é aconselhamento médico.",
+    "body": "As análises da Pepvise são educativas. Não são aconselhamento médico. Consulte o seu prescritor antes de iniciar qualquer protocolo peptídico."
+  },
+  "regulatoryAuthorities": {
+    "heading": "Autoridades reguladoras"
+  },
+  "impressum": {
+    "heading": "Impressum",
+    "linkLabel": "Ficha técnica"
   }
 }

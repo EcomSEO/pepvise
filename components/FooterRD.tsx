@@ -1,5 +1,16 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import { CookiePreferencesLink } from "./CookiePreferencesLink";
+import { RegulatoryAuthoritiesStrip } from "./RegulatoryAuthoritiesStrip";
+
+const SISTER_SITES = [
+  { name: "InjectCompass", href: "https://injectcompass.com" },
+  { name: "PepTips", href: "https://peptips.com" },
+  { name: "LarderLab", href: "https://larderlab.com" },
+  { name: "ThatCleanChef", href: "https://thatcleanchef.com" },
+  { name: "CircadianStack", href: "https://circadianstack.com" },
+  { name: "PlasticFreeLab", href: "https://plasticfreelab.com" },
+];
 
 /**
  * FooterRD — pepvise review-database footer.
@@ -52,12 +63,32 @@ export function FooterRD() {
               <li><Link href={"/medical-disclaimer" as never} className="text-ink hover:text-forest">{t("linkMedicalDisclaimer")}</Link></li>
               <li><Link href={"/affiliate-disclosure" as never} className="text-ink hover:text-forest">{t("linkAffiliateDisclosure")}</Link></li>
               <li><Link href={"/privacy" as never} className="text-ink hover:text-forest">{t("linkPrivacy")}</Link></li>
+              <li><Link href={"/cookies" as never} className="text-ink hover:text-forest">{t("cookies_link")}</Link></li>
               <li><Link href={"/terms" as never} className="text-ink hover:text-forest">{t("linkTerms")}</Link></li>
+              <li><Link href={"/impressum" as never} className="text-ink hover:text-forest">{t("impressum_link")}</Link></li>
+              <li><CookiePreferencesLink className="text-ink" /></li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-rule-soft text-[12px] leading-[1.55] text-ink-soft max-w-3xl">
+        {/* Sister-site cross-links */}
+        <div className="mt-10 pt-6 border-t border-rule-soft">
+          <div className="caps-data text-ink mb-3">From the network</div>
+          <ul className="flex flex-wrap gap-x-5 gap-y-2 text-[13px]">
+            {SISTER_SITES.map((s) => (
+              <li key={s.href}>
+                <a href={s.href} target="_blank" rel="noopener" className="text-ink-soft hover:text-forest">
+                  {s.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Per-locale regulatory authorities (medicines + DPA) */}
+        <RegulatoryAuthoritiesStrip />
+
+        <div className="mt-8 pt-6 border-t border-rule-soft text-[12px] leading-[1.55] text-ink-soft max-w-3xl">
           {t("footerNote")}
         </div>
       </div>

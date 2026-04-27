@@ -42,7 +42,10 @@
     "linkPrivacy": "Confidentialité",
     "linkTerms": "Conditions",
     "linkMedicalDisclaimer": "Avis médical",
-    "footerNote": "Les tests Pepvise ne sont pas un avis médical. Nous ne vendons pas de peptides, n'acceptons pas de sponsorisation de vendeurs, et ne recommandons pas un composé à un individu. Consultez un médecin agréé travaillant dans un cadre conforme à la FDA avant toute administration."
+    "footerNote": "Les tests Pepvise ne sont pas un avis médical. Nous ne vendons pas de peptides, n'acceptons pas de sponsorisation de vendeurs, et ne recommandons pas un composé à un individu. Consultez un médecin agréé travaillant dans un cadre conforme à la FDA avant toute administration.",
+    "cookie_preferences": "Préférences cookies",
+    "cookies_link": "Politique cookies",
+    "impressum_link": "Impressum"
   },
   "home": {
     "hero": {
@@ -196,5 +199,35 @@
     "colStage": "ÉTAPE",
     "colReviewer": "ÉDITEUR",
     "colTargetPub": "PUBLICATION CIBLE"
+  },
+  "cookieConsent": {
+    "aria_label": "Consentement aux cookies",
+    "heading": "Nous utilisons des cookies",
+    "body": "Nous utilisons des cookies strictement nécessaires au fonctionnement du site. Les cookies de mesure d'audience ou de marketing ne sont activés qu'avec votre consentement. Vous pouvez modifier votre choix à tout moment.",
+    "read_more": "Lire la politique cookies",
+    "accept_all": "Tout accepter",
+    "reject_all": "Tout refuser",
+    "customize": "Personnaliser",
+    "customize_heading": "Préférences cookies",
+    "customize_body": "Choisissez les catégories que vous souhaitez autoriser.",
+    "necessary_label": "Nécessaires",
+    "necessary_desc": "Indispensables au fonctionnement du site. Toujours actifs.",
+    "analytics_label": "Mesure d'audience",
+    "analytics_desc": "Statistiques agrégées et pseudonymisées.",
+    "marketing_label": "Marketing",
+    "marketing_desc": "Mesure de performance publicitaire. Désactivé par défaut.",
+    "save_choices": "Enregistrer mes choix"
+  },
+  "educationalBanner": {
+    "aria_label": "Note éducative",
+    "eyebrow": "À titre informatif uniquement — pas un avis médical.",
+    "body": "Les analyses de Pepvise sont à but éducatif. Elles ne constituent pas un avis médical. Consultez votre prescripteur avant de commencer un protocole peptidique."
+  },
+  "regulatoryAuthorities": {
+    "heading": "Autorités de tutelle"
+  },
+  "impressum": {
+    "heading": "Impressum",
+    "linkLabel": "Mentions légales"
   }
 }
