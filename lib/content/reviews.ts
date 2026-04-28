@@ -363,6 +363,43 @@ const ENTRIES: ReviewEntry[] = [
     lastUpdated: "2026-04-26",
     body: "Zepbound is the weight-management brand of tirzepatide. The chemistry, dose ladder, and side-effect profile mirror Mounjaro; the FDA approval pathway and label indication differ. SURMOUNT-1 is the foundational trial: 22.5% mean weight loss at 72 weeks on the 15 mg/week arm. SURMOUNT-5 (2025) put tirzepatide ahead of semaglutide for weight management at matched titration. Methodology v1.2 scores Zepbound 9.3, the upper bound of the approved-drug shelf. We rank Zepbound and Mounjaro identically because the molecule is identical and the data we score against (mechanism, human evidence, supply integrity, regulatory posture) doesn't differ between the two indications. The clinical-context selection between them is downstream of the patient's diagnosis, not the drug.",
   },
+  {
+    slug: "mounjaro",
+    rank: 10,
+    variant: "also-ran",
+    name: "Mounjaro",
+    primaryDrug: "tirzepatide",
+    alias: "tirzepatide (T2D 5–15 mg)",
+    oneLineVerdict:
+      "Tirzepatide brand-name for type-2 diabetes. Same molecule as Zepbound at the same dose ladder; SURPASS-2 is the head-to-head trial against semaglutide.",
+    longVerdict:
+      "Brand-specific entry for the T2D label of tirzepatide. Pepvise covers Mounjaro distinct from Zepbound because the FDA-approved indication, real-world prescribing context, and insurance-coverage pathway differ even though the molecule and dose ladder are identical.",
+    score: { evidence: 9.3, mechanism: 9.2, human: 9.5, vendor: 9.4, safety: 8.7 },
+    total: 9.3,
+    category: "metabolic-and-glp1",
+    fdaStatus: "FDA-approved for type-2 diabetes (May 2022)",
+    wadaStatus: "Not currently listed",
+    pros: [
+      "SURPASS-2 (Frias 2021, NEJM) is the published head-to-head against semaglutide — tirzepatide showed greater HbA1c reduction and greater weight reduction at 40 weeks.",
+      "SURPASS-3, SURPASS-4, and SURPASS-5 fill the comparator matrix against insulin degludec, glargine, and add-on combinations — strongest T2D evidence base of any GLP-1 class agent at Q2 2026.",
+      "Same supply chain as Zepbound — Eli Lilly direct-to-pharmacy reduces grey-market exposure compared with research-peptide channels.",
+    ],
+    cons: [
+      "Off-label prescribing for weight management at the Mounjaro label dose underdoses against the Zepbound chronic-weight-management evidence.",
+      "Supply has lagged demand through 2024–2025 driven by surge prescribing and weight-management substitution.",
+      "GI side-effect burden during titration is the dominant real-world adherence risk; trial-reported discontinuation around 12–14%, real-world higher.",
+      "SURPASS-CVOT cardiovascular outcomes trial does not read out until 2026 — the cardiac data lags Ozempic's SUSTAIN-6.",
+    ],
+    alternatives: ["zepbound", "ozempic", "wegovy", "retatrutide"],
+    references: [
+      { label: "Frias et al. 2021, SURPASS-2 (vs semaglutide), NEJM", url: "https://pubmed.ncbi.nlm.nih.gov/34370970/" },
+      { label: "Ludvik et al. 2021, SURPASS-3, Lancet", url: "https://pubmed.ncbi.nlm.nih.gov/34370970/" },
+      { label: "Del Prato et al. 2021, SURPASS-4, Lancet", url: "https://pubmed.ncbi.nlm.nih.gov/34619108/" },
+      { label: "FDA Drugs@FDA, Mounjaro labeling and review docs", url: "https://www.accessdata.fda.gov/scripts/cder/daf/" },
+    ],
+    lastUpdated: "2026-04-28",
+    body: "Mounjaro is the T2D-labelled brand of tirzepatide. The molecule and dose ladder mirror Zepbound (5, 7.5, 10, 12.5, and 15 mg/week subcutaneous). The FDA indication, prescribing context, and insurance pathway are what differ. SURPASS-2 is the relevant head-to-head: at 40 weeks against semaglutide 1 mg, tirzepatide produced a greater HbA1c reduction and a larger weight reduction at every dose level studied. The SURPASS-3 and SURPASS-4 add-on and insulin-comparator trials extend the dossier across real-world prescribing scenarios. Methodology v1.2 scores Mounjaro 9.3 — identical to Zepbound and one tenth above Ozempic — because the methodology scores the molecule and the evidence base, not the indication. We rank Mounjaro and Zepbound identically; the clinical-context selection between them is downstream of the patient's primary diagnosis. The legitimate criticisms — cost, supply integrity through 2025, GI tolerability during titration, the 2026 cardiovascular outcomes readout — are real and we surface them, but they do not move the score off the top of the approved-drug shelf.",
+  },
 ];
 
 export function reviewBySlug(slug: string): ReviewEntry | undefined {

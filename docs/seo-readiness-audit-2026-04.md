@@ -20,12 +20,14 @@ Snapshot of pepvise's current state against the 06-pepvise prompt's Gate A / B /
 
 ### Gate B (≈ 6 weeks) — Review density
 
+**Audit correction (2026-04-28):** initial pass undercounted reviews — the data layer has both `posts.ts` (prose hub) AND `reviews.ts` (score-forward review database), and the `[slug]` route consumes the union. The accurate counts:
+
 | Check | Status | Evidence |
 |---|---|---|
-| 25 individual reviews live | ❌ | 4 actual peptide reviews live (bpc-157, tb-500, ghk-cu-peptide, retatrutide). Need ~21 more individual reviews to hit gate. |
-| 8 comparative reviews live | ❌ | 0 dedicated comparison pages (data layer ready for 3, page layer not shipped) |
-| 5 reference pages live | 🟡 close | 6 reference posts present (how-peptides-signal, bpc-157-for-tendon, how-to-reconstitute-peptides, peptide-reconstitution-calculator, research-use-only-explained, where-to-buy-peptides-taxonomy). Methodology hub gets the credit but content is across multiple slugs. |
-| Every review has VerdictBlock + ComparisonTable + ProsConsTable + DrugImage + reviewer signoff | 🟡 partial | Components exist (`ComparisonTable.tsx`, `DrugImage` ported in `53a25f0`, etc.). Need to verify per-review they all render. |
+| 25 individual reviews live | 🟡 closer than reported | **10 reviews live** — 4 research peptides (bpc-157, tb-500, ghk-cu-peptide, retatrutide) + 5 GLP-1/dual-agonist reviews (semaglutide, tirzepatide, ozempic, wegovy, zepbound) + **mounjaro added on this branch**. Need ~15 more (saxenda, victoza, trulicity, rybelsus, plus 6 research peptides). |
+| 8 comparative reviews live | ❌ | Comparison-table data ready for 3 (ozempic-vs-wegovy, mounjaro-vs-ozempic, wegovy-vs-zepbound). Dedicated comparison **post** entries not yet in `posts.ts`. The `ComparisonTemplate` component exists. |
+| 5 reference pages live | ✅ | 6 reference posts present (how-peptides-signal, bpc-157-for-tendon, how-to-reconstitute-peptides, peptide-reconstitution-calculator, research-use-only-explained, where-to-buy-peptides-taxonomy). |
+| Every review has VerdictBlock + ComparisonTable + ProsConsTable + DrugImage + reviewer signoff | 🟡 partial | Components exist (`ComparisonTable.tsx`, `DrugImage` ported in `53a25f0`, etc.). Per-review render audit deferred to next session. |
 
 ### Gate C (≈ 12 weeks) — Locale + ranking
 
@@ -112,22 +114,22 @@ What's published in `lib/content/posts.ts` today:
 
 Ordered by composite priority score from `docs/research/pepvise-keyword-priority-2026-q2.md`. Each entry: target keyword + locale + estimated priority score (1–10).
 
-### Tier 1 — Ship in next 4 weeks (10 reviews)
+### Tier 1 — Ship in next 4 weeks
 
-These are the keywords with the best vol × ease × trend ratios. Eight of ten are net-new individual reviews; two are dedicated comparison pages backed by data already in `comparison-tables.ts`.
+Audit-corrected: items 2, 3, 4, 10 already have published EN review entries in `lib/content/reviews.ts`. Item 6 added on this branch. Tier 1 reduces to 5 net-new artifacts:
 
 | # | Slug | Locale | Keyword | Vol | KD | Type | Why now |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | wegovy-vs-zepbound | en | wegovy vs zepbound | 33,100 | **2** | comparison page | KD 2 + 124% yoy. Comparison-table data ready in `lib/content/comparison-tables.ts`. |
-| 2 | wegovy | en | wegovy review | 5,400 | **1** | individual review | KD 1 head-term |
-| 3 | zepbound | en | zepbound review | 9,900 | low | individual review | 9,900/mo, dual-agonist hub anchor |
-| 4 | ozempic | en | ozempic review | 1,900 | **1** | individual review | KD 1 |
-| 5 | mounjaro-vs-ozempic | en | mounjaro vs ozempic | 40,500 | 23 | comparison page | 40,500/mo; comparison-table data ready |
-| 6 | mounjaro | en | mounjaro review | 2,400 | low | individual review | dual-agonist anchor |
-| 7 | wegovy-erfahrungen | de | wegovy erfahrungen | 8,100 | low | individual review (DE locale) | DE locale highest-volume RA |
-| 8 | mounjaro-erfahrungen | de | mounjaro erfahrungen | 9,900 | low | individual review (DE locale) | DE dual-agonist anchor |
-| 9 | mounjaro-avis | fr | mounjaro avis | 3,600 | 0 | individual review (FR locale) | +132% yoy rising star |
-| 10 | tirzepatide | en | tirzepatide review | 2,900 | 41 | individual review | +52% m-o-m, long-term anchor |
+| 1 | wegovy-vs-zepbound | en | wegovy vs zepbound | 33,100 | **2** | comparison post | KD 2 + 124% yoy. Comparison-table data ready in `lib/content/comparison-tables.ts`. Needs `Post` entry in `posts.ts` of `postType: "comparison"`. |
+| 2 | mounjaro-vs-ozempic | en | mounjaro vs ozempic | 40,500 | 23 | comparison post | 40,500/mo; comparison-table data ready. |
+| 3 | wegovy-erfahrungen | de | wegovy erfahrungen | 8,100 | low | EN→DE locale translation | DE locale highest-volume RA |
+| 4 | mounjaro-erfahrungen | de | mounjaro erfahrungen | 9,900 | low | EN→DE locale translation (now possible after this branch) | DE dual-agonist anchor |
+| 5 | mounjaro-avis | fr | mounjaro avis | 3,600 | 0 | EN→FR locale translation (now possible after this branch) | +132% yoy rising star |
+| 6 | mounjaro | en | mounjaro review | 2,400 | low | individual review | ✅ Added on this branch — closes the 404 gap |
+| 7 (already live) | wegovy | en | wegovy review | 5,400 | **1** | ✅ live | — |
+| 8 (already live) | zepbound | en | zepbound review | 9,900 | low | ✅ live | — |
+| 9 (already live) | ozempic | en | ozempic review | 1,900 | **1** | ✅ live | — |
+| 10 (already live) | tirzepatide | en | tirzepatide review | 2,900 | 41 | ✅ live | — |
 
 ### Tier 2 — Weeks 5–8 (10 reviews)
 
