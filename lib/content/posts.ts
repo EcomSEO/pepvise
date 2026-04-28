@@ -1444,24 +1444,24 @@ export const posts: Post[] = [
     medicalDisclaimer: "required",
     ourPick: {
       name: "Zepbound (tirzepatide 15 mg)",
-      tier: "Primary trial — SURMOUNT-1, SURMOUNT-5",
+      tier: "Primary trial: SURMOUNT-1, SURMOUNT-5",
       reason:
-        "Zepbound carries a higher methodology v1.2 score (9.3 vs 9.2) on the strength of the SURMOUNT trial program and the SURMOUNT-5 head-to-head where tirzepatide at 15 mg outperformed semaglutide 2.4 mg at the time-matched comparison. Both molecules work; tirzepatide works more on the weight endpoint. Wegovy retains the cardiovascular outcomes lead via SELECT, which is the legitimate counter-case for patients where the CV indication matters more than the weight delta. The pick is the molecule, not the brand — patients should select with their prescriber based on indication, insurance access, and tolerability profile.",
+        "Zepbound carries a higher methodology v1.2 score (9.3 vs 9.2) on the strength of the SURMOUNT trial program and the SURMOUNT-5 head-to-head where tirzepatide at 15 mg outperformed semaglutide 2.4 mg at the time-matched comparison. Both molecules work; tirzepatide works more on the weight endpoint. Wegovy retains the cardiovascular outcomes lead via SELECT, which is the legitimate counter-case for patients where the CV indication matters more than the weight delta. The pick is the molecule, not the brand. Patients should select with their prescriber based on indication, insurance access, and tolerability profile.",
     },
     products: [
       {
         rank: 1,
         name: "Zepbound (tirzepatide 15 mg / week subcutaneous)",
-        tier: "Primary trial — SURMOUNT-1",
+        tier: "Primary trial: SURMOUNT-1",
         summary:
-          "FDA-approved November 2023 for chronic weight management. SURMOUNT-1 (Jastreboff 2022, NEJM) is the foundational trial: n=2539, 72 weeks, mean weight loss 22.5% on the 15 mg arm versus 3.1% on placebo. SURMOUNT-5 (2025) is the head-to-head against semaglutide 2.4 mg — tirzepatide outperformed by approximately 5–7 percentage points at the time-matched 72-week comparison. Mechanism is dual GIP/GLP-1 receptor agonism, with the GIP component contributing additional energy-expenditure and lipid-handling effects beyond the GLP-1 satiety pathway. Methodology v1.2 score 9.3, the upper bound of the approved-drug shelf. The SURPASS-CVOT cardiovascular outcomes trial does not read out until 2026 — at the time of this review, the cardiac evidence base is materially behind semaglutide.",
+          "FDA-approved November 2023 for chronic weight management. SURMOUNT-1 (Jastreboff 2022, NEJM) is the foundational trial: n=2539, 72 weeks, mean weight loss 22.5% on the 15 mg arm versus 3.1% on placebo. SURMOUNT-5 (2025) is the head-to-head against semaglutide 2.4 mg; tirzepatide outperformed by approximately 5 to 7 percentage points at the time-matched 72-week comparison. Mechanism is dual GIP/GLP-1 receptor agonism, with the GIP component contributing additional energy-expenditure and lipid-handling effects beyond the GLP-1 satiety pathway. Methodology v1.2 score 9.3, the upper bound of the approved-drug shelf. The SURPASS-CVOT cardiovascular outcomes trial does not read out until 2026, so the cardiac evidence base is materially behind semaglutide as of this writing.",
       },
       {
         rank: 2,
         name: "Wegovy (semaglutide 2.4 mg / week subcutaneous)",
-        tier: "Primary trial — STEP-1",
+        tier: "Primary trial: STEP-1",
         summary:
-          "FDA-approved June 2021 for chronic weight management. STEP-1 (Wilding 2021, NEJM) is the foundational trial: n=1961, 68 weeks, mean weight loss 14.9% on the 2.4 mg arm versus 2.4% on placebo. The SELECT cardiovascular outcomes trial (Lincoff 2023, NEJM) added a documented MACE-reduction benefit in adults with established cardiovascular disease, distinct from the weight indication. STEP-4, STEP-5, and STEP-9 extended the trial dossier across maintenance, long-term, and special-population scenarios. Methodology v1.2 score 9.2 — one tenth below tirzepatide. Wegovy is the better-supported molecule for the CV-comorbid patient and the cleanest example of a weight-management drug with both weight and cardiovascular outcomes evidence.",
+          "FDA-approved June 2021 for chronic weight management. STEP-1 (Wilding 2021, NEJM) is the foundational trial: n=1961, 68 weeks, mean weight loss 14.9% on the 2.4 mg arm versus 2.4% on placebo. The SELECT cardiovascular outcomes trial (Lincoff 2023, NEJM) added a documented MACE-reduction benefit in adults with established cardiovascular disease, distinct from the weight indication. STEP-4, STEP-5, and STEP-9 extended the trial dossier across maintenance, long-term, and special-population scenarios. Methodology v1.2 score 9.2, one tenth below tirzepatide. Wegovy is the better-supported molecule for the CV-comorbid patient and the cleanest example of a weight-management drug with both weight and cardiovascular outcomes evidence.",
       },
     ],
     faq: [
@@ -1517,24 +1517,24 @@ export const posts: Post[] = [
     medicalDisclaimer: "required",
     ourPick: {
       name: "Mounjaro (tirzepatide 5–15 mg)",
-      tier: "Primary trial — SURPASS-2",
+      tier: "Primary trial: SURPASS-2",
       reason:
-        "Mounjaro carries the higher methodology v1.2 score (9.3 vs 9.1) and the SURPASS-2 head-to-head against semaglutide 1 mg/week showed greater HbA1c and weight reductions at 40 weeks across every dose level studied. Ozempic retains a meaningful counter-case via the SUSTAIN-6 cardiovascular outcomes trial — a positive MACE signal that tirzepatide's SURPASS-CVOT has not yet matched. The pick is the molecule for prioritising glycaemic control plus weight; the cardiovascular-prevention case currently favours semaglutide while we wait on the 2026 SURPASS-CVOT readout.",
+        "Mounjaro carries the higher methodology v1.2 score (9.3 vs 9.1). The SURPASS-2 head-to-head against semaglutide 1 mg/week showed greater HbA1c and weight reductions at 40 weeks across every dose level studied. Ozempic retains a meaningful counter-case via the SUSTAIN-6 cardiovascular outcomes trial, a positive MACE signal that tirzepatide's SURPASS-CVOT has not yet matched. The pick is the molecule for prioritising glycaemic control plus weight; the cardiovascular-prevention case currently favours semaglutide while we wait on the 2026 SURPASS-CVOT readout.",
     },
     products: [
       {
         rank: 1,
         name: "Mounjaro (tirzepatide 5–15 mg / week subcutaneous)",
-        tier: "Primary trial — SURPASS-2",
+        tier: "Primary trial: SURPASS-2",
         summary:
-          "FDA-approved May 2022 for type-2 diabetes. SURPASS-2 (Frias 2021, NEJM) is the published head-to-head: n=1879, 40 weeks, tirzepatide outperformed semaglutide 1 mg/week on HbA1c reduction (−2.01% to −2.30% across the 5/10/15 mg arms vs −1.86% on semaglutide) and on weight reduction (−7.6 kg to −11.2 kg vs −5.7 kg). The full SURPASS program (SURPASS-1 through -6) extends the dossier across monotherapy, sulfonylurea add-on, basal-insulin add-on, and high-CV-risk populations. Methodology v1.2 score 9.3 — identical to Zepbound and one tenth above Ozempic. SURPASS-CVOT cardiovascular outcomes does not read out until 2026.",
+          "FDA-approved May 2022 for type-2 diabetes. SURPASS-2 (Frias 2021, NEJM) is the published head-to-head: n=1879, 40 weeks, tirzepatide outperformed semaglutide 1 mg/week on HbA1c reduction (−2.01% to −2.30% across the 5/10/15 mg arms vs −1.86% on semaglutide) and on weight reduction (−7.6 kg to −11.2 kg vs −5.7 kg). The full SURPASS program (SURPASS-1 through -6) extends the dossier across monotherapy, sulfonylurea add-on, basal-insulin add-on, and high-CV-risk populations. Methodology v1.2 score 9.3, identical to Zepbound and one tenth above Ozempic. SURPASS-CVOT cardiovascular outcomes does not read out until 2026.",
       },
       {
         rank: 2,
         name: "Ozempic (semaglutide 0.5–2.0 mg / week subcutaneous)",
-        tier: "Primary trial — SUSTAIN-6, SUSTAIN-2",
+        tier: "Primary trial: SUSTAIN-6, SUSTAIN-2",
         summary:
-          "FDA-approved December 2017 for type-2 diabetes. SUSTAIN-6 (Marso 2016, NEJM) was the cardiovascular outcomes trial: n=3297, 2.1-year median follow-up, MACE reduction at semaglutide 0.5 and 1.0 mg/week. SUSTAIN-2 through -10 fill the comparator dossier across DPP-4 inhibitors, insulin glargine, sitagliptin, and dulaglutide. Methodology v1.2 score 9.1 — half a point below tirzepatide. The cardiovascular outcomes evidence is the dimension where Ozempic outranks Mounjaro and remains the published-trial advantage as of Q2 2026.",
+          "FDA-approved December 2017 for type-2 diabetes. SUSTAIN-6 (Marso 2016, NEJM) was the cardiovascular outcomes trial: n=3297, 2.1-year median follow-up, MACE reduction at semaglutide 0.5 and 1.0 mg/week. SUSTAIN-2 through -10 fill the comparator dossier across DPP-4 inhibitors, insulin glargine, sitagliptin, and dulaglutide. Methodology v1.2 score 9.1, half a point below tirzepatide. The cardiovascular outcomes evidence is the dimension where Ozempic outranks Mounjaro and remains the published-trial advantage as of Q2 2026.",
       },
     ],
     faq: [
@@ -1585,25 +1585,25 @@ export const posts: Post[] = [
     status: "published",
     medicalDisclaimer: "required",
     ourPick: {
-      name: "Indication-driven — there is no single winner",
-      tier: "Primary trial — STEP-1 (Wegovy), SUSTAIN-6 (Ozempic)",
+      name: "Indication-driven; there is no single winner",
+      tier: "Primary trial: STEP-1 (Wegovy), SUSTAIN-6 (Ozempic)",
       reason:
-        "Both products are semaglutide. The molecule is identical. The FDA-approved indications, dose ceilings, and prescribing contexts differ. For chronic weight management in adults without diabetes, Wegovy is the labelled product and STEP-1 is the supporting trial. For adults with type-2 diabetes where weight loss is welcome but glycaemic control is the primary endpoint, Ozempic is the labelled product and SUSTAIN-6 is the supporting cardiovascular outcomes trial. Methodology v1.2 scores Wegovy 9.2 and Ozempic 9.1 — within rounding of one another, with the small gap reflecting STEP-1's larger weight magnitude. The pick is downstream of the patient's primary diagnosis, not the molecule.",
+        "Both products are semaglutide. The molecule is identical. The FDA-approved indications, dose ceilings, and prescribing contexts differ. For chronic weight management in adults without diabetes, Wegovy is the labelled product and STEP-1 is the supporting trial. For adults with type-2 diabetes where weight loss is welcome but glycaemic control is the primary endpoint, Ozempic is the labelled product and SUSTAIN-6 is the supporting cardiovascular outcomes trial. Methodology v1.2 scores Wegovy 9.2 and Ozempic 9.1, within rounding of one another. The small gap is what STEP-1's larger weight magnitude produces. The pick is downstream of the patient's primary diagnosis, not the molecule.",
     },
     products: [
       {
         rank: 1,
         name: "Wegovy (semaglutide 2.4 mg, chronic weight management)",
-        tier: "Primary trial — STEP-1",
+        tier: "Primary trial: STEP-1",
         summary:
-          "FDA-approved June 2021 for chronic weight management in adults with BMI ≥30 or ≥27 with weight-related comorbidities, and for adolescents 12+ with obesity (December 2022). Dose ladder tops at 2.4 mg/week subcutaneous. STEP-1 (Wilding 2021, NEJM) is the pivotal trial — 14.9% mean weight loss at 68 weeks vs 2.4% on placebo. SELECT (Lincoff 2023) added cardiovascular outcomes evidence at the same 2.4 mg dose for adults with established CVD. Methodology v1.2 score 9.2.",
+          "FDA-approved June 2021 for chronic weight management in adults with BMI ≥30 or ≥27 with weight-related comorbidities, and for adolescents 12+ with obesity (December 2022). Dose ladder tops at 2.4 mg/week subcutaneous. STEP-1 (Wilding 2021, NEJM) is the pivotal trial: 14.9% mean weight loss at 68 weeks vs 2.4% on placebo. SELECT (Lincoff 2023) added cardiovascular outcomes evidence at the same 2.4 mg dose for adults with established CVD. Methodology v1.2 score 9.2.",
       },
       {
         rank: 2,
         name: "Ozempic (semaglutide 0.5–2.0 mg, type-2 diabetes)",
-        tier: "Primary trial — SUSTAIN-6",
+        tier: "Primary trial: SUSTAIN-6",
         summary:
-          "FDA-approved December 2017 for type-2 diabetes. Dose ladder tops at 2.0 mg/week subcutaneous (raised from 1.0 mg in 2022). SUSTAIN-6 (Marso 2016, NEJM) was the cardiovascular outcomes trial — 26% MACE reduction in high-CV-risk T2D adults. The SUSTAIN program (1 through 10) is the comparator dossier. Methodology v1.2 score 9.1. Off-label prescribing for weight management at the Ozempic dose ceiling underdoses against the Wegovy label evidence and is one of the most-discussed prescribing patterns in the GLP-1 conversation.",
+          "FDA-approved December 2017 for type-2 diabetes. Dose ladder tops at 2.0 mg/week subcutaneous (raised from 1.0 mg in 2022). SUSTAIN-6 (Marso 2016, NEJM) was the cardiovascular outcomes trial: 26% MACE reduction in high-CV-risk T2D adults. The SUSTAIN program (1 through 10) is the comparator dossier. Methodology v1.2 score 9.1. Off-label prescribing for weight management at the Ozempic dose ceiling underdoses against the Wegovy label evidence and is one of the most-discussed prescribing patterns in the GLP-1 conversation.",
       },
     ],
     faq: [
