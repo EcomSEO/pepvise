@@ -24,8 +24,8 @@ Snapshot of pepvise's current state against the 06-pepvise prompt's Gate A / B /
 
 | Check | Status | Evidence |
 |---|---|---|
-| 25 individual reviews live | 🟡 closer than reported | **10 reviews live** — 4 research peptides (bpc-157, tb-500, ghk-cu-peptide, retatrutide) + 5 GLP-1/dual-agonist reviews (semaglutide, tirzepatide, ozempic, wegovy, zepbound) + **mounjaro added on this branch**. Need ~15 more (saxenda, victoza, trulicity, rybelsus, plus 6 research peptides). |
-| 8 comparative reviews live | ❌ | Comparison-table data ready for 3 (ozempic-vs-wegovy, mounjaro-vs-ozempic, wegovy-vs-zepbound). Dedicated comparison **post** entries not yet in `posts.ts`. The `ComparisonTemplate` component exists. |
+| 25 individual reviews live | ✅ at gate | **20 reviews live** — 4 research peptides (bpc-157, tb-500, ghk-cu-peptide, retatrutide) + 10 GLP-1/dual-agonist (semaglutide, tirzepatide, ozempic, wegovy, zepbound, mounjaro, saxenda, victoza, trulicity, rybelsus) + 6 GHRH/GHRP/mitochondrial research peptides (mots-c, aod-9604, cjc-1295, ipamorelin, tesamorelin, sermorelin) — all added on this branch. Total 20, gate set at 25. Remaining gap: 5 — typically saxenda-EU brand variants or additional research peptides (thymosin-alpha-1, kisspeptin, etc.) per next-quarter expansion. |
+| 8 comparative reviews live | 🟡 partial | 3 comparison posts live on this branch (wegovy-vs-zepbound, mounjaro-vs-ozempic, ozempic-vs-wegovy). 5 more for full Gate B: rybelsus-vs-ozempic, ozempic-vs-mounjaro-vs-wegovy 3-way, semaglutide-vs-tirzepatide, victoza-vs-ozempic, saxenda-vs-wegovy. |
 | 5 reference pages live | ✅ | 6 reference posts present (how-peptides-signal, bpc-157-for-tendon, how-to-reconstitute-peptides, peptide-reconstitution-calculator, research-use-only-explained, where-to-buy-peptides-taxonomy). |
 | Every review has VerdictBlock + ComparisonTable + ProsConsTable + DrugImage + reviewer signoff | 🟡 partial | Components exist (`ComparisonTable.tsx`, `DrugImage` ported in `53a25f0`, etc.). Per-review render audit deferred to next session. |
 
