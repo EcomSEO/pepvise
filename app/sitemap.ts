@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/categories", priority: 0.85, lastMod: now },
     { path: "/methodology", priority: 0.85, lastMod: now },
     { path: "/methodology/v1-2", priority: 0.7, lastMod: now },
+    { path: "/methodology/v1-1", priority: 0.5, lastMod: now },
     { path: "/pipeline", priority: 0.75, lastMod: now },
   ];
 
