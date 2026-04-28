@@ -24,7 +24,7 @@ export const SITE = {
   launched: true,
   requiresMedicalDisclaimer: true,
   methodologyVersion: "v1.2",
-  databaseEntries: 9,
+  databaseEntries: 20,
   pipelineEntries: 8,
   lastDatabaseRefresh: "2026-04-28",
 
