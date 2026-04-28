@@ -30,6 +30,7 @@ const RESERVED = new Set([
   "methodology",
   "pipeline",
   "reviews",
+  "reviewers",
   "comparisons",
   "categories",
   "medical-disclaimer",

@@ -21,19 +21,19 @@ export const SITE = {
     "Pepvise reviews the published peptide literature the way Wirecutter reviews mattresses, every compound ranked, every score on the same five-dimension yardstick, no vendor links, no dosing prescriptions.",
   author: "The Pepvise Editorial Team",
   email: "hello@pepvise.com",
-  launched: false,
+  launched: true,
   requiresMedicalDisclaimer: true,
   methodologyVersion: "v1.2",
-  databaseEntries: 12,
+  databaseEntries: 9,
   pipelineEntries: 8,
-  lastDatabaseRefresh: "2026-04-26",
+  lastDatabaseRefresh: "2026-04-28",
 
   // Legacy editorial-masthead fields. Kept for typecheck compatibility
   // with unused Header/Footer/Dateline components; not rendered in the
   // live review-database shell (HeaderRD/FooterRD).
-  dateline: "Refreshed 2026-04-26",
+  dateline: "Refreshed 2026-04-28",
   volume: "Database v1.2",
-  issue: "12 reviews live",
+  issue: "9 reviews live",
   subtitle: "Reviews of the research-peptide literature.",
 
   i18n: {
