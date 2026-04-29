@@ -1,22 +1,28 @@
-# Pepvise — Launch Blockers (2026-04-28)
+# Pepvise — Launch Blockers (2026-04-29)
 
 What stands between pepvise.com today and "leave it alone for 3 months and just upload content."
 
-Status as of branch `feat/seo-readiness-2026-04` @ `37f3dd2`.
+Status as of `main` @ `004dfdf` (post-2026-04-29 topic-boundary lock).
 
 ---
 
-## TL;DR
+## TL;DR — Fabian-side decisions only
 
-**Three blockers. Two are 30-minute tasks. One is the merge.**
+The 2026-04-29 audit-fix sweep is complete on `main`. Pepvise covers
+research peptides only (9 reviews live); GLP-1 patient-education content
+moved to peptips with 301 redirects in place.
 
-| Blocker | Owner | Time | Status |
+| Decision | Owner | Time | Status |
 |---|---|---|---|
-| 1. Merge `feat/seo-readiness-2026-04` PR | Fabian | 5 min | ❌ open — review + merge |
-| 2. Fill operator placeholders (3 files) | Fabian | 30 min | ❌ pending Fabian/legal |
-| 3. Set Vercel env vars (Beehiiv + Neon) | Fabian | 15 min | ❌ pending |
+| 1. Operator placeholders in impressum / terms | Fabian | 30 min | ❌ pending |
+| 2. Vercel env: BEEHIIV_API_KEY | Fabian | 5 min | ❌ pending (newsletter no-ops without) |
+| 3. Vercel env: AMAZON_TAG (real) | Fabian | 5 min | ❌ pending (registry uses `pepvise-20` placeholder) |
+| 4. Reviewer credential verification (Dr. Priya Narang GMC + Dr. Marcus Haley WA Pharmacy QAC) | Fabian | 1–2 hr | ❌ pending — `verifiedCredential: false` flag surfaces "credential pending" note |
+| 5. Real reviewer headshots commissioned | Fabian | external | ❌ deferred — schema omits Person.image while pending |
+| 6. Custom domain DNS to pepvise.com | Fabian | 30 min | ❌ pending |
+| 7. Mediavine application | Fabian | gated on 50k sessions | ⏳ deferred |
 
-After those three, pepvise is in pure content-upload mode. The current build, schema, EU compliance, audit:claims gate, and 20-review database are production-ready. The blockers below are all single-input gaps that Claude Code cannot fill autonomously.
+Everything else is shipped.
 
 ---
 
