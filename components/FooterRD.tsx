@@ -3,15 +3,6 @@ import { useTranslations } from "next-intl";
 import { CookiePreferencesLink } from "./CookiePreferencesLink";
 import { RegulatoryAuthoritiesStrip } from "./RegulatoryAuthoritiesStrip";
 
-const SISTER_SITES = [
-  { name: "InjectCompass", href: "https://injectcompass.com" },
-  { name: "PepTips", href: "https://peptips.com" },
-  { name: "LarderLab", href: "https://larderlab.com" },
-  { name: "ThatCleanChef", href: "https://thatcleanchef.com" },
-  { name: "CircadianStack", href: "https://circadianstack.com" },
-  { name: "PlasticFreeLab", href: "https://plasticfreelab.com" },
-];
-
 /**
  * FooterRD — pepvise review-database footer.
  *
@@ -69,20 +60,6 @@ export function FooterRD() {
               <li><CookiePreferencesLink className="text-ink" /></li>
             </ul>
           </div>
-        </div>
-
-        {/* Sister-site cross-links */}
-        <div className="mt-10 pt-6 border-t border-rule-soft">
-          <div className="caps-data text-ink mb-3">From the network</div>
-          <ul className="flex flex-wrap gap-x-5 gap-y-2 text-[13px]">
-            {SISTER_SITES.map((s) => (
-              <li key={s.href}>
-                <a href={s.href} target="_blank" rel="noopener" className="text-ink-soft hover:text-forest">
-                  {s.name}
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
 
         {/* Per-locale regulatory authorities (medicines + DPA) */}

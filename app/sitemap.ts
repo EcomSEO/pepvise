@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { hubs } from "@/lib/content/hubs";
 import { posts } from "@/lib/content/posts";
 import { allReviews } from "@/lib/content/reviews";
-import { locales, defaultLocale } from "@/i18n/routing";
+import { defaultLocale, type Locale } from "@/i18n/routing";
 import { localeUrl } from "@/lib/seo";
 
 /**
@@ -65,9 +65,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     paths.push({ path, priority: 0.3, lastMod: now });
   }
 
+  // Per 2026-04-29 lock: hreflang alternates trimmed to en/de/fr/x-default.
+  // Other locale routes still resolve (no URL breakage) but are not
+  // surfaced as hreflang alternates while translations stabilise.
+  const HREFLANG_LOCALES: readonly Locale[] = ["en", "de", "fr"];
   return paths.map((p) => {
     const languages: Record<string, string> = {};
-    for (const l of locales) {
+    for (const l of HREFLANG_LOCALES) {
       languages[l] = localeUrl(l, p.path);
     }
     languages["x-default"] = localeUrl(defaultLocale, p.path);
