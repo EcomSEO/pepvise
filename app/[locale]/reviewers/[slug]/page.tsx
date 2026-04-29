@@ -57,6 +57,11 @@ export default async function ReviewerPage({
     sameAs: [r.orcidUrl, r.pubmedUrl, r.licenseStateBoardUrl].filter(
       Boolean,
     ),
+    // Per 2026-04-29 lock: omit `image` while `verifiedCredential` is
+    // false — no AI-generated headshots in Person schema.
+    ...(r.verifiedCredential && r.imageUrl
+      ? { image: `${SITE.url}${r.imageUrl}` }
+      : {}),
     hasCredential: [
       {
         "@type": "EducationalOccupationalCredential",
@@ -145,6 +150,15 @@ export default async function ReviewerPage({
               <p className="mt-3 text-[14.5px] text-charcoal/85 leading-relaxed">
                 {r.noConflictStatement}
               </p>
+
+              {!r.verifiedCredential && r.credentialingNote && (
+                <div className="mt-5 rounded-sm border border-oxblood/30 bg-oxblood/5 p-3 text-[12.5px] leading-relaxed text-charcoal/80">
+                  <span className="block font-mono uppercase tracking-[0.14em] text-oxblood text-[10.5px] mb-1">
+                    Credential pending
+                  </span>
+                  {r.credentialingNote}
+                </div>
+              )}
 
               <dl className="mt-7 pt-6 border-t border-inknavy/10 space-y-3 text-[13.5px]">
                 <div className="flex justify-between gap-4">

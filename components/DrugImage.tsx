@@ -27,7 +27,7 @@ const DIMENSIONS: Record<Size, { width: number; height: number; sizes: string }>
 };
 
 export type DrugImageProps = {
-  /** Slug from the DRUGS manifest, e.g. "ozempic", "mounjaro", "bpc-157" */
+  /** Slug from the DRUGS manifest, e.g. "bpc-157", "tb-500", "cjc-1295" */
   drugSlug: string;
   /** Render size (default "md") */
   size?: Size;
@@ -51,7 +51,7 @@ export type DrugImageProps = {
  *
  * Usage:
  *   import { DrugImage } from "@/components/DrugImage";
- *   <DrugImage drugSlug="ozempic" size="md" />
+ *   <DrugImage drugSlug="bpc-157" size="md" />
  */
 export function DrugImage({
   drugSlug,

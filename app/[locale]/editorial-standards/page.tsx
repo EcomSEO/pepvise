@@ -49,11 +49,11 @@ export default function EditorialStandardsPage() {
 
       <h2>Use of generic and brand names</h2>
       <p>
-        We always use the generic name alongside the brand name, especially in
-        the first mention of a post. &ldquo;Semaglutide (Ozempic, Wegovy)&rdquo; and
-        &ldquo;tirzepatide (Mounjaro, Zepbound)&rdquo;, always both. This is for accuracy
-        and for accessibility when readers are comparing what their doctor
-        prescribed against what we&apos;ve written.
+        We always use the generic name alongside any brand name in the first
+        mention of a post. &ldquo;Tesamorelin (Egrifta)&rdquo; and
+        &ldquo;sermorelin (Geref)&rdquo;, always both. This is for accuracy and for
+        accessibility when readers are comparing what their clinician has
+        cited against what we&apos;ve written.
       </p>
 
       <h2>No telehealth recommendations</h2>

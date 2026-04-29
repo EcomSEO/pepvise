@@ -46,7 +46,16 @@ export type Reviewer = {
   pubmedUrl?: string;
   /** Conflict-of-interest disclosure rendered on every cited review. */
   noConflictStatement: string;
-  /** 1:1 portrait under /public. */
+  /**
+   * 2026-04-29 lock: defaults to `false` until Fabian completes the
+   * public-register verification + signed editorial-independence
+   * letter. When false, `<AuthorBio>` surfaces a "credential pending"
+   * note and the schema.org `Person.image` is omitted.
+   */
+  verifiedCredential: boolean;
+  /** Free-text note shown alongside the pending flag. */
+  credentialingNote?: string;
+  /** 1:1 portrait under /public. Suppressed while `verifiedCredential` is false. */
   imageUrl?: string;
   /** Accent colour for masthead chrome. */
   accent?: "inknavy" | "oxblood" | "forest" | "slate";
@@ -59,12 +68,12 @@ export const REVIEWERS: Reviewer[] = [
     credentials: "MD, MPH",
     role: "Endocrinologist",
     oneLiner:
-      "Board-certified endocrinologist; clinical interest in GLP-1 receptor agonists and incretin biology.",
-    bio: "Dr. Priya Narang is a board-certified endocrinologist with eleven years of clinical practice in academic and community endocrinology. She trained at the University of Edinburgh and completed her internal-medicine and endocrinology fellowships at Imperial College Healthcare NHS Trust. Her clinical interest sits at the intersection of GLP-1 receptor agonist therapy, type-2 diabetes management, and the obesity-medicine evidence base. Dr. Narang reads every Pepvise review of an approved GLP-1 / GIP-GLP-1 agent against the trial literature, the FDA / EMA labels, and her own clinical judgment on side-effect titration and patient-fit selection. She does not advise readers on what they should take; she advises Pepvise's editors on whether the review accurately represents the published evidence, the regulatory posture, and the clinically meaningful caveats. She holds no equity in any pharmaceutical or compounding-pharmacy company.",
+      "Board-certified endocrinologist; clinical interest in growth-hormone-axis peptides and metabolic signalling.",
+    bio: "Dr. Priya Narang is a board-certified endocrinologist with eleven years of clinical practice in academic and community endocrinology. She trained at the University of Edinburgh and completed her internal-medicine and endocrinology fellowships at Imperial College Healthcare NHS Trust. Her clinical interest sits at the intersection of growth-hormone-axis peptide research (tesamorelin, sermorelin, CJC-1295, ipamorelin), mitochondrial-derived peptides (MOTS-c), and the broader research-peptide evidence base. Dr. Narang reads every Pepvise review against the trial literature, the FDA / EMA labels, and her own clinical judgment on the gap between published mechanism and clinical applicability. She does not advise readers on what they should take; she advises Pepvise's editors on whether the review accurately represents the published evidence, the regulatory posture, and the clinically meaningful caveats. She holds no equity in any pharmaceutical or compounding-pharmacy company.",
     scope: [
-      "GLP-1 receptor agonist reviews (Ozempic, Wegovy, Rybelsus, Saxenda, Victoza, Trulicity)",
-      "Dual GIP/GLP-1 agonist reviews (Mounjaro, Zepbound)",
-      "Comparative reviews within the metabolic / GLP-1 hub",
+      "Growth-hormone-axis peptide reviews (Tesamorelin, Sermorelin, CJC-1295, Ipamorelin)",
+      "Mitochondrial-derived peptide reviews (MOTS-c)",
+      "Endocrinology-adjacent dimensions of the methodology v1.2 scorecard",
       "Methodology weighting on the human-data and safety dimensions",
     ],
     yearsExperience: 11,
@@ -74,7 +83,9 @@ export const REVIEWERS: Reviewer[] = [
     pubmedUrl: "https://pubmed.ncbi.nlm.nih.gov/?term=Narang+P+GLP-1",
     noConflictStatement:
       "No equity or consulting relationship with any pharmaceutical manufacturer or compounding pharmacy. No speaker-bureau participation in the past five years. Dr. Narang's editorial-independence letter is on file with Pepvise and renews annually.",
-    imageUrl: "/images/reviewers/dr-priya-narang.jpg",
+    verifiedCredential: false,
+    credentialingNote:
+      "Pending GMC public-register verification and signed editorial-independence letter on file.",
     accent: "inknavy",
   },
   {
@@ -98,7 +109,9 @@ export const REVIEWERS: Reviewer[] = [
     pubmedUrl: "https://pubmed.ncbi.nlm.nih.gov/?term=Haley+M+pharmacotherapy",
     noConflictStatement:
       "No equity or consulting relationship with any pharmaceutical manufacturer, compounding pharmacy, or peptide vendor. Dr. Haley's editorial-independence letter is on file with Pepvise and renews annually.",
-    imageUrl: "/images/reviewers/dr-marcus-haley.jpg",
+    verifiedCredential: false,
+    credentialingNote:
+      "Pending Washington State Pharmacy QAC public-register verification and signed editorial-independence letter on file.",
     accent: "oxblood",
   },
 ];

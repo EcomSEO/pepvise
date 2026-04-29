@@ -24,9 +24,9 @@ export const SITE = {
   launched: true,
   requiresMedicalDisclaimer: true,
   methodologyVersion: "v1.2",
-  databaseEntries: 20,
-  pipelineEntries: 8,
-  lastDatabaseRefresh: "2026-04-28",
+  databaseEntries: 9,
+  pipelineEntries: 4,
+  lastDatabaseRefresh: "2026-04-29",
 
   // Legacy editorial-masthead fields. Kept for typecheck compatibility
   // with unused Header/Footer/Dateline components; not rendered in the
